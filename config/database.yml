@@ -10,7 +10,7 @@ default: &default
   pool: 5
   timeout: 5000
   user: pguser
-  password: pguser_password
+  password: psswd
 
 development:
   <<: *default
@@ -24,5 +24,11 @@ test:
   database: sm_test
 
 production:
-  <<: *default
-  database: sm_prod
+  adapter: postgresql
+  host: <%= ENV["DB_HOST"] %>
+  port: <%= ENV["DB_PORT"] %>
+  pool: 5
+  timeout: 5000
+  user: <%= ENV["DB_USER"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
+  database: sm_production
