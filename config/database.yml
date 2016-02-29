@@ -31,4 +31,4 @@ production:
   timeout: 5000
   user: <%= ENV["DB_USER"] %>
   password: <%= ENV["DB_PASSWORD"] %>
-  database: sm_production
+  database: <%= ENV["DB_NAME"] %>
