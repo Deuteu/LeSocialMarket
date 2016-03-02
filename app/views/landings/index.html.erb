@@ -1,11 +1,11 @@
 <% if notice%>
 <div class="padding">
-  <div class="alert alert-success" role="alert">C'est ok</div>
+  <div class="alert alert-success" role="alert">Vous êtes bien inscrit à notre newsletter, merci.</div>
 </div>
 <% end %>
 <% if alert%>
 <div class="padding">
-  <div class="alert alert-danger" role="alert">C'est mort</div>
+  <div class="alert alert-danger" role="alert">Vous êtes déjà inscrit à notre newsletter.</div>
 </div>
 <% end %>
     <!-- Header -->
@@ -18,15 +18,10 @@
                         <span class="name">Le Social Market</span>
                         <hr class="star-light">
                         <span class="skills">Des produits et des actes.</span>
-                          <%= form_for @mail do |f| %>
-                          <%= f.email_field :mail %>
-                          <%= f.submit "OK" %>
-                          <% end %>
-                        <br>
-                        <% @mails.each do |x| %>
-                          <%= x.mail%>
-                          <br>
-                        <% end %>
+                          <p><%= form_for @mail do |f| %>
+                          <%= f.email_field :mail, :placeholder => "Newsletter"%>
+                          <%= f.submit "OK", class: "btn-submit"  %>
+                          <% end %></p>
                     </div>
                 </div>
             </div>
