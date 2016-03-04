@@ -1,6 +1,6 @@
-class CreateLandings < ActiveRecord::Migration
+class CreateLeads < ActiveRecord::Migration
   def change
-    create_table :landings do |t|
+    create_table :leads do |t|
       t.string :mail
 
       t.timestamps null: false

@@ -78,7 +78,7 @@
                             <span class="name">Le Social Market</span>
                             <hr class="star-light">
                             <span class="skills">Des produits et des actes.</span>
-                              <p><%= form_for @mail do |f| %>
+                              <p><%= form_for @lead do |f| %>
                               <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Newsletter"%>
                               <%= f.submit "OK", class: "btn-submit"  %>
                               <% end %></p>

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root 'landings#index'
+  root 'leads#index'
 
-  resources :landings
-  get 'landings/create'
+  resources :leads
+  get 'leads/create'
 
 end
