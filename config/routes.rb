@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  root 'leads#index'
+  root 'pages#landing'
 
-  resources :leads
-  get 'leads/create'
-
+  post  'leads' =>  'leads#create'
 end

@@ -1,15 +1,10 @@
 class LeadsController < ApplicationController
-  def index
-    @lead = Lead.new
-    @mails = Lead.all
-    render layout: false
-  end
   def create
     @lead = Lead.new lead_param
     if @lead.save
-      redirect_to "#", notice: "Adresse sauvegardée"
+      redirect_to root_path, notice: "Adresse sauvegardée"
     else
-      redirect_to "#", alert: "Echec de la sauvegarde"
+      redirect_to root_path, alert: "Echec de la sauvegarde"
     end
   end
 

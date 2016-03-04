@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
-  def index
-    @mail = Landing.new
+  def landing
+    @lead = Lead.new
+    render layout: false
   end
 end
