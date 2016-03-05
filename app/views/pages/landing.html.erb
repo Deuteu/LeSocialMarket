@@ -56,20 +56,24 @@
                 </ul>
             </div> <!-- /.navbar-collapse -->
         </div> <!-- /.container-fluid -->
+        <% if notice%>
+        <div class="padding">
+          <div class="alert fade in alert-success alert-dismissable">
+            <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
+            Vous êtes bien inscrit à notre newsletter, merci.</div>
+        </div>
+        <% end %>
+        <% if alert%>
+        <div class="padding">
+          <div class="alert fade in alert-danger alert-dismissable">
+            <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
+            Vous êtes déjà inscrit à notre newsletter.</div>
+        </div>
+        <% end %>
     </nav>
 
         <!-- Header -->
         <header>
-          <% if notice%>
-          <div class="padding">
-            <div class="alert alert-success" a href="#" class="close" data-dismiss="alert" aria-label="close" role="alert">Vous êtes bien inscrit à notre newsletter, merci.</div>
-          </div>
-          <% end %>
-          <% if alert%>
-          <div class="padding">
-            <div class="alert alert-danger" class="close" data-dismiss="alert" aria-label="close" role="alert">Vous êtes déjà inscrit à notre newsletter.</div>
-          </div>
-          <% end %>
             <div class="container" id="home">
                 <div class="row">
                     <div class="col-lg-12">
