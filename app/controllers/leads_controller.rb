@@ -4,7 +4,9 @@ class LeadsController < ApplicationController
     if @lead.save
       redirect_to root_path, notice: "Adresse sauvegardée"
     else
-      redirect_to root_path, alert: "Echec de la sauvegarde"
+      if @lead.errors.include?(:mail)
+        redirect_to root_path, alert: "Echec de la sauvegarde"
+      end
     end
   end
 
