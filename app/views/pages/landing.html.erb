@@ -47,8 +47,11 @@
                       <li class="page-scroll">
                           <a href="#home">Accueil</a>
                       </li>
+                      <li class="page-scroll">
+                          <a href="#about">C'est quoi ?</a>
+                      </li>
                     <li class="page-scroll">
-                        <a href="#about">Comment ça marche ?</a>
+                        <a href="#how">Comment ça marche ?</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#footer">Contact</a>
@@ -56,24 +59,28 @@
                 </ul>
             </div> <!-- /.navbar-collapse -->
         </div> <!-- /.container-fluid -->
-        <% if notice%>
-        <div class="padding">
-          <div class="alert fade in alert-success alert-dismissable">
-            <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
-            Vous êtes bien inscrit à notre newsletter, merci.</div>
-        </div>
-        <% end %>
-        <% if alert%>
-        <div class="padding">
-          <div class="alert fade in alert-danger alert-dismissable">
-            <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
-            Vous êtes déjà inscrit à notre newsletter.</div>
-        </div>
-        <% end %>
+
+                  <% if notice%>
+                    <div class="padding">
+                      <div class="alert fade in alert-success alert-dismissable">
+                        <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
+                        Vous êtes bien inscrit à notre newsletter, merci.</div>
+                    </div>
+                  <% end %>
+                  <% if alert%>
+                    <div class="padding">
+                      <div class="alert fade in alert-danger alert-dismissable">
+                        <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
+                        Vous êtes déjà inscrit à notre newsletter ou l'adresse est invalide.
+                      </div>
+                    </div>
+                  <% end %>
     </nav>
+
 
         <!-- Header -->
         <header>
+
             <div class="container" id="home">
                 <div class="row">
                     <div class="col-lg-12">
@@ -81,7 +88,10 @@
                         <div class="intro-text">
                             <span class="name">Le Social Market</span>
                             <hr class="star-light">
-                            <span class="skills">Des produits et des actes.</span>
+                            <span class="skills">
+                              <h2>Des produits et des actes.</h2>
+                              Le site de ventes-privées solidaires qui vous permet d’acheter des produits en changeant le monde !
+                              <p>Abonnez-vous à notre newsletter pour être informés de nos ventes et recevoir des news joyeuses.</p></span>
                               <p><%= form_for @lead do |f| %>
                               <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Newsletter"%>
                               <%= f.submit "OK", class: "btn-submit"  %>
@@ -97,20 +107,43 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2>Comment ça marche ?</h2>
+                        <h2>Le Social Market, c’est quoi ?</h2>
                         <hr class="star-primary">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-lg-offset-2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                          <p>Le Social Market, c’est un projet qui part de l’idée que le monde de demain est celui des consommacteurs,
+                          qui donnent leur avis sur les conséquences de leurs achats. <br>Nous oeuvrons pour une nouvelle culture de consommation,
+                          une culture où les entreprises gagnent par leurs produits mais aussi par leur vision et leurs valeurs,
+                          parfois et souvent incarnés par des projets citoyens et associatifs. <br>Fini le clivage si déchirant entre nos
+                          incontrôlables pulsions de shopaholics compulsifs et notre conscience de citoyen responsable !
+                          Le Social Market est là pour mettre l’engagement au cœur du processus d’achat.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- How Section -->
+        <section class="how" id="how">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Comment ça marche ?</h2>
+                        <hr class="star-light">
+                    </div>
+                </div>
+                <div class="row">
+                          <p>Nous organisons des ventes-privées solidaires avec des produits dénichés par nos soins.
+                            Ils proviennent tous de marques qui ont une cause à cœur, et sont proposés à prix solidaires.<br>
+                            Quand un consommacteur achète un produit sur notre site, une partie du montant est reversé à un
+                            projet associatif soutenu par la marque en question. La répartition du montant d’achat entre association,
+                            marque et Social Market est exposée en toute transparence. Pour s’engager plus dans les projets proposés,
+                            libre à vous de contribuer au-delà du montant de l’achat (sans commission) ou de contacter l’association partenaire pour du bénévolat !
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Footer -->
         <footer class="text-center" id="footer">
