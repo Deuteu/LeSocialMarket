@@ -104,19 +104,22 @@
         <section class="success" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
+                    <div class="col-lg-12">
                         <h2>Le Social Market, c’est quoi ?</h2>
                     </div>
                 </div>
                 <div class="row">
-                  <br><p class="flotte-right"><%= image_tag "nature1.png", class: "img-responsive", width: "500", height: "auto" %></p>
-                          <p><br>Le Social Market, c’est un projet qui part de l’idée que le monde de demain est celui des consommacteurs,
+                <div class="col-md-6">
+                          <p>Le Social Market, c’est un projet qui part de l’idée que le monde de demain est celui des consommacteurs,
                           qui donnent leur avis sur les conséquences de leurs achats. <br>Nous oeuvrons pour une nouvelle culture de consommation,
                           une culture où les entreprises gagnent par leurs produits mais aussi par leur vision et leurs valeurs,
                           parfois et souvent incarnés par des projets citoyens et associatifs. <br>Fini le clivage si déchirant entre nos
                           incontrôlables pulsions de shopaholics compulsifs et notre conscience de citoyen responsable !
                           Le Social Market est là pour mettre l’engagement au cœur du processus d’achat.</p>
                     </div>
+                    <div class="col-md-6">
+                    <%= image_tag "tree.png", class: "img-responsive", width: "500", height: "auto" %>
+                  </div>
                 </div>
             </div>
         </section>
@@ -124,22 +127,25 @@
         <!-- How Section -->
         <section class="how" id="how">
             <div class="container">
-                <div class="row" class="flotte-left">
-                    <div class="col-lg-12 text-center">
-                        <h2>Comment ça marche ?</h2>
-                    </div>
-                </div>
-                <div class="row">
-                  <br><p class="flotte-left"><%= image_tag "nature2.png", class: "img-responsive", width: "500", height: "auto" %></p>
-                          <p><br>Nous organisons des ventes-privées solidaires avec des produits dénichés par nos soins.
-                            Ils proviennent tous de marques qui ont une cause à cœur, et sont proposés à prix solidaires.<br>
-                            Quand un consommacteur achète un produit sur notre site, une partie du montant est reversé à un
-                            projet associatif soutenu par la marque en question. La répartition du montant d’achat entre association,
-                            marque et Social Market est exposée en toute transparence. Pour s’engager plus dans les projets proposés,
-                            libre à vous de contribuer au-delà du montant de l’achat (sans commission) ou de contacter l’association partenaire pour du bénévolat !
-                    </div>
-                </div>
-            </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <h2>Comment ça marche ?</h2>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                <%= image_tag "yes.png", class: "img-responsive", width: "500", height: "auto" %>
+              </div>
+              <div class="col-md-6">
+                              <p>Nous organisons des ventes-privées solidaires avec des produits dénichés par nos soins.
+                                Ils proviennent tous de marques qui ont une cause à cœur, et sont proposés à prix solidaires.<br>
+                                Quand un consommacteur achète un produit sur notre site, une partie du montant est reversé à un
+                                projet associatif soutenu par la marque en question. La répartition du montant d’achat entre association,
+                                marque et Social Market est exposée en toute transparence. Pour s’engager plus dans les projets proposés,
+                                libre à vous de contribuer au-delà du montant de l’achat (sans commission) ou de contacter l’association partenaire pour du bénévolat !</p>
+                              </div>
+                          </div>
+                      </div>
         </section>
 
 

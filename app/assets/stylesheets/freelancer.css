@@ -123,16 +123,6 @@ header .intro-text .skills {
     }
 }
 
-.flotte-right {
-  float:right;
-}
-
-.flotte-left {
-  float:left;
-  margin: 20px;
-}
-
-
 .form {
   text-align:center;
   margin: 0 auto 10px;
@@ -214,6 +204,7 @@ section {
 section h2 {
     margin: 0;
     font-size: 3em;
+    margin-bottom: 25px;
 }
 
 section.success {
