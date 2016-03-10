@@ -123,6 +123,16 @@ header .intro-text .skills {
     }
 }
 
+.flotte-right {
+  float:right;
+}
+
+.flotte-left {
+  float:left;
+  margin: 20px;
+}
+
+
 .form {
   text-align:center;
   margin: 0 auto 10px;
@@ -352,10 +362,10 @@ footer .footer-below {
 }
 
 .btn-submit {
-  color: #FFFFFF;
+  color: #2c3e50;
   font-size: 15px;
   text-transform: uppercase;
-  background: #55C7B8;
+  background: #FFFFFF;
   padding: 8px 15px;
   border-radius: 30px;
   margin-top: 6px;
