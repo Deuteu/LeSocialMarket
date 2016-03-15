@@ -9,7 +9,7 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 p.small {
@@ -22,7 +22,6 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
 }
 
 h1,
@@ -33,7 +32,7 @@ h5,
 h6 {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 hr.star-light,
@@ -75,19 +74,10 @@ hr.star-primary:after {
     background-color: #fff;
 }
 
-.img-centered {
-    margin: 0 auto;
-}
-
 header {
     text-align: center;
     color: #fff;
     background: #3a76b2;
-}
-
-header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
 }
 
 header img {
@@ -108,6 +98,12 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
@@ -121,11 +117,6 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
-}
-
-.test {
-  padding: 100px 0 8px 0;
-
 }
 
 .form {
@@ -154,7 +145,15 @@ input[type=email] {
   color: #fff;
 }
 
-@media(min-width:768px) {
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+
+@media(min-width:1024px) {
     .navbar-fixed-top {
         padding: 10abpx 0;
         -webkit-transition: padding .3s;
@@ -209,11 +208,9 @@ input[type=email] {
 }
 
 section {
-    padding: 100px 0;
 }
 
-section h2 {
-    margin: 0;
+section h3 {
     font-size: 3em;
     margin-bottom: 25px;
 }
@@ -228,12 +225,6 @@ section.how {
     background: #3a76b2;
     color: #fff;
     font-family: 'Raleway', sans-serif;
-}
-
-section.mail-contact {
-    font-weight: 500;
-    line-height: 1.1;
-    color: #00000;
 }
 
 section.success a,
@@ -262,11 +253,6 @@ section.how a.active {
     section.first {
         padding-top: 75px;
     }
-}
-
-section.mail {
-    color: #00000;
-    background: #3a76b2;
 }
 
 .btn-outline {
@@ -409,3 +395,20 @@ footer .footer-below {
 .scroll-top .btn:focus {
     outline: 0;
 }
+
+/* edit delete : unesed
+
+.img-centered {
+    margin: 0 auto;
+}
+
+section.mail-contact {
+    font-weight: 500;
+    line-height: 1.1;
+    color: #00000;
+}
+section.mail {
+    color: #00000;
+    background: #3a76b2;
+}
+*/
