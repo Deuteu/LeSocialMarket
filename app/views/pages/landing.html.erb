@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <title>Le Social Market</title>
 
     <meta name="viewport" content="width=device-width" />
@@ -43,6 +44,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="navbar-color" id="nav-color">
                 <ul class="nav navbar-nav navbar-right">
                       <li class="page-scroll">
                           <a href="#home">Accueil</a>
@@ -57,6 +59,7 @@
                         <a href="#footer">Contact</a>
                     </li>
                 </ul>
+              </div>
             </div> <!-- /.navbar-collapse -->
         </div> <!-- /.container-fluid -->
 
@@ -81,27 +84,24 @@
         <header>
 
             <div class="container" id="home">
-                <div class="row">
-                    <div class="col-lg-12">
-                      <div class="intro-text">
-                          <span class="name">Le Social Market</span>
-                          <%= image_tag "logotsm_alpha.png", class: "img-responsive", size: "100x130" %>
-                        <h2>Des produits et des actes.</h2>
-                        <div class="col-md-6">
-                              <p>Le site de ventes-privées solidaires qui vous permet d’acheter des produits en changeant le monde !</p>
-                            </div>
-                            <div class="col-md-6">
-                              <p>Abonnez-vous à notre newsletter pour être informés de nos ventes et recevoir des news joyeuses.</p>
-                              <%= form_for @lead do |f| %>
-                              <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Newsletter"%>
-                              <%= button_tag(type: 'submit', class: "btn btn-submit") do %>
-                              <span class="glyphicon glyphicon-envelope"></span>
-                              <% end %>
-                              <% end %>
-                            </div>
-                        </div>
+              <div class="col-lg-12">
+                <div class="intro-text">
+                  <%= image_tag "logotsm.png", class: "img-responsive", size: "300x300" %>
+                  <h2>Des produits et des actes.</h2>
+                    <div class="col-md-6">
+                        <p>Le site de ventes-privées solidaires qui vous permet d’acheter des produits en changeant le monde !</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p>Abonnez-vous à notre newsletter pour être informés de nos ventes et recevoir des news joyeuses.</p>
+                      <%= form_for @lead do |f| %>
+                      <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Newsletter"%>
+                      <%= button_tag(type: 'submit', class: "btn btn-submit") do %>
+                      <span class="glyphicon glyphicon-envelope"></span>
+                        <% end %>
+                      <% end %>
                     </div>
                 </div>
+              </div>
             </div>
         </header>
 
