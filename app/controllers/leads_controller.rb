@@ -1,11 +1,17 @@
 class LeadsController < ApplicationController
+before_action :authenticate_admin!, only: [:index]
+
+  def index
+    @leads = Lead.all
+  end
+
   def create
     @lead = Lead.new lead_param
     if @lead.save
-      redirect_to root_path, notice: "Adresse sauvegardée"
+      redirect_to root_path, nl_success: "Adresse sauvegardée"
     else
       if @lead.errors.include?(:mail)
-        redirect_to root_path, alert: "Echec de la sauvegarde"
+        redirect_to root_path, nl_failed: "Echec de la sauvegarde"
       end
     end
   end

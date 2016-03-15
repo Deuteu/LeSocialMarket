@@ -63,14 +63,14 @@
             </div> <!-- /.navbar-collapse -->
         </div> <!-- /.container-fluid -->
 
-                  <% if notice%>
+                  <% if nl_success%>
                     <div class="padding">
                       <div class="alert fade in alert-success alert-dismissable">
                         <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
                         Vous êtes bien inscrit à notre newsletter, merci.</div>
                     </div>
                   <% end %>
-                  <% if alert%>
+                  <% if nl_failed%>
                     <div class="padding">
                       <div class="alert fade in alert-danger alert-dismissable">
                         <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
