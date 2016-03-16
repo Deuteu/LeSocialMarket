@@ -1,199 +1,197 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-    <title>Le Social Market</title>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <title>Le Social Market</title>
 
-    <meta name="viewport" content="width=device-width" />
-    <%= favicon_link_tag %>
+  <meta name="viewport" content="width=device-width" />
+  <%= favicon_link_tag %>
 
-    <%= stylesheet_link_tag    'landing', media: 'all', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-    <!-- jQuery -->
-    <!--     <script src="assets/jquery.js"></script> -->
-    <!-- Bootstrap Core JavaScript -->
-    <!--     <script src="assets/bootstrap.min.js"></script> -->
+  <%= stylesheet_link_tag    'landing', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <!-- jQuery -->
+  <!--     <script src="assets/jquery.js"></script> -->
+  <!-- Bootstrap Core JavaScript -->
+  <!--     <script src="assets/bootstrap.min.js"></script> -->
 
-    <!-- Plugin JavaScript -->
-    <!--     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
-    <!--     <script src="assets/classie.js"></script> -->
-    <!--     <script src="assets/cbpAnimatedHeader.js"></script> -->
+  <!-- Plugin JavaScript -->
+  <!--     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+  <!--     <script src="assets/classie.js"></script> -->
+  <!--     <script src="assets/cbpAnimatedHeader.js"></script> -->
 
-    <!-- Contact Form JavaScript -->
-    <!--     <script src="assets/jqBootstrapValidation.js"></script> -->
-    <!--     <script src="assets/contact_me.js"></script> -->
+  <!-- Contact Form JavaScript -->
+  <!--     <script src="assets/jqBootstrapValidation.js"></script> -->
+  <!--     <script src="assets/contact_me.js"></script> -->
 
-    <!-- Custom Theme JavaScript -->
-    <!--     <script src="assets/freelancer.js"></script> -->
-  </head>
+  <!-- Custom Theme JavaScript -->
+  <!--     <script src="assets/freelancer.js"></script> -->
+</head>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="glyphicon glyphicon-menu-hamburger"></span>
-                </button>
-                <a class="navbar-brand">Le Social Market</a>
-            </div>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <a class="navbar-brand">Le Social Market</a>
+      </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <div class="navbar-color" id="nav-color">
-                <ul class="nav navbar-nav navbar-right">
-                      <li class="page-scroll">
-                          <a href="#home">Accueil</a>
-                      </li>
-                      <li class="page-scroll">
-                          <a href="#about">C'est quoi ?</a>
-                      </li>
-                    <li class="page-scroll">
-                        <a href="#how">Comment ça marche ?</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#footer">Contact</a>
-                    </li>
-                </ul>
-              </div>
-            </div> <!-- /.navbar-collapse -->
-        </div> <!-- /.container-fluid -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="navbar-color" id="nav-color">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="page-scroll">
+              <a href="#home">Accueil</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#about">C'est quoi ?</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#how">Comment ça marche ?</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- /.navbar-collapse -->
+    </div> <!-- /.container-fluid -->
 
-                  <% if nl_success%>
-                    <div class="padding">
-                      <div class="alert fade in alert-success alert-dismissable">
-                        <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
-                        Vous êtes bien inscrit à notre newsletter, merci.</div>
-                    </div>
-                  <% end %>
-                  <% if nl_failed%>
-                    <div class="padding">
-                      <div class="alert fade in alert-danger alert-dismissable">
-                        <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
-                        Vous êtes déjà inscrit à notre newsletter ou l'adresse est invalide.
-                      </div>
-                    </div>
-                  <% end %>
+    <% if nl_success%>
+    <div class="padding">
+      <div class="alert fade in alert-success alert-dismissable">
+        <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
+        Vous êtes bien inscrit à notre newsletter, merci.</div>
+      </div>
+      <% end %>
+      <% if nl_failed%>
+      <div class="padding">
+        <div class="alert fade in alert-danger alert-dismissable">
+          <button class="close" data-dismiss="alert" aria-hidden="true" type="button">×</button>
+          Vous êtes déjà inscrit à notre newsletter ou l'adresse est invalide.
+        </div>
+      </div>
+      <% end %>
     </nav>
 
-        <!-- Header -->
-        <header>
+    <!-- Header -->
+    <header>
+      <div class="container" id="home">
+        <div class="col-lg-12">
+          <div class="intro-text">
+            <%= image_tag "logotsm.png", class: "img-responsive", size: "300x300" %>
+            <h3>Des produits et des actes.</h3>
+            <div class="col-md-6">
+              <p>Le site de ventes-privées solidaires qui vous permet d’acheter des produits en changeant le monde !</p>
+            </div>
+            <div class="col-md-6">
+              <p>Abonnez-vous à notre newsletter pour être informés de nos ventes et recevoir des news joyeuses.</p>
+              <%= form_for @lead do |f| %>
+              <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Newsletter"%>
+              <%= button_tag(type: 'submit', class: "btn btn-submit") do %>
+              <span class="glyphicon glyphicon-envelope"></span>
+              <% end %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-            <div class="container" id="home">
-              <div class="col-lg-12">
-                <div class="intro-text">
-                  <%= image_tag "logotsm.png", class: "img-responsive", size: "300x300" %>
-                  <h3>Des produits et des actes.</h3>
-                    <div class="col-md-6">
-                        <p>Le site de ventes-privées solidaires qui vous permet d’acheter des produits en changeant le monde !</p>
-                    </div>
-                    <div class="col-md-6">
-                      <p>Abonnez-vous à notre newsletter pour être informés de nos ventes et recevoir des news joyeuses.</p>
-                      <%= form_for @lead do |f| %>
-                      <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Newsletter"%>
-                      <%= button_tag(type: 'submit', class: "btn btn-submit") do %>
-                      <span class="glyphicon glyphicon-envelope"></span>
-                        <% end %>
-                      <% end %>
-                    </div>
-                </div>
+    <!-- About Section -->
+    <section class="success" id="about">
+      <div class="col-right-img">
+        <%= image_tag "tree.png", class: "img-responsive", width: "650", height: "auto" %>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3>Le Social Market, c’est quoi ?</h3>
+            <p>Le Social Market, c’est un projet qui part de l’idée que le monde de demain est celui des consommacteurs,                          qui donnent leur avis sur les conséquences de leurs achats. <br>Nous oeuvrons pour une nouvelle culture de consommation,
+              une culture où les entreprises gagnent par leurs produits mais aussi par leur vision et leurs valeurs,
+              parfois et souvent incarnés par des projets citoyens et associatifs. Fini le clivage si déchirant entre nos
+              incontrôlables pulsions de shopaholics compulsifs et notre conscience de citoyen responsable !
+              Le Social Market est là pour mettre l’engagement au cœur du processus d’achat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How Section -->
+      <section class="how" id="how">
+        <div class="col-left-img">
+          <%= image_tag "yes.png", class: "img-responsive", width: "650", height: "auto" %>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Comment ça marche ?</h3>
+              <p>Nous organisons des ventes-privées solidaires avec des produits dénichés par nos soins.
+                Ils proviennent tous de marques qui ont une cause à cœur, et sont proposés à prix solidaires.<br>
+                Quand un consommacteur achète un produit sur notre site, une partie du montant est reversé à un
+                projet associatif soutenu par la marque en question. La répartition du montant d’achat entre association,
+                marque et Social Market est exposée en toute transparence. <br>Pour s’engager plus dans les projets proposés,
+                libre à vous de contribuer au-delà du montant de l’achat (sans commission) ou de contacter l’association partenaire pour du bénévolat !</p>
               </div>
             </div>
-        </header>
-
-        <!-- About Section -->
-        <section class="success" id="about">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-6">
-                  <h3>Le Social Market, c’est quoi ?</h3>
-                          <p>Le Social Market, c’est un projet qui part de l’idée que le monde de demain est celui des consommacteurs,
-                          qui donnent leur avis sur les conséquences de leurs achats. <br>Nous oeuvrons pour une nouvelle culture de consommation,
-                          une culture où les entreprises gagnent par leurs produits mais aussi par leur vision et leurs valeurs,
-                          parfois et souvent incarnés par des projets citoyens et associatifs. <br>Fini le clivage si déchirant entre nos
-                          incontrôlables pulsions de shopaholics compulsifs et notre conscience de citoyen responsable !
-                          Le Social Market est là pour mettre l’engagement au cœur du processus d’achat.</p>
-                    </div>
-                    <div class="col-lg-6">
-                    <%= image_tag "tree.png", class: "img-responsive", width: "500", height: "auto" %>
-                  </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- How Section -->
-        <section class="how" id="how">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-6">
-                <%= image_tag "yes.png", class: "img-responsive", width: "500", height: "auto" %>
-              </div>
-              <div class="col-lg-6">
-                <h3>Comment ça marche ?</h3>
-                              <p>Nous organisons des ventes-privées solidaires avec des produits dénichés par nos soins.
-                                Ils proviennent tous de marques qui ont une cause à cœur, et sont proposés à prix solidaires.<br>
-                                Quand un consommacteur achète un produit sur notre site, une partie du montant est reversé à un
-                                projet associatif soutenu par la marque en question. La répartition du montant d’achat entre association,
-                                marque et Social Market est exposée en toute transparence. Pour s’engager plus dans les projets proposés,
-                                libre à vous de contribuer au-delà du montant de l’achat (sans commission) ou de contacter l’association partenaire pour du bénévolat !</p>
-                              </div>
-                          </div>
-                      </div>
+          </div>
         </section>
 
 
         <!-- Footer -->
         <footer class="text-center" id="footer">
-            <div class="footer-above">
-                <div class="container">
-                    <div class="row">
-                        <div class="footer-col col-md-4">
-                            <h3>Adresse</h3>
-                            <p>Paris, 75000<p>HEC - Télécom<p>42 - e-artsup</p>
-                        </div>
-                        <div class="footer-col col-md-4">
-                            <h3>Contact</h3>
-                            <ul class="list-inline">
-                                <li>
-                                    <a target="_blank" href="https://www.facebook.com/lesocialmarket/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="mailto:contact@lesocialmarket.fr" class="btn-social btn-outline"><i class="fa fa-envelope"></i></a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://twitter.com/lesocialmarket" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-col col-md-4">
-                            <h3>Qui sommes nous ?</h3>
-                            <p>Attaa Ben Elafdil<p>Cécile Compte<p>Guillaume Deberdt</a></p>
-                        </div>
-                    </div>
+          <div class="footer-above">
+            <div class="container">
+              <div class="row">
+                <div class="footer-col col-md-4">
+                  <h3>Adresse</h3>
+                  <p>Paris, 75000<p>HEC - Télécom<p>42 - e-artsup</p>
                 </div>
-            </div>
-            <div class="footer-below">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            Copyright &copy; Hopla.top
-                        </div>
-                    </div>
+                <div class="footer-col col-md-4">
+                  <h3>Contact</h3>
+                  <ul class="list-inline">
+                    <li>
+                      <a target="_blank" href="https://www.facebook.com/lesocialmarket/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="mailto:contact@lesocialmarket.fr" class="btn-social btn-outline"><i class="fa fa-envelope"></i></a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://twitter.com/lesocialmarket" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                    </li>
+                  </ul>
                 </div>
+                <div class="footer-col col-md-4">
+                  <h3>Qui sommes nous ?</h3>
+                  <p>Attaa Ben Elafdil<p>Cécile Compte<p>Guillaume Deberdt</a></p>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="footer-below">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  Copyright &copy; Hopla.top
+                </div>
+              </div>
+            </div>
+          </div>
         </footer>
 
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
         <div class="scroll-top page-scroll visible-xs visible-sm">
-            <a class="btn btn-primary" href="#home">
-                <i class="fa fa-chevron-up"></i>
-            </a>
+          <a class="btn btn-primary" href="#home">
+            <i class="fa fa-chevron-up"></i>
+          </a>
         </div>
 
-  </body>
+      </body>
 
-  <!-- Do not include in head or no highlight in header on active section -->
-  <%= javascript_include_tag 'landing', 'data-turbolinks-track' => true %>
+      <!-- Do not include in head or no highlight in header on active section -->
+      <%= javascript_include_tag 'landing', 'data-turbolinks-track' => true %>
 
-</html>
+      </html>
