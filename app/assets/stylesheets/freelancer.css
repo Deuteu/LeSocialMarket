@@ -85,6 +85,10 @@ header img {
   margin: 0 auto 20px;
 }
 
+header h3 {
+  margin-bottom: 64px;
+}
+
 header .intro-text .name {
   display: block;
   text-transform: uppercase;
@@ -205,6 +209,11 @@ input[type=text] {
   border: 0;
 }
 
+.navbar-line {
+  background-color: #fff;
+
+}
+
 .padding {
   background: #3a76b2;
   margin-bottom: -50px;
@@ -216,7 +225,8 @@ section p {
 
 section h3 {
   padding-top: 20px;
-  font-size: 3em;
+  font-size: 2em;
+  padding-bottom: 12px;
 }
 
 section.success {
@@ -238,6 +248,18 @@ section.success a:active,
 section.success a.active {
   outline: 0;
   color: #3a76b2;
+}
+
+.success h3 {
+  text-align: right;
+}
+
+.success p {
+  text-align: justify;
+}
+
+.how p {
+  text-align: justify;
 }
 
 section.how a,
