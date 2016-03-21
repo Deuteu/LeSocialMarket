@@ -50,9 +50,9 @@ h5, h6 {
 }
 
 /*--- HEADER ---*/
-header::after {
+  header::after {
   content: "";
-  background: url(tree.png);
+  background: url(thankyoutsm.jpg);
   background-size: auto 100%;
   background-position: center;
   opacity: 0.5;
@@ -67,7 +67,6 @@ header::after {
 header {
   text-align: center;
   color: #fff;
-  background: rgba(58,118,178, 0.4);
 
   img {
     display: block;
@@ -103,7 +102,6 @@ header {
   header {
     .container {
       padding-top: 200px;
-      padding-bottom: 100px;
     }
 
     .intro-text {
@@ -170,7 +168,7 @@ header {
   font-family: $font01;
   font-weight: 700;
   background-color: #fff;
-  opacity: 0.4;
+  opacity: 0.6;
 
   a:focus {
     outline: 0;
