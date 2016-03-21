@@ -53,9 +53,7 @@ h5, h6 {
   header::after {
   content: "";
   background: url(thankyoutsm.png);
-  background-size: auto 100%;
   background-position: center;
-  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
@@ -101,6 +99,7 @@ header {
   header {
     .container {
       padding-top: 200px;
+      padding-bottom: 100px;
     }
 
     .intro-text {
@@ -121,7 +120,10 @@ header {
 
   .navbar-nav > li > a {
     color: #000000;
+    margin-left: 50px;
+    margin-right: 50px;
   }
+
   .navbar-brand {
     color: #fff;
   }
