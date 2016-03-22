@@ -27,8 +27,16 @@ $font01: sans-serif;
 * For details, see http://www.apache.org/licenses/LICENSE-2.0.
 */
 
+html {
+  overflow-x: hidden;
+  position: relative;
+  max-height: 100%;
+}
+
 body {
   overflow-x: hidden;
+  position: relative;
+  max-height: 100%;
 }
 
 p {
@@ -232,76 +240,58 @@ input[type=email] {
 
 /*--- SECTION ---*/
 section {
-  padding: 25px 0;
+  height: 300px;
+  position: relative;
+  padding: 20px 10px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .text {
+    position: relative;
+    padding: 15px;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .text::after {
+    content: "";
+    background-color: white;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+  }
 
   &.pink {
+    background-image: url(SectionPink.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
     background-color: $pink;
   }
 
   &.blue {
     background-color: $blue;
   }
-
-  // p {
-  //   padding-bottom: 20px;
-  //   text-align: justify;
-  // }
-
-  // h3 {
-  //   padding-top: 20px;
-  //   margin-top: 0px;
-  //   font-size: 2em;
-  //   padding-bottom: 12px;
-  //   text-align: center;
-  // }
-
-  // img {
-  //   margin: auto;
-  // }
 }
 
-section.light a,
-section.light a:hover,
-section.light a:focus,
-section.light a:active,
-section.light a.active {
-  outline: 0;
-  color: #3a76b2;
-}
-
-section.dark a,
-section.dark a:hover,
-section.dark a:focus,
-section.dark a:active,
-section.dark a.active {
-  outline: 0;
-  color: #000;
-}
-
-@media(min-width:992px) {
+@media(min-width:768px) {
   section {
-    padding: 0;
+    height: 500px;
+    padding: 20px 100px;
 
-    &.text-left h3 {
-      text-align: right;
-    }
-
-    &.text-right h3 {
-      text-align: left;
-    }
-
-    &.first {
-      padding-top: 25px;
+    &.pink {
+      background-image: url(SectionPink.png);
     }
   }
 }
 
-.col-right-img {
-  float: right;
-}
+@media(min-width:992px) {
 
-.col-left-img {
-  float: left;
 }
 
 /*--- BTN ---*/
