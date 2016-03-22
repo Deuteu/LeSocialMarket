@@ -15,7 +15,8 @@
 @import "bootstrap";
 @import "font-awesome";
 
-$blue: #3a76b2;
+$pink: #F7B3AB;
+$blue: #57BDBA;
 
 $font00: 'Raleway';
 $font01: sans-serif;
@@ -50,7 +51,7 @@ h5, h6 {
 }
 
 /*--- HEADER ---*/
-  header::after {
+header::after {
   content: "";
   background: url(thankyoutsm.png);
   background-position: center;
@@ -63,6 +64,7 @@ h5, h6 {
 }
 
 header {
+  position: relative;
   text-align: center;
   color: #fff;
 
@@ -232,34 +234,30 @@ input[type=email] {
 section {
   padding: 25px 0;
 
-  &.light {
-    color: #3a76b2;
-    background: #fff;
-    font-family: $font01;
+  &.pink {
+    background-color: $pink;
   }
 
-  &.dark {
-    background: #3a76b2;
-    color: #fff;
-    font-family: $font01;
+  &.blue {
+    background-color: $blue;
   }
 
-  p {
-    padding-bottom: 20px;
-    text-align: justify;
-  }
+  // p {
+  //   padding-bottom: 20px;
+  //   text-align: justify;
+  // }
 
-  h3 {
-    padding-top: 20px;
-    margin-top: 0px;
-    font-size: 2em;
-    padding-bottom: 12px;
-    text-align: center;
-  }
+  // h3 {
+  //   padding-top: 20px;
+  //   margin-top: 0px;
+  //   font-size: 2em;
+  //   padding-bottom: 12px;
+  //   text-align: center;
+  // }
 
-  img {
-    margin: auto;
-  }
+  // img {
+  //   margin: auto;
+  // }
 }
 
 section.light a,
