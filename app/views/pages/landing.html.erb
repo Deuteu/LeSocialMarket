@@ -26,12 +26,12 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="navbar-color" id="nav-color">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
             <li class="page-scroll">
               <a href="#home">Accueil</a>
             </li>
             <li class="page-scroll">
-                <a href="#about">C'est quoi ?</a>
+              <a href="#about">C'est quoi ?</a>
             </li>
             <li class="page-scroll">
               <a href="#how">Comment ça marche ?</a>
@@ -71,18 +71,17 @@
         <div class="col-lg-12">
           <div class="intro-text">
             <%= image_tag "logotsm.png", class: "img-responsive", size: "300x300" %>
-            <h3>Des produits et des actes.</h3>
-            <div class="col-md-6">
-              <p>Le site de ventes-privées solidaires qui vous permet d’acheter des produits en changeant le monde !</p>
-            </div>
-            <div class="col-md-6">
-              <p>Abonnez-vous à notre newsletter pour être informés de nos ventes et recevoir des news joyeuses.</p>
+            <div class="col-lg-12">
+              <h3>Bienvenue au Social Market. <br>La plateforme des produits sympathiques <br>qui veulent changer le monde!</h3>
+              <div class="line-header">
+              </div>
+              <h5>Rejoignez vite notre communauté pour <br>profiter de nos ventes flash solidaires!</h5>
+              <div class="col-lg-12">
               <%= form_for @lead do |f| %>
-              <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Newsletter"%>
-              <%= button_tag(type: 'submit', class: "btn btn-submit") do %>
-              <span class="glyphicon glyphicon-envelope"></span>
+              <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Adresse email"%>
+              <%= f.submit "Je participe !", class: "btn-submit"%>
               <% end %>
-              <% end %>
+              </div>
             </div>
           </div>
         </div>
@@ -133,15 +132,19 @@
 
         <!-- Footer -->
     <footer class="text-center" id="footer">
+      <div class="navbar-line-bleu">
+      </div>
+      <div class="navbar-line-red">
+      </div>
       <div class="footer-above">
         <div class="container">
           <div class="row">
             <div class="footer-col col-md-4">
-              <h3>Adresse</h3>
-              <p>Paris, 75000<p>HEC - Télécom<p>42 - e-artsup</p>
+              <h4>A propos</h4>
+              <p>Le blog</p><p>Mentions Légales</p>
             </div>
             <div class="footer-col col-md-4">
-              <h3>Contact</h3>
+              <h4>Suivez-nous</h4>
               <ul class="list-inline">
                 <li>
                   <a target="_blank" href="https://www.facebook.com/lesocialmarket/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
@@ -155,8 +158,8 @@
               </ul>
             </div>
             <div class="footer-col col-md-4">
-              <h3>Qui sommes nous ?</h3>
-              <p>Attaa Ben Elafdil<p>Cécile Compte<p>Guillaume Deberdt</a></p>
+              <h4>Contactez-nous</h4>
+              <p>Attaa B.E.<p>Cécile C.<p>Guillaume Dbt.</a></p>
             </div>
           </div>
         </div>
@@ -165,7 +168,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              Copyright &copy; Hopla.top
+              Le Social Market &copy; 2016
             </div>
           </div>
         </div>
