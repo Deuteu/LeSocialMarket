@@ -15,13 +15,17 @@
 @import "bootstrap";
 @import "font-awesome";
 
-$pink: #ED696C;
-$blue: #5ABEBA;
+
+$blue: #57BDBA;
+$pink: #F7B3AB;
+// $pink: #ED696C;
+// $blue: #5ABEBA;
 $brown: #804000;
 
 $font00: 'Raleway';
 $font01: 'Slabo';
 $font02: 'Roboto Slab';
+$font03: 'American Typewriter';
 
 html {
   overflow-x: hidden;
@@ -211,6 +215,16 @@ footer {
     padding: 20px 0;
     background-color: #fff;
   }
+
+  .newsletter {
+    background-color: $blue;
+    color: white;
+
+    div {
+      width: 50%;
+      display: inline-block;
+    }
+  }
 }
 
 /*--- FORM ---*/
@@ -239,7 +253,7 @@ section {
   position: relative;
   padding: 70px 30px 10px;
   text-align: center;
-  font-family: $font01;
+  font-family: $font03;
   font-style: normal;
   font-weight: 700;
 
@@ -293,6 +307,8 @@ section {
 @media(min-width:992px) {
   section {
     position: relative;
+    padding-top: 175px;
+    height: 450px;
 
     .number {
       position: relative;
@@ -305,6 +321,8 @@ section {
       width: 50%;
       margin: auto 0px;
       position: relative;
+      max-width: none;
+      font-size: 1.2em;
     }
 
     &.right {
@@ -352,9 +370,9 @@ section {
 
     &.first {
       .text::before {
-        background: url(SuperMan.png);
-        background-position: center;
-        background-repeat: no-repeat;
+        // background: url(SuperMan.png);
+        // background-position: center;
+        // background-repeat: no-repeat;
       }
 
       .arrow {
@@ -371,7 +389,9 @@ section {
         background: url(Playmobil.png);
         background-position: center;
         background-repeat: no-repeat;
-        top: -50%;
+        background-position-x: calc(50% - 25px);
+        background-position-y: calc(50% - 50px);
+        top: -100%;
         bottom: 50%;
       }
 
@@ -389,7 +409,9 @@ section {
         background: url(SuperMan.png);
         background-position: center;
         background-repeat: no-repeat;
-        top: -50%;
+        background-position-x: calc(50% - 25px);
+        background-position-y: calc(50% - 50px);
+        top: -100%;
         bottom: 50%;
       }
     }
