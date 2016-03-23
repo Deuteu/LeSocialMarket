@@ -15,12 +15,13 @@
 @import "bootstrap";
 @import "font-awesome";
 
-$pink: #F7B3AB;
-$blue: #57BDBA;
+$pink: #ED696C;
+$blue: #5ABEBA;
 $brown: #804000;
 
 $font00: 'Raleway';
-$font01: 'American Typewriter';
+$font01: 'Slabo';
+$font02: 'Roboto Slab';
 
 html {
   overflow-x: hidden;
@@ -235,93 +236,172 @@ input[type=email] {
 
 /*--- SECTION ---*/
 section {
-  height: 300px;
   position: relative;
-  padding: 20px 10px;
-  text-align: justify;
-  display: flex;
+  padding: 70px 30px 10px;
+  text-align: center;
+  font-family: $font01;
+  font-style: normal;
+  font-weight: 700;
+
+  .number {
+    color: white;
+    background-color: $blue;
+    font-size: 55px;
+  }
+
+  .circle {
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    margin: auto auto 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+
+    span {
+      margin: auto;
+    }
+  }
 
   .text {
     position: relative;
     max-width: 500px;
-    padding: 15px;
     margin: auto;
-    font-family: $font02, $font03;
-    font-size: 1.2em;
-    color: $brown;
+    padding: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
 
-    .number {
-      color: white;
-      background-color: $blue;
-      font-size: 1.5em;
+    border: 4px dotted black;
+
+    color: black;
+
+    &.blue {
+      border-color: $pink;
+      color: $blue;
     }
 
-    .circle {
-      text-align: center;
-      width: 40px;
-      height: 40px;
-      margin: 15px auto;
-      font-weight: bold;
-      border-radius: 50%;
-      box-shadow: 0px 2px 5px 0px #000;
-      display: flex;
-
-      span {
-        margin: auto;
-      }
+    &.pink {
+      border-color: $blue;
+      color: $pink;
     }
-  }
-
-  .text::after {
-    content: "";
-    background-color: white;
-    opacity: 0.2;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 0;
-  }
-
-  &.pink {
-    background-image: url(SectionPink.png);
-    background-size: 1280px 100%;
-    background-repeat: no-repeat;
-    background-color: $pink;
-  }
-
-  &.blue {
-    background-color: $blue;
   }
 }
 
 @media(min-width:768px) {
-  section {
-    height: 500px;
-    padding: 20px 100px;
-
-    &.pink {
-      background-image: url(SectionPink.png);
-    }
-  }
 }
 
 @media(min-width:992px) {
   section {
-    background-position: center;
+    position: relative;
 
-    .text::after {
-      display: none;
+    .number {
+      position: relative;
+      margin-right: 0px;
+      margin-left: 0px;
+      transform: translateX(-50%);
     }
 
     .text {
-      margin: auto 0;
-      left: 50%;
+      width: 50%;
+      margin: auto 0px;
+      position: relative;
+    }
 
-      &.left {
+    &.right {
+      .number {
+       left: 75%;
+      }
+
+      .text {
+        left: 50%;
+      }
+    }
+
+    &.left {
+      .number {
+        left: 25%;
+      }
+
+      .text {
+        left: 50%;
         transform: translateX(-100%);
       }
+    }
+
+    .text::before {
+      background-position: center;
+      background-repeat: no-repeat;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    .arrow {
+      content: "";
+      position: absolute;
+      top: 100%;
+      bottom: -100%;
+      width: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
+
+    &.first {
+      .text::before {
+        background: url(SuperMan.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .arrow {
+        left: 0;
+        background: url(Arrow1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &.second {
+      .text::before {
+        background: url(Playmobil.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        top: -50%;
+        bottom: 50%;
+      }
+
+      .arrow {
+        right: 0;
+        background: url(Arrow2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    
+    &.third {
+      .text::before {
+        background: url(SuperMan.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        top: -50%;
+        bottom: 50%;
+      }
+    }
+
+    &.left .text::before {
+      left: 100%;
+      right: -100%;
+    }
+
+    &.right .text::before {
+      left: -100%;
+      right: 100%;
     }
   }
 }
