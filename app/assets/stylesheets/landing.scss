@@ -309,9 +309,12 @@ section {
       color: $pink;
     }
   }
-}
-
-@media(min-width:768px) {
+  &.end {
+    text-align: center;
+    font-weight: normal;
+    margin-top: -40px;
+    color: #F7B3AB;
+  }
 }
 
 @media(min-width:992px) {
@@ -413,7 +416,7 @@ section {
         background-size: contain;
       }
     }
-    
+
     &.third {
       .text::before {
         background: image-url("SuperMan.png");
@@ -434,6 +437,14 @@ section {
     &.right .text::before {
       left: -100%;
       right: 100%;
+    }
+
+    &.end {
+      text-align: center;
+      margin-top: -140px;
+      margin-bottom: -120px;
+      font-weight: normal;
+      color: #F7B3AB;
     }
   }
 }

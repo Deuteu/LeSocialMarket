@@ -107,9 +107,23 @@
   <section class="container left third">
     <div class="number circle"><span class="">3</span></div>
     <div class="text blue">
-      Et hop, vous venez d’apporter votre pierre à un projet qui oeuvre pour un monde plus durable, plus responsable et plus joyeux&nbsp;! Oui, car une bonne partie du montant sera reversée au&nbsp;projet&nbsp;partenaire&nbsp;de&nbsp;la&nbsp;vente&nbsp;! 
+      Et hop, vous venez d’apporter votre pierre à un projet qui oeuvre pour un monde plus durable, plus responsable et plus joyeux&nbsp;! Oui, car une bonne partie du montant sera reversée au&nbsp;projet&nbsp;partenaire&nbsp;de&nbsp;la&nbsp;vente&nbsp;!
     </div>
   </section>
+
+  <section class="container end">
+  <div class="container newsletter-end">
+    <div class="col-lg-12">
+      <p>Intéressez ? Rejoignez-nous pour <br>profiter de nos ventes flash solidaires!</p>
+    </div>
+      <div class="newsletter_end">
+        <%= form_for @lead do |f| %>
+        <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Adresse email"%>
+        <%= f.submit "Je participe !", class: "btn-submit"%>
+        <% end %>
+  </div>
+</div>
+</section>
 
 
     <!-- Footer -->
