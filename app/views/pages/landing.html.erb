@@ -40,9 +40,9 @@
         </div>
       </div> <!-- /.navbar-collapse -->
     </div> <!-- /.container-fluid -->
-    <div class="navbar-line-bleu">
+    <div class="line-bleu-bottom">
     </div>
-    <div class="navbar-line-red">
+    <div class="line-red-bottom">
     </div>
 
     <% if nl_success%>
@@ -73,7 +73,7 @@
             <h3>Bienvenue au Social Market. <br>La plateforme des produits sympathiques <br>qui veulent changer le monde!</h3>
             <div class="line-header">
             </div>
-            <h5>Rejoignez vite notre communauté pour <br>profiter de nos ventes flash solidaires!</h5>
+            <h3>Rejoignez vite notre communauté pour profiter de nos ventes flash solidaires!</h3>
             <div class="col-lg-12">
               <%= form_for @lead do |f| %>
                 <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Adresse email"%>
@@ -84,7 +84,15 @@
         </div>
       </div>
     </div>
+    <div class="line-bleu-bottom">
+    </div>
+    <div class="line-red-bottom">
+    </div>
   </header>
+
+  <section class="container title">
+      <h1>Mais comment ça marche ?</h1>
+  </section>
 
   <section class="container left first" id="how">
     <div class="number circle"><span class="">1</span></div>
@@ -111,26 +119,26 @@
     </div>
   </section>
 
-  <section class="container end">
-  <div class="container newsletter-end">
-    <div class="col-lg-12">
-      <p>Intéressez ? Rejoignez-nous pour <br>profiter de nos ventes flash solidaires!</p>
-    </div>
+  <section class="end lines-top">
+    <div class="container newsletter-end">
+      <div class="col-lg-12">
+        <p>Un monde plus durable, plus responsable et plus joyeux, ça vous tente&nbsp;?<br>Rejoignez notre communauté&nbsp;!</p>
+      </div>
       <div class="newsletter_end">
         <%= form_for @lead do |f| %>
-        <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Adresse email"%>
-        <%= f.submit "Je participe !", class: "btn-submit"%>
+          <%= f.email_field :mail, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', :placeholder => "Adresse email"%>
+          <%= f.submit "Je participe !", class: "btn-submit"%>
         <% end %>
-  </div>
-</div>
-</section>
+      </div>
+    </div>
+  </section>
 
 
     <!-- Footer -->
   <footer class="text-center" id="footer">
-    <div class="navbar-line-bleu">
+    <div class="line-bleu-bottom">
     </div>
-    <div class="navbar-line-red">
+    <div class="line-red-bottom">
     </div>
     <div class="footer-above">
       <div class="container">
@@ -146,16 +154,17 @@
                 <a target="_blank" href="https://www.facebook.com/lesocialmarket/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
               </li>
               <li>
-                <a href="mailto:contact@lesocialmarket.fr" class="btn-social btn-outline"><i class="fa fa-envelope"></i></a>
-              </li>
-              <li>
                 <a target="_blank" href="https://twitter.com/lesocialmarket" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
               </li>
             </ul>
           </div>
           <div class="footer-col col-md-4">
+            <ul class="list-inline">
             <h4>Contactez-nous</h4>
-            <p>Attaa B.E.</p><p>Cécile C.</p><p>Guillaume D.</p>
+            <li>
+              <a href="mailto:contact@lesocialmarket.fr" class="btn-social btn-outline"><i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>
           </div>
         </div>
       </div>

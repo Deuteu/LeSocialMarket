@@ -17,6 +17,7 @@
 
 
 $blue: #57BDBA;
+$blue-light: #ABDEDC;
 $pink: #F7B3AB;
 // $pink: #ED696C;
 // $blue: #5ABEBA;
@@ -59,15 +60,36 @@ h5, h6 {
 }
 
 /*--- HEADER ---*/
-header::after {
+header::before {
   content: "";
   background: image-url("thankyoutsm.png");
   background-position: center;
-  opacity: 0.8;
+  opacity: 1;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+header::after {
+  content: "";
+  background-color: black;
+  background-position: center;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   position: absolute;
   z-index: -1;
 }
@@ -76,6 +98,11 @@ header {
   position: relative;
   text-align: center;
   color: #fff;
+  //background-color: rgba(0,0,0,0.5);
+  .container {
+    //padding-top: 100px;
+    padding-bottom: 30px;
+  }
 
   img {
     display: block;
@@ -105,7 +132,7 @@ header {
 @media(min-width:992px) {
   header {
     .container {
-      padding-top: 200px;
+      padding-top: 100px;
       padding-bottom: 100px;
     }
 
@@ -130,9 +157,9 @@ header {
 
 .line-header {
   margin: auto;
-  width: 200px;
+  width: 400px;
   height: 3px;
-  background-color: #F7B3AB;
+  background-color: $pink;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -142,21 +169,21 @@ header {
   border: 0;
 
   .navbar-nav > li > a {
-    color: #F7B3AB;
+    color: $pink;
   }
 
   .navbar-brand {
-    color: #F7B3AB;
+    color: $pink;
   }
   .navbar-toggle {
-    border-color: #F7B3AB;
+    border-color: $pink;
   }
 
   .navbar-nav > li > a:hover,
   .navbar-nav > .active > a,
   .navbar-nav > .active > a:hover,
   .navbar-nav > .active > a:focus {
-    color: #57BDBA;
+    color: $blue;
   }
 }
 
@@ -185,18 +212,33 @@ header {
   }
 }
 
-.navbar-line-bleu {
-  border-bottom: solid #57BDBA 2px;
+.line-bleu-bottom {
+  border-bottom: solid $blue 2px;
 }
 
-.navbar-line-red {
-  border-bottom: solid #F7B3AB 2px;
+.line-red-bottom {
+  border-bottom: solid $pink 2px;
+}
+
+.lines-top {
+  border-top: solid $pink 2px;
+  position: relative;
+}
+
+.lines-top::after {
+  content: "";
+  background: $blue;
+  height: 2px;
+  position: absolute;
+  top: -4px;
+  right: 0px;
+  left: 0px;
 }
 
 .navbar {
   font-family: $font00;
   font-weight: 700;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
   a:focus {
     outline: 0;
   }
@@ -212,15 +254,16 @@ header {
 
 /*--- FOOTER ---*/
 footer {
-  color: #57BDBA;
+  color: $blue;
   line-height : 1.42857143;
 
   .footer-above {
     background-color: #fff;
+    padding-bottom: 10px;
   }
 
   .footer-below {
-    background-color: #F7B3AB;
+    background-color: $pink;
     color: #fff;
   }
 
@@ -240,6 +283,7 @@ footer {
   text-align:center;
   margin: 0 auto 10px;
   padding: 10px 0 8px 0;
+  margin-top: 20px;
   font-size: 10px;
   width: 30px;
 }
@@ -249,13 +293,20 @@ input:focus {
 }
 
 input[type=email] {
-  width: 30%;
-  border: 3px solid #57BDBA;
+  max-width: 200px;
+  width: 100%;
+  border: 3px solid $blue;
   border-radius: 10px;
   height: 42px;
   margin: 5px auto;
   text-indent: 10px;
-  color: #F7B3AB;
+  color: $pink;
+}
+
+@media(min-width:768px) {
+  input[type=email] {
+    width: 30%;
+  }
 }
 
 /*--- SECTION ---*/
@@ -271,6 +322,19 @@ section {
     color: white;
     background-color: $blue;
     font-size: 55px;
+  }
+
+  &.title {
+    color: $blue;
+    padding-top: 50px;
+    padding-bottom: -20px;
+    h1 {
+      border-top: dotted $pink 3px;
+      border-bottom: dotted $pink 3px;
+      display: inline-block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 
   .circle {
@@ -294,9 +358,7 @@ section {
     padding: 20px;
     font-size: 1.1em;
     line-height: 1.6;
-
     border: 4px dotted black;
-
     color: black;
 
     &.blue {
@@ -312,16 +374,25 @@ section {
   &.end {
     text-align: center;
     font-weight: normal;
-    margin-top: -40px;
-    color: #F7B3AB;
+    color: #fff;
+    background-color: $blue-light;
+    margin-top: 80px;
   }
 }
 
 @media(min-width:992px) {
   section {
     position: relative;
-    padding-top: 175px;
-    height: 450px;
+    padding-top: 50px;
+
+    &.end {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: center;
+      font-weight: normal;
+      color: #fff;
+      height: auto;
+    }
 
     .number {
       position: relative;
@@ -399,11 +470,11 @@ section {
 
     &.second {
       .text::before {
-        background: image-url("Playmobil.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-position-x: calc(50% - 25px);
-        background-position-y: calc(50% - 50px);
+        // background: image-url("Playmobil.png");
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-position-x: calc(50% - 25px);
+        // background-position-y: calc(50% - 50px);
         top: -100%;
         bottom: 50%;
       }
@@ -419,11 +490,11 @@ section {
 
     &.third {
       .text::before {
-        background: image-url("SuperMan.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-position-x: calc(50% - 25px);
-        background-position-y: calc(50% - 50px);
+        // background: image-url("SuperMan.png");
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-position-x: calc(50% - 25px);
+        // background-position-y: calc(50% - 50px);
         top: -100%;
         bottom: 50%;
       }
@@ -438,23 +509,14 @@ section {
       left: -100%;
       right: 100%;
     }
-
-    &.end {
-      text-align: center;
-      margin-top: -140px;
-      margin-bottom: -120px;
-      font-weight: normal;
-      color: #F7B3AB;
-    }
   }
 }
 
 /*--- BTN ---*/
 .btn-outline {
-  margin-top: 15px;
   border: solid 2px #fff;
   font-size: 20px;
-  color: #57BDBA;
+  color: $blue;
   background: 0 0;
   transition: all .3s ease-in-out;
 }
@@ -464,17 +526,19 @@ section {
 .btn-outline:active,
 .btn-outline.active {
   border: solid 2px #fff;
-  color: #F7B3AB;
+  color: $pink;
   background: #fff;
 }
 
 .btn-submit {
   color: #fff;
   font-size: 15px;
-  background-color: #57BDBA;
+  background-color: $blue;
   border: 2px solid #fff;
   border-radius: 10px;
   height: 42px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .btn-social {
