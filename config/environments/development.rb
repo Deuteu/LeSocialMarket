@@ -41,4 +41,5 @@ Rails.application.configure do
   
   # Env var
   ENV["ADMIN_PASSWORD"] = "admin123"
+  ENV["SECRET_KEY_DEVISE"] = "89c9b5bc1a399795072376c64203e38b7bd8a6d1b1d14756c7fe90ee9a18e23eef1ba901e1f055bd9df53eabfdc4d026dc94"
 end
