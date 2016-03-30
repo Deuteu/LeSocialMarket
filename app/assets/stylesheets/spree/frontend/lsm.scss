@@ -1,7 +1,6 @@
 /*--- A supprimer, pour essais ---*/
 $bg-image01: url(/spree/products/Couvertures/Osez_generique.jpg);
-$bg-image02: url(/spree/products/Couvertures/le-shape.jpg);
-$bg-image03: url(/spree/products/Couvertures/calchemise.jpg);
+$bg-image02: url(/spree/products/Couvertures/calchemise.jpg);
 $brand-height: 430px;
 $blue: #57BDBA;
 $blue-light: #ABDEDC;
@@ -72,10 +71,6 @@ h5, h6 {
 #brand-splash2 {
   @include brand-splash;
   background-image: $bg-image02;
-}
-#brand-splash3 {
-  @include brand-splash;
-  background-image: $bg-image03;
 }
 .white-square-bg {
   position: relative;
