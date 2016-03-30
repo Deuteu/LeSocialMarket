@@ -1,0 +1,71 @@
+<%
+ paginated_products = @searcher.retrieve_products if params.key?(:keywords)
+ paginated_products ||= products
+%>
+
+<% content_for :head do %>
+ <% if paginated_products.respond_to?(:num_pages) %>
+   <%= rel_next_prev_link_tags paginated_products %>
+ <% end %>
+<% end %>
+
+<!-- Carousel -->
+<div id="carousel-first" class="container-fluid">
+ <div class="row carousel-holder">
+     <div id="carousel-products" class="carouseil slide" data-ride="carousel">
+       <ol class="carousel-indicators">
+         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+       </ol>
+       <div class="carousel-inner">
+         <div class="item active">
+           <img class="slide-image" src="http://placehold.it/1600x300" alt="">
+         </div>
+         <div class="item">
+           <img class="slide-image" src="http://placehold.it/1600x300" alt="">
+         </div>
+         <div class="item">
+           <img class="slide-image" src="http://placehold.it/1600x300" alt="">
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<div data-hook="products_search_results_heading">
+ <% if products.empty? %>
+   <div data-hook="products_search_results_heading_no_results_found">
+     <%= Spree.t(:no_products_found) %>
+   </div>
+ <% elsif params.key?(:keywords) %>
+   <div data-hook="products_search_results_heading_results_found">
+     <h6 class="search-results-title"><%= Spree.t(:search_results, keywords: h(params[:keywords])) %></h6>
+   </div>
+ <% end %>
+</div>
+
+<% if products.any? %>
+   <% products.each do |product| %>
+   <div class="col-sm-4 col-lg-4 col-md-4">
+     <div class="thumbnail border-on">
+       <% url = spree.product_path(product, taxon_id: @taxon.try(:id)) %>
+         <% cache(@taxon.present? ? [I18n.locale, current_currency, @taxon, product] : [I18n.locale, current_currency, product]) do %>
+             <div class="resize-image">
+             <%= link_to image_tag(product.display_image.attachment(:product), itemprop: "image"), url, itemprop: 'url' %>
+               </div>
+               <div class="caption">
+                 <h4 class="pull-right"><%= display_price(product) %></h4>
+                 <h4><a href="#"><%= link_to truncate(product.name, length: 20), url, class: 'info', itemprop: "name", title: product.name %></a>
+                 </h4>
+                 <p><a href="#"><%= link_to truncate(product.description, length: 25), url, class: 'info', itemprop: "name" %></a></p>
+              <% end %>
+             </div>
+           </div>
+         </div>
+       <% end %>
+   <% reset_cycle("classes") %>
+<% end %>
+
+<% if paginated_products.respond_to?(:num_pages) %>
+ <%= paginate paginated_products %>
+<% end %>
