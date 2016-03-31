@@ -447,6 +447,7 @@ progress {
   max-height: 300px;
 }
 /*--- BEAUTIFY ---*/
+/*--- |--> PRODUCTS ---*/
 footer#footer {
   border: 0px;
   padding-bottom: 0px;
@@ -457,10 +458,37 @@ footer#footer {
 .container .sixteen.columns {
   width: auto;
 }
-#wrapper {
-  margin: auto;
-}
 .caption h4 {
   font-weight: 800;
   font-family: $font03;
+}
+/*--- |--> PRODUCTS SHOW ---*/
+#product-images #main-image {
+  border: 0px;
+}
+#product-variants ul {
+  list-style: none;
+}
+div[itemprop="description"] {
+  font-family: $font03;
+}
+#product-description .product-title {
+  border-color: #404042;
+}
+#product-variants li {
+  display: inline-block;
+}
+span.price {
+  font-family: $font03;
+  color: $grey;
+}
+.add-to-cart input[type="number"] {
+  color: $grey;
+  font-family: $font03;
+}
+.btn-submit {
+  @include btn-sm;
+}
+#product-show {
+  margin-top: 30px;
 }
