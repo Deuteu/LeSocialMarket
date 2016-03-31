@@ -249,7 +249,7 @@ footer {
 }
 /*--- PRODUCTS PAGE ---*/
 #carousel-first {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 li > a {
   font-family: $font03;
@@ -444,7 +444,7 @@ progress {
 }
 
 .resize-image {
-  min-height: 300px;
+  max-height: 300px;
 }
 /*--- BEAUTIFY ---*/
 footer#footer {
@@ -459,4 +459,8 @@ footer#footer {
 }
 #wrapper {
   margin: auto;
+}
+.caption h4 {
+  font-weight: 800;
+  font-family: $font03;
 }
