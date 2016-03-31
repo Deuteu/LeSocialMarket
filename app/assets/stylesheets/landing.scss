@@ -187,6 +187,23 @@ header {
   }
 }
 
+.logo {
+ position: fixed;
+ top: 0.5em;
+ left: 1em;
+ display: inline;
+}
+
+@media(max-width:992px) {
+  .logo {
+   position: fixed;
+   top: 0.4em;
+   left: 1em;
+   display: inline;
+    height: 40px;
+    width: auto
+  }
+}
 @media(min-width:992px) {
   .navbar-fixed-top {
     padding: 10abpx 0;
