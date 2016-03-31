@@ -6,7 +6,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="glyphicon glyphicon-menu-hamburger"></span>
         </button>
-        <%= image_tag "logotsm.png", class: "img-responsive logo", size: "100x100", alt: "le social market logo"%>
+        <%= link_to image_tag("logotsm.png", class: "img-responsive logo", size: "100x100", alt: "le social market logo"),'/shop'%>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -14,10 +14,10 @@
         <div class="navbar-color" id="nav-color">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="https://www.lesocialmarket.fr/">Notre mission</a>
+              <%= link_to "Notre mission",'/'%>
             </li>
             <li>
-              <%= link_to "Nos ventes",'/'%>
+              <%= link_to "Nos ventes",'/shop'%>
             </li>
             <li>
               <%= link_to "Panier",'/shop/cart'%>
