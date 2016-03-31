@@ -44,13 +44,13 @@ Rails.application.configure do
   ENV["SECRET_KEY_DEVISE"] = "89c9b5bc1a399795072376c64203e38b7bd8a6d1b1d14756c7fe90ee9a18e23eef1ba901e1f055bd9df53eabfdc4d026dc94"
 
   # Mail
-  #config.action_mailer.delivery_method = :mailjet
-  # config.action_mailer.smtp_settings = {
-  #   address:              'smtp.gmail.com',
-  #   port:                 587,
-  #   domain:               'gmail.com',
-  #   user_name:            'the.sclmkt.dev@gmail.com',
-  #   password:             'Telecom42',
-  #   authentication:       'plain',
-  #   enable_starttls_auto: true }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address        => 'smtp.gmail.com',
+    :domain         => 'mail.google.com',
+    :port           => 587,
+    :user_name      => 'the.sclmkt.dev@gmail.com',
+    :password       => 'Hec42Telecom',
+    :authentication => :plain
+  }
 end
