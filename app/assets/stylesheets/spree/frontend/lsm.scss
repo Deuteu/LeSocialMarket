@@ -446,3 +446,17 @@ progress {
 .resize-image {
   min-height: 300px;
 }
+/*--- BEAUTIFY ---*/
+footer#footer {
+  border: 0px;
+  padding-bottom: 0px;
+}
+.container .twelve.columns {
+  width: auto;
+}
+.container .sixteen.columns {
+  width: auto;
+}
+#wrapper {
+  margin: auto;
+}
