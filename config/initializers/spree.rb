@@ -10,10 +10,11 @@ Spree.config do |config|
   # Core:
 
   # Default currency for new sites
-  config.currency = "USD"
+  config.currency = "EUR"
 
   # from address for transactional emails
-  config.mails_from = "store@example.com"
+  #config.mails_from = "store@example.com"
+  config.mails_from = "contact@lesocialmarket.com"
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
@@ -49,12 +50,15 @@ Spree.config do |config|
   #   server: Rails.env.production? ? 'production' : 'test',
   #   test_mode: !Rails.env.production?
   # )
+
+  # Add
+  config.default_country_id = Spree::Country.find_by(name: "France").id
 end
 
 Spree::Frontend::Config.configure do |config|
   config.use_static_preferences!
 
-  config.locale = 'en'
+  config.locale = 'fr'
 end
 
 Spree::Backend::Config.configure do |config|
