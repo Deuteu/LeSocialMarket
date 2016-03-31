@@ -152,12 +152,15 @@ header {
         font-size: 1.75em;
       }
     }
+    .line-header {
+      width: 400px;
+    }
   }
 }
 
 .line-header {
   margin: auto;
-  width: 400px;
+  width: 300px;
   height: 3px;
   background-color: $pink;
   margin-top: 25px;
@@ -392,9 +395,13 @@ section {
     text-align: center;
     font-weight: normal;
     color: #fff;
-    background-color: $blue-light;
+    background-color: $pink;
     margin-top: 80px;
   }
+  &.end p {
+    font-size: 25px;
+  }
+
 }
 
 @media(min-width:992px) {
