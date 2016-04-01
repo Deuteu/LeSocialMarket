@@ -1,0 +1,21 @@
+<% if @taxon %>
+  <div class="row">
+    <% if @taxon.name == 'osez' %>
+      <div class="col-md-12 hidden-sm hidden-xs">
+        <div id="bandotop">
+          <div class="arrow_box">
+            <p>En achetant un produit sur cette page vous soutenez les projets de <a href="http://www.sportdanslaville.com/" target="_blank">Sport dans la Ville</a></p>
+          </div>
+        </div>
+      </div>
+    <% elsif @taxon.name == 'calchemise' %>
+      <div class="col-md-12">
+        <div id="bandotop">
+          <div class="arrow_box">
+            <p>En achetant un produit sur cette page vous soutenez les projets de <a href="http://calcuttarueecole.fr/" target="_blank">Calcutta de la rue à l'école</a></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>
