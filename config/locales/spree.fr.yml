@@ -1112,13 +1112,24 @@ fr:
         subtotal: ! 'Sous-total: %{subtotal}'
         total: ! 'Total de la commande: %{total}'
       confirm_email:
-        dear_customer: Cher client,
-        instructions: Veuillez vérifier et sauvegarder les informations suivantes à propos de votre commande.
+        # GDT : Edit
+        dear_customer: Cher(e) client(e),
+        instructions: |
+          Votre commande numéro {numero}, du {date}, vient d'être enregistrée et transférée au fournisseur. Celui-ci a vos coordonnées et pourra vous contacter en cas de besoin.
+          Pour toute réclamation concernant la livraison ou le produit, veuillez contacter votre fournisseur !
+
+          Le Social Market reste aussi à votre disposition si besoin.
+          Veuillez vérifier et sauvegarder les informations suivantes à propos de votre commande.
         order_summary: Sommaire de la commande
         subject: Confirmation de commande
-        subtotal: Sous-total de la commande
-        thanks: Merci d'avoir fait affaire avec nous.
-        total: ! 'Total de la commande: %{total}'
+        subtotal: Sous-total
+        thanks: |+
+          Le Social Market et les associations vous remercient en choeur pour votre participation.
+          A bientôt!
+
+        total: ! 'Total :'
+        # GDT : Add
+        resend: Renvoi
     order_not_found: Impossible de trouver votre commande. Merci d'essayer à nouveau.
     order_number: Facture %{number}
     order_processed_successfully: Votre commande a été traitée avec succès
