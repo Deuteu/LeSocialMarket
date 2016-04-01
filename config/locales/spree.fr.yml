@@ -1476,7 +1476,7 @@ fr:
     states: Régions
     states_required: Etat / province obligatoire
     status: Statut
-    stock:
+    stock: Stock
     stock_location: Emplacement de stock
     stock_location_info: Informations sur l'emplacement de stock
     stock_locations: Emplacements de stock
@@ -1565,7 +1565,8 @@ fr:
     update: Mise à jour
     updating: Mise à jour
     usage_limit: Limite d'utilisation
-    use_app_default:
+    # GDB : Edit
+    use_app_default: Use app default
     use_billing_address: Utiliser l'adresse de facturation
     use_new_cc: Utiliser une nouvelle carte
     use_s3: Utiliser Amazon S3 pour les Images
