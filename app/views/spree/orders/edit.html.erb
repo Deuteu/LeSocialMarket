@@ -19,15 +19,7 @@
             <%= render :partial => 'form', :locals => { :order_form => order_form } %>
           </div>
 
-          <div id="" data-hook>
-            <%= form_tag empty_cart_path, :method => :put do %>
-              <p id="clear_cart_link" data-hook>
-                <%= link_to Spree.t(:continue_shopping), products_path, :class => 'btn btn-small' %>
-              </p>
-            <% end %>
-          </div>
-
-          <div class="" data-hook="cart_buttons">
+          <div class="alpha omega" data-hook="cart_buttons">
             <%= button_tag :class => 'btn-small', :id => 'update-button' do %>
               <%= Spree.t(:update) %>
             <% end %>
@@ -37,6 +29,16 @@
           </div>
 
         </div>
+      <% end %>
+    </div>
+
+    <div id="empty-cart" data-hook>
+      <%= form_tag empty_cart_path, :method => :put do %>
+        <p id="clear_cart_link" data-hook>
+          <%= submit_tag Spree.t(:empty_cart), :class => 'btn-small' %>
+          <%= Spree.t(:or) %>
+          <%= link_to Spree.t(:continue_shopping), '/shop/', :class => 'btn btn-sm' %>
+        </p>
       <% end %>
     </div>
 
