@@ -5,4 +5,6 @@ class AddFranceAsDefaultCountry < ActiveRecord::Migration
       config.default_country_id = c.id
     end
   end
+  def down
+  end
 end

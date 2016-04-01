@@ -53,4 +53,8 @@ Rails.application.configure do
     :password       => 'Hec42Telecom',
     :authentication => :plain
   }
+
+  # Stripe
+  ENV["SECRET_KEY_STRIPE"] = "sk_test_SZj8vmNPm3gNsW9qjoR536Bk"
+  ENV["PUBLISHABLE__KEY_STRIPE"] = "pk_test_CS7KYc6E7wJ5bZ6RXfOtcAp8"
 end
