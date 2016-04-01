@@ -17900,15 +17900,14 @@ a:focus {
 
 /* line 304, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #product-description {
-  background-color: #57BDBA;
-  color: #fff;
+  color: #2B2B2B;
   padding-top: 5px;
   padding-right: 15px;
   padding-bottom: 10px;
   padding-left: 15px;
 }
 
-/* line 312, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 311, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #validation {
   padding-left: 0px;
   padding-right: 0px;
@@ -17916,11 +17915,11 @@ a:focus {
   border: 0px;
 }
 
-/* line 318, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 317, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #command-form {
   background-color: #57BDBA;
 }
-/* line 320, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 319, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #command-form .btn {
   float: right;
   width: 100%;
@@ -17930,12 +17929,12 @@ a:focus {
   font-family: "American Typewriter";
   color: #fff;
 }
-/* line 325, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 324, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #command-form h4 {
   color: #fff;
 }
 
-/* line 329, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 328, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #asso-desc {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -17944,13 +17943,13 @@ a:focus {
   color: #fff;
 }
 
-/* line 336, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 335, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #asso-img {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 340, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 339, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .asso-splash {
   margin: 0 auto;
   padding: 0;
@@ -17959,7 +17958,7 @@ a:focus {
   display: block;
 }
 
-/* line 347, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 346, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 progress {
   padding: 2px;
   background-color: #F7B3AB;
@@ -17967,7 +17966,7 @@ progress {
 }
 
 /*--- HOVER EFFECT ---*/
-/* line 353, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 352, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -17978,7 +17977,7 @@ progress {
   cursor: default;
 }
 
-/* line 362, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 361, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .hovereffect .overlay {
   width: 100%;
   height: 100%;
@@ -17994,7 +17993,7 @@ progress {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 376, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 375, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .hovereffect img {
   display: block;
   position: relative;
@@ -18002,7 +18001,7 @@ progress {
   transition: all .4s linear;
 }
 
-/* line 382, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 381, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .hovereffect h2 {
   text-transform: uppercase;
   font-family: "Raleway";
@@ -18015,7 +18014,7 @@ progress {
   padding: 10px;
 }
 
-/* line 391, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 390, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .hovereffect a.info {
   text-decoration: none;
   display: inline-block;
@@ -18031,25 +18030,25 @@ progress {
   padding: 7px 14px;
 }
 
-/* line 405, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 404, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .hovereffect a.info:hover {
   box-shadow: 0 0 5px #fff;
 }
 
-/* line 408, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 407, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .hovereffect:hover img {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-/* line 413, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 412, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .hovereffect:hover .overlay {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-/* line 417, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 416, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .hovereffect:hover h2, .hovereffect:hover a.info {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -18058,27 +18057,27 @@ progress {
   transform: translatey(0);
 }
 
-/* line 424, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 423, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .hovereffect:hover a.info {
   -webkit-transition-delay: .2s;
   transition-delay: .2s;
 }
 
 /*--- CART ---*/
-/* line 429, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 428, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .img-thumb {
   max-height: 150px;
   max-width: 100%;
 }
 
-/* line 433, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 432, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .blue-box {
   background-color: #57BDBA;
   padding: 15px;
   margin-bottom: 30px;
   margin-top: 15px;
 }
-/* line 438, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 437, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .blue-box .btn {
   width: 100%;
   height: 60px;
@@ -18089,94 +18088,94 @@ progress {
 }
 
 /*--- FORM ---*/
-/* line 444, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 443, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .form-signin {
   font-family: "American Typewriter";
 }
 
-/* line 447, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 446, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .form-control {
   margin-bottom: 15px;
 }
 
-/* line 451, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 450, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .resize-image {
   max-height: 300px;
 }
 
 /*--- BEAUTIFY ---*/
 /*--- |--> PRODUCTS ---*/
-/* line 456, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 455, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 footer#footer {
   border: 0px;
   padding-bottom: 0px;
 }
 
-/* line 460, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 459, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .container .twelve.columns {
   width: auto;
 }
 
-/* line 463, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 462, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .container .sixteen.columns {
   width: auto;
 }
 
-/* line 466, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 465, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #wrapper {
   margin: auto;
 }
 
-/* line 469, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 468, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .caption h4 {
   font-weight: 800;
   font-family: "American Typewriter";
 }
 
-/* line 473, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 472, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #products-display {
   margin-top: 30px;
 }
 
 /*--- |--> PRODUCTS SHOW ---*/
-/* line 477, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 476, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #product-images #main-image {
   border: 0px;
 }
 
-/* line 480, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 479, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #product-variants ul {
   list-style: none;
 }
 
-/* line 483, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 482, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 div[itemprop="description"] {
   font-family: "American Typewriter";
 }
 
-/* line 486, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 485, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #product-description .product-title {
   border-color: #404042;
 }
 
-/* line 489, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 488, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #product-variants li {
   display: inline-block;
 }
 
-/* line 492, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 491, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 span.price {
   font-family: "American Typewriter";
   color: #2B2B2B;
 }
 
-/* line 496, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 495, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .add-to-cart input[type="number"] {
   color: #2B2B2B;
   font-family: "American Typewriter";
 }
 
-/* line 500, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 499, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .btn-cart {
   height: 60px;
   background-color: #F7B3AB;
@@ -18186,7 +18185,7 @@ span.price {
   border: 0;
 }
 
-/* line 504, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 503, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .btn-cart:hover,
 .btn-cart:focus,
 .btn-cart:active,
@@ -18195,23 +18194,23 @@ span.price {
   background: #57BDBA;
 }
 
-/* line 511, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 510, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #product-show {
   margin-top: 30px;
 }
 
 /*--- |--> CART ---*/
-/* line 515, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 514, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 thead {
   font-family: "Raleway";
 }
 
-/* line 518, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 517, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #line_items {
   font-family: "American Typewriter";
 }
 
-/* line 521, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 520, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .btn-small {
   background-color: #ABDEDC;
   color: #F7B3AB;
@@ -18220,7 +18219,7 @@ thead {
   border-radius: 0;
 }
 
-/* line 528, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 527, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .btn-small:hover,
 .btn-small:focus,
 .btn-small:active,
@@ -18229,26 +18228,26 @@ thead {
   background: #57BDBA;
 }
 
-/* line 535, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 534, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .bg-blue {
   background-color: #57BDBA;
 }
 
-/* line 538, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 537, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #cart-total {
   color: #fff;
 }
 
-/* line 541, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 540, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #empty-cart {
   margin: 0;
 }
 
-/* line 544, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 543, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #clear_cart_link {
   font-size: 0.8rem;
 }
-/* line 546, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 545, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #clear_cart_link input[type="submit"] {
   background-color: #fff;
   color: #F7B3AB;
@@ -18258,13 +18257,13 @@ thead {
   font-weight: 400;
 }
 
-/* line 555, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 554, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 #update-button {
   color: #fff;
 }
 
 /*--- BANDEAU PAGE MARQUES ---*/
-/* line 559, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 558, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .ruban {
   background: #57BDBA;
   height: 50px;
@@ -18275,7 +18274,7 @@ thead {
   z-index: 100;
 }
 
-/* line 568, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 567, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .ruban h2 {
   font-size: 25px;
   color: #fff;
@@ -18285,16 +18284,15 @@ thead {
 }
 
 /*--- DESCRIPTION PRODUIT ---*/
-/* line 576, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+/* line 575, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
 .part-asso {
-  background-color: #F7B3AB;
-  color: #fff;
+  color: #F7B3AB;
   font-family: "American Typewriter";
   font-weight: 800;
-  padding: 0 10px;
   display: inline-block;
 }
-/* line 583, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
-.part-asso p {
-  margin-bottom: 0;
+
+/* line 581, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/spree/frontend/lsm.scss */
+#add-to-cart-button {
+  height: auto;
 }
