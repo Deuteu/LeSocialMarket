@@ -12293,11 +12293,15 @@ header .container {
   header .intro-text .skills {
     font-size: 1.75em;
   }
+  /* line 156, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  header .line-header {
+    width: 400px;
+  }
 }
-/* line 159, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 162, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .line-header {
   margin: auto;
-  width: 400px;
+  width: 300px;
   height: 3px;
   background-color: #F7B3AB;
   margin-top: 25px;
@@ -12305,23 +12309,23 @@ header .container {
 }
 
 /*--- NAVBAR ---*/
-/* line 169, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 172, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .navbar-default {
   border: 0;
 }
-/* line 172, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 175, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .navbar-default .navbar-nav > li > a {
   color: #F7B3AB;
 }
-/* line 176, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 179, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .navbar-default .navbar-brand {
   color: #F7B3AB;
 }
-/* line 179, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 182, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .navbar-default .navbar-toggle {
   border-color: #F7B3AB;
 }
-/* line 183, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 186, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -12329,23 +12333,42 @@ header .container {
   color: #57BDBA;
 }
 
+/* line 194, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+.logo {
+  position: fixed;
+  top: 0.5em;
+  left: 1em;
+  display: inline;
+}
+
+@media (max-width: 992px) {
+  /* line 202, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  .logo {
+    position: fixed;
+    top: 0.4em;
+    left: 1em;
+    display: inline;
+    height: 40px;
+    width: auto;
+  }
+}
 @media (min-width: 992px) {
-  /* line 192, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 212, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   .navbar-fixed-top {
     padding: 10abpx 0;
     -webkit-transition: padding .3s;
     -moz-transition: padding .3s;
     transition: padding .3s;
   }
-  /* line 198, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 218, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   .navbar-fixed-top.navbar-shrink {
     padding: 10px 0;
   }
-  /* line 201, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 221, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   .navbar-fixed-top.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
-  /* line 206, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 226, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   .navbar-fixed-top .navbar-brand {
     font-size: 2em;
     -webkit-transition: all .3s;
@@ -12354,23 +12377,23 @@ header .container {
     color: #000000;
   }
 }
-/* line 216, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 236, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .line-bleu-bottom {
   border-bottom: solid #57BDBA 2px;
 }
 
-/* line 220, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 240, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .line-red-bottom {
   border-bottom: solid #F7B3AB 2px;
 }
 
-/* line 224, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 244, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .lines-top {
   border-top: solid #F7B3AB 2px;
   position: relative;
 }
 
-/* line 229, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 249, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .lines-top::after {
   content: "";
   background: #57BDBA;
@@ -12381,54 +12404,54 @@ header .container {
   left: 0px;
 }
 
-/* line 239, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 259, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .navbar {
   font-family: "Raleway";
   font-weight: 700;
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 243, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 263, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .navbar a:focus {
   outline: 0;
 }
-/* line 247, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 267, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .navbar .navbar-nav {
   letter-spacing: 1px;
 }
-/* line 250, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 270, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .navbar .navbar-nav li a:focus {
   outline: 0;
 }
 
 /*--- FOOTER ---*/
-/* line 257, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 277, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 footer {
   color: #57BDBA;
   line-height: 1.42857143;
 }
-/* line 261, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 281, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 footer .footer-above {
   background-color: #fff;
   padding-bottom: 10px;
 }
-/* line 266, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 286, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 footer .footer-below {
   background-color: #F7B3AB;
   color: #fff;
 }
-/* line 271, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 291, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 footer .newsletter {
   background-color: #57BDBA;
   color: white;
 }
-/* line 275, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 295, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 footer .newsletter div {
   width: 50%;
   display: inline-block;
 }
 
 /*--- FORM ---*/
-/* line 283, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 303, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .form {
   text-align: center;
   margin: 0 auto 10px;
@@ -12438,12 +12461,12 @@ footer .newsletter div {
   width: 30px;
 }
 
-/* line 292, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 312, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 input:focus {
   outline: none;
 }
 
-/* line 296, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 316, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 input[type=email] {
   max-width: 200px;
   width: 100%;
@@ -12456,13 +12479,13 @@ input[type=email] {
 }
 
 @media (min-width: 768px) {
-  /* line 308, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 328, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   input[type=email] {
     width: 30%;
   }
 }
 /*--- SECTION ---*/
-/* line 314, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 334, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 section {
   position: relative;
   padding: 70px 30px 10px;
@@ -12471,19 +12494,19 @@ section {
   font-style: normal;
   font-weight: 700;
 }
-/* line 322, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 342, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 section .number {
   color: white;
   background-color: #57BDBA;
   font-size: 55px;
 }
-/* line 328, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 348, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 section.title {
   color: #57BDBA;
   padding-top: 50px;
   padding-bottom: -20px;
 }
-/* line 332, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 352, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 section.title h1 {
   border-top: dotted #F7B3AB 3px;
   border-bottom: dotted #F7B3AB 3px;
@@ -12491,7 +12514,7 @@ section.title h1 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 341, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 361, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 section .circle {
   text-align: center;
   width: 80px;
@@ -12501,11 +12524,11 @@ section .circle {
   border-radius: 50%;
   display: flex;
 }
-/* line 350, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 370, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 section .circle span {
   margin: auto;
 }
-/* line 355, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 375, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 section .text {
   position: relative;
   max-width: 500px;
@@ -12516,32 +12539,46 @@ section .text {
   border: 4px dotted black;
   color: black;
 }
-/* line 365, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 385, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 section .text.blue {
   border-color: #F7B3AB;
   color: #57BDBA;
 }
-/* line 370, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 390, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 section .text.pink {
   border-color: #57BDBA;
   color: #F7B3AB;
 }
-/* line 375, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 395, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 section.end {
   text-align: center;
   font-weight: normal;
   color: #fff;
-  background-color: #ABDEDC;
+  background-color: #F7B3AB;
   margin-top: 80px;
+}
+/* line 402, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+section.end p {
+  font-size: 25px;
+}
+
+/* line 408, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+.third button {
+  border: solid 2px #F7B3AB;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: -20px;
+  background-color: #57BDBA;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
-  /* line 385, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 418, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section {
     position: relative;
     padding-top: 50px;
   }
-  /* line 389, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 422, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section.end {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -12550,14 +12587,14 @@ section.end {
     color: #fff;
     height: auto;
   }
-  /* line 398, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 431, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section .number {
     position: relative;
     margin-right: 0px;
     margin-left: 0px;
     transform: translateX(-50%);
   }
-  /* line 405, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 438, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section .text {
     width: 50%;
     margin: auto 0px;
@@ -12565,24 +12602,24 @@ section.end {
     max-width: none;
     font-size: 1.2em;
   }
-  /* line 414, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 447, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section.right .number {
     left: 75%;
   }
-  /* line 418, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 451, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section.right .text {
     left: 50%;
   }
-  /* line 424, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 457, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section.left .number {
     left: 25%;
   }
-  /* line 428, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 461, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section.left .text {
     left: 50%;
     transform: translateX(-100%);
   }
-  /* line 434, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 467, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section .text::before {
     background-position: center;
     background-repeat: no-repeat;
@@ -12592,7 +12629,7 @@ section.end {
     bottom: 0;
     z-index: -1;
   }
-  /* line 444, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 477, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section .arrow {
     content: "";
     position: absolute;
@@ -12604,7 +12641,7 @@ section.end {
     background-size: contain;
     z-index: -1;
   }
-  /* line 463, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 496, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section.first .arrow {
     left: 0;
     background: url(/assets/Arrow1-cd1530b3817b02b14f142f87dde3a737986c4c18551398e1c3481f7f8811882b.png);
@@ -12612,12 +12649,12 @@ section.end {
     background-repeat: no-repeat;
     background-size: contain;
   }
-  /* line 473, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 506, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section.second .text::before {
     top: -100%;
     bottom: 50%;
   }
-  /* line 483, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 516, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section.second .arrow {
     right: 0;
     background: url(/assets/Arrow2-e378f81000c8b490569cde65d1bab62036c6cb9eb39ddc3be9fe8351e08d9d68.png);
@@ -12625,24 +12662,24 @@ section.end {
     background-repeat: no-repeat;
     background-size: contain;
   }
-  /* line 493, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 526, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section.third .text::before {
     top: -100%;
     bottom: 50%;
   }
-  /* line 504, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 537, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section.left .text::before {
     left: 100%;
     right: -100%;
   }
-  /* line 509, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+  /* line 542, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
   section.right .text::before {
     left: -100%;
     right: 100%;
   }
 }
 /*--- BTN ---*/
-/* line 517, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 550, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .btn-outline {
   border: solid 2px #fff;
   font-size: 20px;
@@ -12651,7 +12688,7 @@ section.end {
   transition: all .3s ease-in-out;
 }
 
-/* line 525, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 558, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
@@ -12661,7 +12698,7 @@ section.end {
   background: #fff;
 }
 
-/* line 534, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 567, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .btn-submit {
   color: #fff;
   font-size: 15px;
@@ -12673,7 +12710,7 @@ section.end {
   margin-right: 10px;
 }
 
-/* line 545, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 578, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .btn-social {
   display: inline-block;
   width: 50px;
@@ -12685,7 +12722,7 @@ section.end {
   line-height: 45px;
 }
 
-/* line 556, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 589, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .btn:focus,
 .btn:active,
 .btn.active {
@@ -12693,7 +12730,7 @@ section.end {
 }
 
 /*--- SCROLL TOP ---*/
-/* line 563, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 596, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .scroll-top {
   z-index: 1049;
   position: fixed;
@@ -12702,7 +12739,7 @@ section.end {
   width: 50px;
   height: 50px;
 }
-/* line 571, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 604, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .scroll-top.btn {
   width: 50px;
   height: 50px;
@@ -12710,13 +12747,13 @@ section.end {
   font-size: 20px;
   line-height: 28px;
 }
-/* line 579, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 612, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .scroll-top.btn:focus {
   outline: 0;
 }
 
 /*--- OTHER ---*/
-/* line 585, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
+/* line 618, /home/deberdt/LeSocialMarket/LSM-dev/app/assets/stylesheets/landing.scss */
 .padding {
   background: #3a76b2;
   margin-bottom: -50px;
