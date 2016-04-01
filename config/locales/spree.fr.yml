@@ -1565,7 +1565,7 @@ fr:
     update: Mise à jour
     updating: Mise à jour
     usage_limit: Limite d'utilisation
-    use_app_default:
+    use_app_default: Use app default
     use_billing_address: Utiliser l'adresse de facturation
     use_new_cc: Utiliser une nouvelle carte
     use_s3: Utiliser Amazon S3 pour les Images

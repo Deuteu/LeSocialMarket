@@ -302,8 +302,7 @@ a:focus {
   }
 }
 #product-description {
-  background-color: $blue;
-  color: #fff;
+  color: $grey;
   padding-top: 5px;
   padding-right: 15px;
   padding-bottom: 10px;
@@ -574,13 +573,11 @@ thead {
 }
 /*--- DESCRIPTION PRODUIT ---*/
 .part-asso {
-  background-color: $pink;
-  color: #fff;
+  color: $pink;
   font-family: $font03;
   font-weight: 800;
-  padding: 0 10px;
   display: inline-block;
-  p {
-    margin-bottom: 0;
-  }
+}
+#add-to-cart-button {
+  height: auto;
 }
