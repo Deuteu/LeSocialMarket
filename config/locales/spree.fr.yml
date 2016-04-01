@@ -720,6 +720,7 @@ fr:
     category: Categorie
     charged: Chargé
     check_for_spree_alerts: Recevoir les alertes de Spree
+    # GDT : Edit
     checkout: Passer la commande
     choose_a_customer: Choisissez un client
     choose_a_taxon_to_sort_products_for: "Choisir une taxon pour organiser les produits pour"
@@ -1191,7 +1192,8 @@ fr:
     percent_per_item: Pourcent par article
     permalink: Permalien
     phone: Téléphone
-    place_order: Passer la commande
+    # GDT : Edit
+    place_order: Fnaliser l'achat
     please_define_payment_methods: S'il vous plaît définissez d'abord certains modes de paiement.
     populate_get_error: Quelque chose s'est passé mal. Essayez S'il vous plaît d'ajouter l'article de nouveau.
     powered_by: Réalisé avec
