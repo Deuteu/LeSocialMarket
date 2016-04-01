@@ -1,8 +1,8 @@
 <% cache [I18n.locale, current_currency, @product] do %>
-  <div data-hook="product_show" itemscope itemtype="http://schema.org/Product">
+  <div data-hook="product_show" id="product-show" itemscope itemtype="http://schema.org/Product">
     <% @body_id = 'product-details' %>
 
-    <div class="columns six alpha" data-hook="product_left_part">
+    <div class="col-md-4" data-hook="product_left_part">
       <div class="row" data-hook="product_left_part_wrap">
 
         <div id="product-images" data-hook="product_images">
@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <div class="columns ten omega" data-hook="product_right_part">
+    <div class="col-md-8" data-hook="product_right_part">
       <div class="row" data-hook="product_right_part_wrap">
 
         <div id="product-description" data-hook="product_description">
@@ -41,8 +41,6 @@
           </div>
 
         </div>
-
-        <%= render :partial => 'taxons' %>
 
       </div>
     </div>
