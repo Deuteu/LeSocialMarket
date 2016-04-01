@@ -466,6 +466,9 @@ footer#footer {
   font-weight: 800;
   font-family: $font03;
 }
+#products-display {
+  margin-top: 30px;
+}
 /*--- |--> PRODUCTS SHOW ---*/
 #product-images #main-image {
   border: 0px;
@@ -490,8 +493,16 @@ span.price {
   color: $grey;
   font-family: $font03;
 }
-.btn-submit {
+.btn-cart {
   @include btn-sm;
+  border: 0;
+}
+.btn-cart:hover,
+.btn-cart:focus,
+.btn-cart:active,
+.btn-cart.active {
+  color: #fff;
+  background: $blue;
 }
 #product-show {
   margin-top: 30px;
@@ -509,6 +520,13 @@ thead {
   border: 0;
   font-family: $font03;
   border-radius: 0;
+}
+.btn-small:hover,
+.btn-small:focus,
+.btn-small:active,
+.btn-small.active {
+  color: #fff;
+  background: $blue;
 }
 .bg-blue {
   background-color: $blue;

@@ -743,7 +743,8 @@ fr:
     confirm_delete: Confirmation de la suppression
     confirm_password: Confirmation du mot de passe
     continue: Continuer
-    continue_shopping: Continuer vos achats
+    # ald : modification de "Continuer vos achats"
+    continue_shopping: Revenir à la boutique
     cost_currency: Devise du prix
     cost_price: Prix coûtant
     could_not_connect_to_jirafe: Impossible de se connecter à Jirafe pour synchroniser les données.
