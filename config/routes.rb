@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   root 'pages#landing'
 
   get 'index' => 'leads#index'
+  get 'cg' => 'pages#cg'
+  get 'faq' => 'pages#faq'
+  get 'mentions' => 'pages#mentions'
 
   devise_for :admins
   devise_scope :admin do
