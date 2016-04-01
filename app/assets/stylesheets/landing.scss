@@ -404,6 +404,15 @@ section {
 
 }
 
+.third button {
+  border: solid 2px $pink;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: -20px;
+  background-color: $blue;
+  color: #fff;
+}
+
 @media(min-width:992px) {
   section {
     position: relative;
