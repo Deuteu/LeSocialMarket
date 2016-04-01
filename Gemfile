@@ -50,4 +50,4 @@ end
 
 gem 'solidus'
 gem 'solidus_auth_devise'
-gem "solidus_gateway"
+gem 'solidus_gateway'
