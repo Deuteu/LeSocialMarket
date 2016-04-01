@@ -50,10 +50,6 @@ Spree.config do |config|
   #   server: Rails.env.production? ? 'production' : 'test',
   #   test_mode: !Rails.env.production?
   # )
-
-  # Add
-  c = Spree::Country.create_with(iso_name: "FRANCE", iso: "FR", iso3: "FRA").find_or_create_by(name:"France") 
-  config.default_country_id = c.id
 end
 
 Spree::Frontend::Config.configure do |config|
