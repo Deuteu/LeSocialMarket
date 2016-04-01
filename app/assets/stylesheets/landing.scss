@@ -127,6 +127,12 @@ header {
   .container {
     padding-top: 100px;
   }
+  .btn-outline {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: $blue;
+    color: white;
+  }
 }
 
 @media(min-width:992px) {
@@ -317,7 +323,7 @@ input:focus {
 }
 
 input[type=email] {
-  max-width: 200px;
+  max-width: 300px;
   width: 100%;
   border: 3px solid $blue;
   border-radius: 10px;
