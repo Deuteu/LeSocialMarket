@@ -1116,8 +1116,8 @@ fr:
         # GDT : Edit
         dear_customer: Cher(e) client(e),
         instructions: |
-          Votre commande numéro {numero}, du {date}, vient d'être enregistrée et transférée au fournisseur. Celui-ci a vos coordonnées et pourra vous contacter en cas de besoin.
-          Pour toute réclamation concernant la livraison ou le produit, veuillez contacter votre fournisseur !
+          Votre commande numéro vient d'être enregistrée et transférée au fournisseur. Celui-ci a vos coordonnées et pourra vous contacter en cas de besoin.
+          Pour toute réclamation concernant la livraison ou le produit, veuillez nous contacter !
 
           Le Social Market reste aussi à votre disposition si besoin.
           Veuillez vérifier et sauvegarder les informations suivantes à propos de votre commande.
