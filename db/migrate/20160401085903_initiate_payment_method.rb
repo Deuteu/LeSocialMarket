@@ -7,10 +7,6 @@ class InitiatePaymentMethod < ActiveRecord::Migration
         "active"=>"true", "name"=>"Carte bancaire",
         "description"=>"",
         "preferences"=>{
-          "server"=>"lesocialmarket.fr",
-          "test_mode"=>false,
-          "secret_key"=>ENV["SECRET_KEY_STRIPE"],
-          "publishable_key"=>ENV["PUBLISHABLE__KEY_STRIPE"]
         }
       )
     end
