@@ -45,3 +45,5 @@
 <% if paginated_products.respond_to?(:num_pages) %>
  <%= paginate paginated_products %>
 <% end %>
+
+<%= render :partial => 'spree/shared/bandobot' %>
