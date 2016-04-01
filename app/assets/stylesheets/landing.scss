@@ -296,6 +296,10 @@ footer {
       display: inline-block;
     }
   }
+  .link-footer a {
+    color: $blue;
+    text-decoration: none;
+  }
 }
 
 /*--- FORM ---*/
