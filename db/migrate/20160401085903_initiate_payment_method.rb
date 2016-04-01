@@ -6,12 +6,11 @@ class InitiatePaymentMethod < ActiveRecord::Migration
         "display_on"=>"", "auto_capture"=>"",
         "active"=>"true", "name"=>"Carte bancaire",
         "description"=>"",
-        "preference_source"=>nil,
         "preferences"=>{
-          "server"=>"test",
+          "server"=>"lesocialmarket.fr",
           "test_mode"=>false,
           "secret_key"=>ENV["SECRET_KEY_STRIPE"],
-          "spublishable_key"=>ENV["PUBLISHABLE__KEY_STRIPE"]
+          "publishable_key"=>ENV["PUBLISHABLE__KEY_STRIPE"]
         }
       )
     end
@@ -24,7 +23,7 @@ class InitiatePaymentMethod < ActiveRecord::Migration
   def down
     # Delete
     if Spree::PaymentMethod.find_by(type: "Spree::Gateway::StripeGateway")
-      Spree::PaymentMethod.find_by(type: "Spree::Gateway::StripeGateway").first.delete
+      Spree::PaymentMethod.find_by(type: "Spree::Gateway::StripeGateway").first.destroy
     end
     # Reactive
     sc = Spree::PaymentMethod.find_by(type: "Spree::PaymentMethod::StoreCredit")
