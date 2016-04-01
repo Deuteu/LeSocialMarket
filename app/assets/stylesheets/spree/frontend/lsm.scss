@@ -568,3 +568,15 @@ thead {
   text-align: center;
   margin:10px;
 }
+/*--- DESCRIPTION PRODUIT ---*/
+.part-asso {
+  background-color: $pink;
+  color: #fff;
+  font-family: $font03;
+  font-weight: 800;
+  padding: 0 10px;
+  display: inline-block;
+  p {
+    margin-bottom: 0;
+  }
+}
