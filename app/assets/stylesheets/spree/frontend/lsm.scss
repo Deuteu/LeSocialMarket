@@ -503,16 +503,33 @@ thead {
 #line_items {
   font-family: $font03;
 }
- .btn-small {
-   background-color: $blue-light;
-   color: $pink;
-   border: 0;
-   font-family: $font03;
-   border-radius: 0;
- }
- .bg-blue {
-   background-color: $blue;
- }
- #cart-total {
-   color: #fff;
- }
+.btn-small {
+  background-color: $blue-light;
+  color: $pink;
+  border: 0;
+  font-family: $font03;
+  border-radius: 0;
+}
+.bg-blue {
+  background-color: $blue;
+}
+#cart-total {
+  color: #fff;
+}
+#empty-cart {
+  margin: 0;
+}
+#clear_cart_link {
+  font-size: 0.8rem;
+  input[type="submit"] {
+    background-color: #fff;
+    color: $pink;
+    border: 0;
+    font-family: $font03;
+    border-radius: 0;
+    font-weight: 400;
+  }
+}
+#update-button {
+  color: #fff;
+}
