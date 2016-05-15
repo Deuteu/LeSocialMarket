@@ -13,7 +13,7 @@
 
 <body>
   <!-- Navigation -->
-  <%= render partial: "layouts/navbar",
+  <%= render partial: "shared/navbar",
               locals: {
                 menu: {
                   "/" => "Accueil"
@@ -169,10 +169,10 @@
   </section>
 
   <!-- Footer -->
-  <%= render "layouts/footer" %>
+  <%= render "shared/footer" %>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <%= render "layouts/scroll_top" %>
+  <%= render "shared/scroll_top" %>
 
 </body>
 
