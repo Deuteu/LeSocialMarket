@@ -13,102 +13,34 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="glyphicon glyphicon-menu-hamburger"></span>
-        </button>
-        <%= link_to image_tag("logotsm.png", class: "img-responsive logo", size: "100x100", alt: "le social market logo"),'/'%>
-      </div>
+  <%= render partial: "layouts/navbar",
+              locals: {
+                menu: {
+                  "/" => "Accueil"
+                  #"#{shop_root}" => "La Social Boutique"
+                }
+              }
+  %>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div class="navbar-color" id="nav-color">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="page-scroll">
-              <a href="/shop/">La Social Boutique</a>
-            </li>
-          </ul>
-        </div>
-      </div> <!-- /.navbar-collapse -->
-    </div> <!-- /.container-fluid -->
-    <div class="line-bleu-bottom">
-    </div>
-    <div class="line-red-bottom">
-    </div>
-    </nav>
+  <div id="top"></div>
 
-  <!-- Header -->
   <section class="container" >
     <section class="container title">
-	<h1>Mentions Légales</h1>
-</section>
-<p align="left" style="font-weight:normal">
-  <br><center>
-  Association Le Social Market, loi 1901<br>
-  Domiciliée chez Cécile Compte 57 rue du cherche-midi<br>
-  75006 Paris</center>
-</p>
+    	<h1>Mentions Légales</h1>
+    </section>
+    <p align="left" style="font-weight:normal">
+      <br><center>
+      Association Le Social Market, loi 1901<br>
+      Domiciliée chez Cécile Compte 57 rue du cherche-midi<br>
+      75006 Paris</center>
+    </p>
   </section>
 
-    <!-- Footer -->
-  <footer class="text-center" id="footer">
-    <div class="line-bleu-bottom">
-    </div>
-    <div class="line-red-bottom">
-    </div>
-    <div class="footer-above">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col col-md-4">
-            <h4>A propos</h4>
-            <div class="link-footer">
-              <a href="/faq/">F.A.Q.</a><br>
-              <a href="/cg/">Conditions Générales</a><br>
-              <a href="/mentions/">Mentions Légales</a>
-            </div>
-          </div>
-          <div class="footer-col col-md-4">
-            <h4>Suivez-nous</h4>
-            <ul class="list-inline">
-              <li>
-                <a target="_blank" href="https://www.facebook.com/lesocialmarket/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://twitter.com/lesocialmarket" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col col-md-4">
-            <ul class="list-inline">
-            <h4>Contactez-nous</h4>
-            <li>
-              <a href="mailto:contact@lesocialmarket.fr" class="btn-social btn-outline"><i class="fa fa-envelope"></i></a>
-            </li>
-          </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-below">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            Le Social Market &copy; 2016
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <!-- Footer -->
+  <%= render "layouts/footer" %>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-top page-scroll visible-xs visible-sm">
-    <a class="btn btn-primary" href="#home">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <%= render "layouts/scroll_top" %>
 
 </body>
 
