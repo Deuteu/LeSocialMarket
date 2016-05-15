@@ -13,178 +13,110 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="glyphicon glyphicon-menu-hamburger"></span>
-        </button>
-        <%= link_to image_tag("logotsm.png", class: "img-responsive logo", size: "100x100", alt: "le social market logo"),'/'%>
-      </div>
+  <%= render partial: "layouts/navbar",
+              locals: {
+                menu: {
+                  "/" => "Accueil"
+                  #"#{shop_root}" => "La Social Boutique"
+                }
+              }
+  %>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div class="navbar-color" id="nav-color">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="page-scroll">
-              <a href="/shop/">La Social Boutique</a>
-            </li>
-          </ul>
-        </div>
-      </div> <!-- /.navbar-collapse -->
-    </div> <!-- /.container-fluid -->
-    <div class="line-bleu-bottom">
-    </div>
-    <div class="line-red-bottom">
-    </div>
-    </nav>
+  <div id="top"></div>
 
-  <!-- Header -->
-  <section class="container" >
+  <section class="container" id="home">
     <section class="container title">
-	<h1>F.A.Q.</h1>
-</section>
-<p align="left" style="font-weight:normal">
-  Besoin d&rsquo;aide&#160;? <br />
-  Si vous ne trouvez pas r&eacute;ponse &agrave; vos soucis et questions ici, envoyez-nous un petit mail &agrave; contact@lesocialmarket.fr&#160;! <br />
-  <br />
-  MA COMMANDE<br />
-  <br />
-  Comment &ccedil;a fonctionne au niveau des commandes, Le Social Market&#160;?<br />
-  Le Social Market est une e-boutique qui fonctionne en marque blanche, c&rsquo;est-&agrave;-dire que ce sont les marques elles-m&ecirc;mes qui effectuent l&rsquo;envoi des produits. Ce qui explique pourquoi, quand vous commandez des produits de plusieurs marques diff&eacute;rentes, vous recevrez plusieurs colis diff&eacute;rents (et donc paierez les frais d&rsquo;envoi li&eacute;s &agrave; chaque marque).<br />
-  <br />
-  Comment se d&eacute;roule une commande&#160;?<br />
-  1) Quand vous finalisez votre commande sur notre site, nous vous envoyons dans les 24 heures un mail d&rsquo;ENREGISTREMENT de commande envoy&eacute; par le Social Market. Nous, de notre c&ocirc;t&eacute;, transmettons la commande &agrave; la marque partenaire<br />
-  2) Vous recevrez ensuite un mail de CONFIRMATION de commande envoy&eacute; par la marque (ou plusieurs si vous avez command&eacute; des produits aupr&egrave;s de marques distinctes), qui vous signifie que le produit est disponible et qu&rsquo;ils le pr&eacute;parent pour exp&eacute;dition<br />
-  3) Enfin, la marque vous enverra un dernier mail d&rsquo;EXPEDITION de commande quand ils vous exp&eacute;dient le colis.<br />
-  Trois &eacute;tapes donc&#160;: <br />
-  Enregistrement (mail du Social Market ) => Confirmation (mail de la marque) => Exp&eacute;dition (mail de la marque)<br />
-  <br />
-  Je n&rsquo;ai pas re&ccedil;u de mail, comment je fais&#160;?<br />
-  Envoyez-nous un petit mail &agrave; contact@lesocialmarket.fr pour qu&rsquo;on r&egrave;gle le probl&egrave;me. Vous pouvez pendant ce temps regarder sur votre compte client le statut de votre commande.<br />
-  <br />
-  Je me suis tromp&eacute;e de taille / de produit / de quantit&eacute; / d&rsquo;adresse de livraison, comment je fais&#160;?<br />
-  Si votre commande n&rsquo;a pas encore &eacute;t&eacute; exp&eacute;di&eacute;e, nous vous invitons &agrave; nous contacter ou bien, encore plus rapide, de contacter la marque&#160;via l&rsquo;email de confirmation de commande&#160;!<br />
-  Si la commande a &eacute;t&eacute; exp&eacute;di&eacute;e, pas de panique, vous avez un d&eacute;lai 14 jours pour demander un &eacute;change. <br />
-  <br />
-  O&ugrave; en est mon colis&#160;?<br />
-  Vous pouvez suivre le statut de votre commande &agrave; partir de votre compte client. Si la marque a fourni un num&eacute;ro de suivi, vous pouvez l&rsquo;utiliser pour suivre votre commande sur le site du transporteur.<br />
-  <br />
-  Pourquoi je paye plusieurs fois les frais de livraison&#160;? / Pourquoi je re&ccedil;ois plusieurs colis&#160;?<br />
-  Comme ce sont les marques elles-m&ecirc;mes qui envoient les colis, chaque exp&eacute;dition est g&eacute;r&eacute;e s&eacute;par&eacute;ment ce qui nous oblige &agrave; facturer les frais de livraison applicables sur chacune. C&rsquo;est aussi la raison pour laquelle vous recevez plusieurs colis et plusieurs mails de confirmation/d&rsquo;exp&eacute;dition si vous avez command&eacute; des produits aupr&egrave;s de marques diff&eacute;rentes&#160;;<br />
-  <br />
-  RECLAMATIONS<br />
-  <br />
-  Je n&rsquo;ai pas re&ccedil;u mon colis, que se passe-t-il&#160;?<br />
-  On vous invite &agrave; suivre le statut de commande depuis votre compte client, et &eacute;galement Si votre commande n&rsquo;est toujours pas arriv&eacute;e 10 jours ouvr&eacute;s apr&egrave;s la commande, on vous invite &agrave; nous contacter sur contact@lesocialmarket.fr ou directement aupr&egrave;s de la marque arm&eacute; de votre num&eacute;ro de commande&#160;!<br />
-  <br />
-  Ma commande est incompl&egrave;te<br />
-  Si vous avez command&eacute; des produits aupr&egrave;s de plusieurs marques diff&eacute;rentes, c&rsquo;est tout &agrave; fait normal&#160;! Les marques g&egrave;rent leurs envois s&eacute;par&eacute;ment, et vous recevrez le reste de votre commande sous peu.<br />
-  <br />
-  Mon produit est endommag&eacute;<br />
-  Vous pouvez contacter la marque via les mails de confirmation et d&rsquo;exp&eacute;dition de commande qu&rsquo;elle vous a envoy&eacute;s. N&rsquo;oubliez pas que si vous voyez, &agrave; la livraison, que le produit est endommag&eacute;, vous pouvez le refuser&#160;! La marque envoie toujours les produits en bon &eacute;tat mais le transport peut les cahoter un peu&#160;<br />
-  <br />
-  Je n&rsquo;ai pas re&ccedil;u le bon produit<br />
-  Contactez la marque par email par le biais des emails que vous avez re&ccedil;us de sa part&#160;! Vous pouvez &eacute;galement nous contacter sur contact@lesocialmarket.fr . <br />
-  <br />
-  RETOURS&#160;/ ECHANGES&#160;/ REMBOURSEMENTS<br />
-  <br />
-  Comment &eacute;changer mon produit&#160;?<br />
-  Si votre commande n&rsquo;a pas encore &eacute;t&eacute; exp&eacute;di&eacute;e, nous vous invitons &agrave; nous contacter ou bien, encore plus rapide, de contacter la marque&#160;via l&rsquo;email de confirmation de commande&#160;!<br />
-  Si la commande a &eacute;t&eacute; exp&eacute;di&eacute;e, pas de panique,, vous avez un d&eacute;lai de 14 jours pour demander un &eacute;change. <br />
-  Nous vous informons que les frais d&rsquo;exp&eacute;dition de retour de commande et d&rsquo;exp&eacute;dition de votre nouvel achat sont &agrave; votre charge. <br />
-  <br />
-  Comment me faire rembourser si le produit ne correspond pas &agrave; mes attentes&#160;?<br />
-  Contactez contact@lesocialmarket.fr dans un d&eacute;lai de 14 jours suivant la r&eacute;ception de votre commande&#160;! Vous serez rembours&eacute; au plus vite, dans un d&eacute;lai maximum de 30 jours.<br />
-  <br />
-  LIVRAISON<br />
-  <br />
-  Puis-je me faire livrer &agrave; l&rsquo;&eacute;tranger&#160;?<br />
-  Pas pour le moment, mais on esp&egrave;re lors d&rsquo;une prochaine vente&#160;!<br />
-  <br />
-  O&ugrave; en est mon colis&#160;?<br />
-  Vous pouvez suivre le statut de votre commande &agrave; partir de votre compte client. Si la marque a fourni un num&eacute;ro de suivi, vous pouvez l&rsquo;utiliser pour suivre votre commande sur le site du transporteur<br />
-  <br />
-  Pourquoi je paye plusieurs fois les frais de livraison&#160;? / Pourquoi je re&ccedil;ois plusieurs colis&#160;?<br />
-  Comme ce sont les marques elles-m&ecirc;mes qui envoient les colis, chaque exp&eacute;dition est g&eacute;r&eacute;e s&eacute;par&eacute;ment ce qui nous oblige &agrave; facturer les frais de livraison applicables sur chacune. C&rsquo;est aussi la raison pour laquelle vous recevez plusieurs colis et plusieurs mails de confirmation/d&rsquo;exp&eacute;dition si vous avez command&eacute; des produits aupr&egrave;s de marques diff&eacute;rentes&#160;;<br />
-  <br />
-  PAIEMENT<br />
-  <br />
-  Quels sont les moyens de paiement ?<br />
-  Toutes les cartes de paiement ou de cr&eacute;dit, valables en France et en cours de validit&eacute;, sous r&eacute;serve de leur acceptation par l&rsquo;Emetteur (Visa, MasterCard, CB) sont accept&eacute;es.<br />
-  <br />
-  Le paiement est-il bien s&eacute;curis&eacute; ?<br />
-  Le paiement sur le site est effectu&eacute; de A &agrave; Z via une connexion s&eacute;curis&eacute;e, et s'effectue par l'interm&eacute;diaire du prestataire de paiement s&eacute;curis&eacute; Stripe.<br />
-  <br />
-  Je n&rsquo;arrive pas &agrave; finaliser mon paiement.<br />
-  Si votre paiement n&rsquo;aboutit pas, cela peut-&ecirc;tre d&ucirc; &agrave; 3 raisons principales<br />
-  - Manque de fonds<br />
-  - Erreur d&rsquo;authentification pour les commandes de plus de 100 euros (3DSecure) : V&eacute;rifiez que vous avez re&ccedil;u un texto avec un code de s&eacute;curit&eacute; &agrave; rentrer pour pouvoir r&eacute;gler la commande (ou que vous avez bien suivi la proc&eacute;dure sp&eacute;cifique &agrave; votre banque pour l'autorisation du paiement)<br />
-  - Utilisation d'une carte &eacute;trang&egrave;re ou autre carte non accept&eacute;e<br />
-  Si vous n&rsquo;&ecirc;tes pas concern&eacute;(e)s par les &eacute;l&eacute;ments ci-dessus, vous pouvez essayer<br />
-  - De vider votre panier, vous d&eacute;connecter et recommencer le processus d&rsquo;achat<br />
-  - De passer commande via un autre navigateur.<br />
-  <br />
-</p>
+      <h1>F.A.Q.</h1>
+    </section>
+    <p align="left" style="font-weight:normal">
+      Besoin d&rsquo;aide&#160;? <br />
+      Si vous ne trouvez pas r&eacute;ponse &agrave; vos soucis et questions ici, envoyez-nous un petit mail &agrave; contact@lesocialmarket.fr&#160;! <br />
+      <br />
+      MA COMMANDE<br />
+      <br />
+      Comment &ccedil;a fonctionne au niveau des commandes, Le Social Market&#160;?<br />
+      Le Social Market est une e-boutique qui fonctionne en marque blanche, c&rsquo;est-&agrave;-dire que ce sont les marques elles-m&ecirc;mes qui effectuent l&rsquo;envoi des produits. Ce qui explique pourquoi, quand vous commandez des produits de plusieurs marques diff&eacute;rentes, vous recevrez plusieurs colis diff&eacute;rents (et donc paierez les frais d&rsquo;envoi li&eacute;s &agrave; chaque marque).<br />
+      <br />
+      Comment se d&eacute;roule une commande&#160;?<br />
+      1) Quand vous finalisez votre commande sur notre site, nous vous envoyons dans les 24 heures un mail d&rsquo;ENREGISTREMENT de commande envoy&eacute; par le Social Market. Nous, de notre c&ocirc;t&eacute;, transmettons la commande &agrave; la marque partenaire<br />
+      2) Vous recevrez ensuite un mail de CONFIRMATION de commande envoy&eacute; par la marque (ou plusieurs si vous avez command&eacute; des produits aupr&egrave;s de marques distinctes), qui vous signifie que le produit est disponible et qu&rsquo;ils le pr&eacute;parent pour exp&eacute;dition<br />
+      3) Enfin, la marque vous enverra un dernier mail d&rsquo;EXPEDITION de commande quand ils vous exp&eacute;dient le colis.<br />
+      Trois &eacute;tapes donc&#160;: <br />
+      Enregistrement (mail du Social Market ) => Confirmation (mail de la marque) => Exp&eacute;dition (mail de la marque)<br />
+      <br />
+      Je n&rsquo;ai pas re&ccedil;u de mail, comment je fais&#160;?<br />
+      Envoyez-nous un petit mail &agrave; contact@lesocialmarket.fr pour qu&rsquo;on r&egrave;gle le probl&egrave;me. Vous pouvez pendant ce temps regarder sur votre compte client le statut de votre commande.<br />
+      <br />
+      Je me suis tromp&eacute;e de taille / de produit / de quantit&eacute; / d&rsquo;adresse de livraison, comment je fais&#160;?<br />
+      Si votre commande n&rsquo;a pas encore &eacute;t&eacute; exp&eacute;di&eacute;e, nous vous invitons &agrave; nous contacter ou bien, encore plus rapide, de contacter la marque&#160;via l&rsquo;email de confirmation de commande&#160;!<br />
+      Si la commande a &eacute;t&eacute; exp&eacute;di&eacute;e, pas de panique, vous avez un d&eacute;lai 14 jours pour demander un &eacute;change. <br />
+      <br />
+      O&ugrave; en est mon colis&#160;?<br />
+      Vous pouvez suivre le statut de votre commande &agrave; partir de votre compte client. Si la marque a fourni un num&eacute;ro de suivi, vous pouvez l&rsquo;utiliser pour suivre votre commande sur le site du transporteur.<br />
+      <br />
+      Pourquoi je paye plusieurs fois les frais de livraison&#160;? / Pourquoi je re&ccedil;ois plusieurs colis&#160;?<br />
+      Comme ce sont les marques elles-m&ecirc;mes qui envoient les colis, chaque exp&eacute;dition est g&eacute;r&eacute;e s&eacute;par&eacute;ment ce qui nous oblige &agrave; facturer les frais de livraison applicables sur chacune. C&rsquo;est aussi la raison pour laquelle vous recevez plusieurs colis et plusieurs mails de confirmation/d&rsquo;exp&eacute;dition si vous avez command&eacute; des produits aupr&egrave;s de marques diff&eacute;rentes&#160;;<br />
+      <br />
+      RECLAMATIONS<br />
+      <br />
+      Je n&rsquo;ai pas re&ccedil;u mon colis, que se passe-t-il&#160;?<br />
+      On vous invite &agrave; suivre le statut de commande depuis votre compte client, et &eacute;galement Si votre commande n&rsquo;est toujours pas arriv&eacute;e 10 jours ouvr&eacute;s apr&egrave;s la commande, on vous invite &agrave; nous contacter sur contact@lesocialmarket.fr ou directement aupr&egrave;s de la marque arm&eacute; de votre num&eacute;ro de commande&#160;!<br />
+      <br />
+      Ma commande est incompl&egrave;te<br />
+      Si vous avez command&eacute; des produits aupr&egrave;s de plusieurs marques diff&eacute;rentes, c&rsquo;est tout &agrave; fait normal&#160;! Les marques g&egrave;rent leurs envois s&eacute;par&eacute;ment, et vous recevrez le reste de votre commande sous peu.<br />
+      <br />
+      Mon produit est endommag&eacute;<br />
+      Vous pouvez contacter la marque via les mails de confirmation et d&rsquo;exp&eacute;dition de commande qu&rsquo;elle vous a envoy&eacute;s. N&rsquo;oubliez pas que si vous voyez, &agrave; la livraison, que le produit est endommag&eacute;, vous pouvez le refuser&#160;! La marque envoie toujours les produits en bon &eacute;tat mais le transport peut les cahoter un peu&#160;<br />
+      <br />
+      Je n&rsquo;ai pas re&ccedil;u le bon produit<br />
+      Contactez la marque par email par le biais des emails que vous avez re&ccedil;us de sa part&#160;! Vous pouvez &eacute;galement nous contacter sur contact@lesocialmarket.fr . <br />
+      <br />
+      RETOURS&#160;/ ECHANGES&#160;/ REMBOURSEMENTS<br />
+      <br />
+      Comment &eacute;changer mon produit&#160;?<br />
+      Si votre commande n&rsquo;a pas encore &eacute;t&eacute; exp&eacute;di&eacute;e, nous vous invitons &agrave; nous contacter ou bien, encore plus rapide, de contacter la marque&#160;via l&rsquo;email de confirmation de commande&#160;!<br />
+      Si la commande a &eacute;t&eacute; exp&eacute;di&eacute;e, pas de panique,, vous avez un d&eacute;lai de 14 jours pour demander un &eacute;change. <br />
+      Nous vous informons que les frais d&rsquo;exp&eacute;dition de retour de commande et d&rsquo;exp&eacute;dition de votre nouvel achat sont &agrave; votre charge. <br />
+      <br />
+      Comment me faire rembourser si le produit ne correspond pas &agrave; mes attentes&#160;?<br />
+      Contactez contact@lesocialmarket.fr dans un d&eacute;lai de 14 jours suivant la r&eacute;ception de votre commande&#160;! Vous serez rembours&eacute; au plus vite, dans un d&eacute;lai maximum de 30 jours.<br />
+      <br />
+      LIVRAISON<br />
+      <br />
+      Puis-je me faire livrer &agrave; l&rsquo;&eacute;tranger&#160;?<br />
+      Pas pour le moment, mais on esp&egrave;re lors d&rsquo;une prochaine vente&#160;!<br />
+      <br />
+      O&ugrave; en est mon colis&#160;?<br />
+      Vous pouvez suivre le statut de votre commande &agrave; partir de votre compte client. Si la marque a fourni un num&eacute;ro de suivi, vous pouvez l&rsquo;utiliser pour suivre votre commande sur le site du transporteur<br />
+      <br />
+      Pourquoi je paye plusieurs fois les frais de livraison&#160;? / Pourquoi je re&ccedil;ois plusieurs colis&#160;?<br />
+      Comme ce sont les marques elles-m&ecirc;mes qui envoient les colis, chaque exp&eacute;dition est g&eacute;r&eacute;e s&eacute;par&eacute;ment ce qui nous oblige &agrave; facturer les frais de livraison applicables sur chacune. C&rsquo;est aussi la raison pour laquelle vous recevez plusieurs colis et plusieurs mails de confirmation/d&rsquo;exp&eacute;dition si vous avez command&eacute; des produits aupr&egrave;s de marques diff&eacute;rentes&#160;;<br />
+      <br />
+      PAIEMENT<br />
+      <br />
+      Quels sont les moyens de paiement ?<br />
+      Toutes les cartes de paiement ou de cr&eacute;dit, valables en France et en cours de validit&eacute;, sous r&eacute;serve de leur acceptation par l&rsquo;Emetteur (Visa, MasterCard, CB) sont accept&eacute;es.<br />
+      <br />
+      Le paiement est-il bien s&eacute;curis&eacute; ?<br />
+      Le paiement sur le site est effectu&eacute; de A &agrave; Z via une connexion s&eacute;curis&eacute;e, et s'effectue par l'interm&eacute;diaire du prestataire de paiement s&eacute;curis&eacute; Stripe.<br />
+      <br />
+      Je n&rsquo;arrive pas &agrave; finaliser mon paiement.<br />
+      Si votre paiement n&rsquo;aboutit pas, cela peut-&ecirc;tre d&ucirc; &agrave; 3 raisons principales<br />
+      - Manque de fonds<br />
+      - Erreur d&rsquo;authentification pour les commandes de plus de 100 euros (3DSecure) : V&eacute;rifiez que vous avez re&ccedil;u un texto avec un code de s&eacute;curit&eacute; &agrave; rentrer pour pouvoir r&eacute;gler la commande (ou que vous avez bien suivi la proc&eacute;dure sp&eacute;cifique &agrave; votre banque pour l'autorisation du paiement)<br />
+      - Utilisation d'une carte &eacute;trang&egrave;re ou autre carte non accept&eacute;e<br />
+      Si vous n&rsquo;&ecirc;tes pas concern&eacute;(e)s par les &eacute;l&eacute;ments ci-dessus, vous pouvez essayer<br />
+      - De vider votre panier, vous d&eacute;connecter et recommencer le processus d&rsquo;achat<br />
+      - De passer commande via un autre navigateur.<br />
+      <br />
+    </p>
   </section>
 
-    <!-- Footer -->
-  <footer class="text-center" id="footer">
-    <div class="line-bleu-bottom">
-    </div>
-    <div class="line-red-bottom">
-    </div>
-    <div class="footer-above">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col col-md-4">
-            <h4>A propos</h4>
-            <div class="link-footer">
-              <a href="/faq/">F.A.Q.</a><br>
-              <a href="/cg/">Conditions Générales</a><br>
-              <a href="/mentions/">Mentions Légales</a>
-            </div>
-          </div>
-          <div class="footer-col col-md-4">
-            <h4>Suivez-nous</h4>
-            <ul class="list-inline">
-              <li>
-                <a target="_blank" href="https://www.facebook.com/lesocialmarket/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://twitter.com/lesocialmarket" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col col-md-4">
-            <ul class="list-inline">
-            <h4>Contactez-nous</h4>
-            <li>
-              <a href="mailto:contact@lesocialmarket.fr" class="btn-social btn-outline"><i class="fa fa-envelope"></i></a>
-            </li>
-          </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-below">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            Le Social Market &copy; 2016
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <!-- Footer -->
+  <%= render "layouts/footer" %>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-top page-scroll visible-xs visible-sm">
-    <a class="btn btn-primary" href="#home">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <%= render "layouts/scroll_top" %>
 
 </body>
 

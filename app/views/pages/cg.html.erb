@@ -13,234 +13,166 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="glyphicon glyphicon-menu-hamburger"></span>
-        </button>
-        <%= link_to image_tag("logotsm.png", class: "img-responsive logo", size: "100x100", alt: "le social market logo"),'/'%>
-      </div>
+  <%= render partial: "layouts/navbar",
+              locals: {
+                menu: {
+                  "/" => "Accueil"
+                  #"#{shop_root}" => "La Social Boutique"
+                }
+              }
+  %>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <div class="navbar-color" id="nav-color">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="page-scroll">
-              <a href="/shop/">La Social Boutique</a>
-            </li>
-          </ul>
-        </div>
-      </div> <!-- /.navbar-collapse -->
-    </div> <!-- /.container-fluid -->
-    <div class="line-bleu-bottom">
-    </div>
-    <div class="line-red-bottom">
-    </div>
-    </nav>
+  <div id="top"></div>
 
-  <!-- Header -->
-  <section class="container" >
+  <section class="container" id="home">
     <section class="container title">
-	<h1>Conditions Générales de Ventes</h1>
-</section>
-<p align="left" style="font-weight:normal">
-  <br />
-  1 Objet &ndash; Champ d&rsquo;application &ndash; Modification des Conditions g&eacute;n&eacute;rales<br />
-  1.1 Les pr&eacute;sentes conditions g&eacute;n&eacute;rales (ci-apr&egrave;s les &laquo; Conditions g&eacute;n&eacute;rales &raquo;) r&eacute;gissent les conditions d&rsquo;utilisation du site www.lesocialmarket.fr (ci-apr&egrave;s le &laquo; Site &raquo;), &eacute;dit&eacute; par l&rsquo;association ASSOCIATION LE SOCIAL MARKET, association loi 1901 domicili&eacute;e au 57 rue du cherche-midi, par tout utilisateur (ci-apr&egrave;s d&eacute;nomm&eacute; le &laquo; Client &raquo;) du site, ci-apr&egrave;s d&eacute;nomm&eacute;s ensemble les &laquo; Parties &raquo; ou individuellement la &laquo; Partie &raquo;. Le terme de Client est indiff&eacute;remment utilis&eacute; que l&rsquo;utilisateur du Site ait effectu&eacute; une commande ou non, aupr&egrave;s des fournisseurs proposant leurs produits sur le Site.<br />
-  1.2 Le site www.lesocialmarket.fr permet aux Clients de s&eacute;lectionner et d&rsquo;acqu&eacute;rir des produits de mode, de technologie, de d&eacute;coration, de sport aupr&egrave;s de fabricants, de distributeurs ou de cr&eacute;ateurs (ci-apr&egrave;s les &laquo; Fournisseurs &raquo;), et de reverser une partie du montant de la vente &agrave; des associations (ci-apr&egrave;s les &laquo;&#160;Associations&#160;&raquo;). Les Produits sont directement choisis, mis en ligne sur le Site et livr&eacute;s par les Fournisseurs. L&rsquo;Association Le Social Market est dans ce cadre un interm&eacute;diaire entre les Fournisseurs et les Clients en mettant &agrave; leur disposition le Site qui permet leur mise en relation.<br />
-  L&rsquo;Association Le Social Market met tout en oeuvre pour s&eacute;lectionner les Fournisseurs susceptibles d&rsquo;offrir le meilleur service aux Clients. N&eacute;anmoins elle ne saurait &ecirc;tre responsable de la mauvaise ou l&rsquo;inex&eacute;cution de leurs obligations.<br />
-  1.3. Les Fournisseurs en commercialisant sur le Site, s&rsquo;engagent &agrave; respecter certaines obligations, notamment l&eacute;gales. Les dites obligations particuli&egrave;rement celles relatives &agrave; la livraison, &agrave; la r&eacute;tractation, et aux garanties l&eacute;gales, sont mentionn&eacute;es dans les Conditions g&eacute;n&eacute;rales et n&rsquo;engagent que les Fournisseurs, &agrave; l&rsquo;exclusion de l&rsquo;Association Le Social Market. Les Clients sont inform&eacute;s que les Fournisseurs ont leur propre organisation et qu&rsquo;ils doivent d&egrave;s lors s&rsquo;informer des modalit&eacute;s de livraison, de retour, de r&eacute;tractation, et de toute autre modalit&eacute; concernant les Produits et leur vente. Les Clients peuvent contacter les Fournisseurs gr&acirc;ce &agrave; une adresse mail fournie sur leur mail d&rsquo;enregistrement de commande.<br />
-  1.4. Avant la validation de toute commande sur le site www.lesocialmarket.fr le client est inform&eacute; qu&rsquo;en cliquant sur un bouton &laquo;&#160;Finaliser l&rsquo;Achat&#160;&raquo; il accepte les pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente avec la phrase &laquo;&#160;En continuant vous acceptez nos Conditions G&eacute;n&eacute;rales de Vente&#160;&raquo;. En cliquant, le Client accepte donc sans r&eacute;serve les Conditions g&eacute;n&eacute;rales qui pr&eacute;valent sur toute autre document &eacute;manant du Client. Le Client est invit&eacute; &agrave; sauvegarder sous sa propre responsabilit&eacute; les Conditions g&eacute;n&eacute;rales par tout moyen dont il dispose. Pour rappel, l&rsquo;utilisation du site par un visiteur implique que le visiteur accepte pleinement les d&rsquo;utilisation du site dans leur totalit&eacute;.<br />
-  1.5. L&rsquo;Association Le Social Market se r&eacute;serve le droit de modifier les Conditions g&eacute;n&eacute;rales &agrave; tout moment. En cas de modification, les Conditions g&eacute;n&eacute;rales applicables sont celles en vigueur &agrave; la date de la navigation et/ou de la commande de Produits effectu&eacute;e par le Client. Afin de faciliter la bonne application des Conditions g&eacute;n&eacute;rales, la date d&rsquo;entr&eacute;e en vigueur et le num&eacute;ro de version sont indiqu&eacute;s en en-t&ecirc;te des Conditions g&eacute;n&eacute;rales.<br />
-  <br />
-   2 Informations sur les Produits &ndash; Disponibilit&eacute; des Produits<br />
-  2.1. Le Client est inform&eacute; que les couleurs des photographies des Produits peuvent, en raison de la qualit&eacute; de r&eacute;solution utilis&eacute;e sur l&rsquo;ordinateur du Client, diff&eacute;r&eacute;es de celles du Produit livr&eacute;. Les descriptifs et photographies des produits sont fournies par les Fournisseurs, mais peuvent &ecirc;tre r&eacute;&eacute;crits dans l&rsquo;optique de maximiser les ventes par l&rsquo;Association Le Social Market.<br />
-  Le Client est invit&eacute; &agrave; interroger le service clients des Fournisseurs &agrave; partir de l&rsquo;adresse email fournie dans l&rsquo;email d&rsquo;enregistrement de commande, et en cas de non-r&eacute;ponse dans un d&eacute;lai de sept (7) jours, le Service clients de l&rsquo;Association Le Social Market dont les coordonn&eacute;es sont mentionn&eacute;es &agrave; la fin des Conditions g&eacute;n&eacute;rales, pour toute demande relative au Produit ou en cas d&rsquo;information manquante ou qui lui semble erron&eacute;e.<br />
-  2.2. La disponibilit&eacute; des Produits est affich&eacute;e sur la page concernant le Produit.<br />
-  2.3. Si les Fournisseurs mettent tout en oeuvre pour v&eacute;rifier en temps r&eacute;el la disponibilit&eacute; de chaque Produit, ce dernier peut cependant s&rsquo;av&eacute;rer indisponible. Les Fournisseurs se sont engag&eacute;s &agrave; informer le Client, par message diffus&eacute; par le syst&egrave;me de messagerie du Site, d&egrave;s qu&rsquo;ils ont connaissance de l&rsquo;indisponibilit&eacute; du Produit dans un d&eacute;lai de sept (7) jours &agrave; compter de la date de la commande. Les Fournisseurs doivent informer le Client :<br />
-   &bull; du d&eacute;lai de disponibilit&eacute; du Produit et du d&eacute;lai de livraison qui s&rsquo;ensuit ;<br />
-   &bull; ou de l&rsquo;indisponibilit&eacute; permanente du Produit. Dans ce cas, conform&eacute;ment aux dispositions de l&rsquo;article L 121-20-3 du Code de la consommation, ils proc&eacute;deront &agrave; la demande du Client :<br />
-   &bull; au remboursement du Produit dans les trente (30) jours, &agrave; compter de la date de la commande du Client ;<br />
-   &bull; ou &agrave; l&rsquo;attribution d&rsquo;un avoir valable pendant une ann&eacute;e.<br />
-   3 Proc&eacute;dure de commande<br />
-  3.1. Seuls les Clients juridiquement capables peuvent commander sur le Site.<br />
-  3.2. Les commandes sont n&eacute;cessairement effectu&eacute;es sur le Site &agrave; l&rsquo;exclusion de tout autre medium.<br />
-  3.3. Le Client doit avant de proc&eacute;der &agrave; toute commande cr&eacute;er son compte personnel en renseignant les donn&eacute;es indiqu&eacute;es sur le formulaire d&rsquo;inscription. Le Client est le seul responsable des donn&eacute;es renseign&eacute;es, non seulement en ce qui concerne leur exactitude mais aussi leur conservation. Il est le seul responsable de toute communication aupr&egrave;s de tiers que ce soit par erreur, n&eacute;gligence ou faute et de leur utilisation frauduleuse. En cas d&rsquo;utilisation frauduleuse du compte personnel du Client, ce dernier devra en informer l&rsquo;Association Le Social Market dans les plus brefs d&eacute;lais en envoyant un courriel &agrave; l&rsquo;adresse suivante :&#160;contact@lesocialmarket.fr.<br />
-  L&rsquo;acc&egrave;s au compte personnel est effectu&eacute; gr&acirc;ce &agrave; l&rsquo;adresse &eacute;lectronique indiqu&eacute;e lors de sa cr&eacute;ation et du mot de passe confidentiel cr&eacute;e par le Client.<br />
-  En cas d&rsquo;oubli du mot de passe, le Client peut demander la cr&eacute;ation d&rsquo;un nouveau mot de passe selon la proc&eacute;dure indiqu&eacute;e sur le formulaire d&rsquo;identification.<br />
-  3.3. Le Client afin de passer la commande de Produit doit s&eacute;lectionner l&rsquo;item pr&eacute;vu &agrave; cet effet et valider son ajout au &laquo; Panier &raquo;. La passation de la commande s&rsquo;effectue &agrave; partir de la page intitul&eacute;e &laquo; Panier &raquo; avec le syst&egrave;me du &laquo; double clic &raquo;, le premier pour finaliser la commande et le deuxi&egrave;me pour la valider. Pr&eacute;alablement &agrave; la validation de la commande (deuxi&egrave;me &laquo; clic &raquo;) le Client peut modifier sa commande.<br />
-  Il sera demand&eacute; au Client de choisir le mode de livraison du(des) Produit(s) en fonction des options propos&eacute;es par le Fournisseur.<br />
-  Le Client est invit&eacute; &agrave; v&eacute;rifier l&rsquo;&eacute;tat de sa commande visible dans la page &laquo; Panier &raquo; avant sa validation d&eacute;finitive. Les Conditions g&eacute;n&eacute;rales devront &ecirc;tre lues et accept&eacute;es par le Client afin d&rsquo;acc&eacute;der &agrave; l&rsquo;&eacute;tape de validation d&eacute;finitive de la commande.<br />
-  Lorsque le paiement est effectu&eacute;, dans les conditions d&eacute;finies ci-apr&egrave;s, le Client recevra une confirmation de la commande par courriel qui ne constitue qu&rsquo;un seul accus&eacute; de r&eacute;ception de celle-ci. La commande ne deviendra d&eacute;finitive qu&rsquo;apr&egrave;s l&rsquo;envoi par le Fournisseur d&rsquo;un courriel de validation de la commande, &agrave; l&rsquo;adresse &eacute;lectronique indiqu&eacute;e dans le compte personnel du Client, r&eacute;capitulant les &eacute;l&eacute;ments de la commande (Produit, prix, mode de paiement, frais de livraison, mode de livraison, etc&#8230;).<br />
-  <br />
-   4 Prix<br />
-  4.1. Les prix des Produits sont exprim&eacute;s en euros et prennent en compte la T.V.A. en vigueur au jour de la commande. Les frais d&rsquo;emballage et de livraison peuvent venir en suppl&eacute;ment du prix total du(des) Produits command&eacute;(s) en fonction de la politique de livraison des Fournisseurs.<br />
-  4.2. Si les Fournisseurs constatent une erreur manifeste relative &agrave; l&rsquo;un des quelconques &eacute;l&eacute;ments de la page relative au Produit command&eacute;, ils se r&eacute;servent le droit de r&eacute;soudre la commande. L&rsquo;Association Le Social Market assurera le remboursement complet du prix pay&eacute; par le Client, sans encourir de responsabilit&eacute; &agrave; cet &eacute;gard.<br />
-  4.3. Le Client est tenu de payer le prix du Produit affich&eacute; le jour de la commande, alors m&ecirc;me que les Fournisseurs l&rsquo;auraient modifi&eacute; peu apr&egrave;s.<br />
-  <br />
-   5 Paiement<br />
-  5.1. L&rsquo;Association Le Social Market a re&ccedil;u de la part des Fournisseurs le mandat de percevoir le prix des commandes de Produits et de traiter toutes r&eacute;clamations relatives au paiement.<br />
-  5.2. Le paiement du prix du Produit est effectu&eacute; par carte bancaire (Carte Bleue, Visa, Eurocard/Mastercard, American Express).<br />
-  5.3. En cas de refus du paiement par la banque du Client, la commande ne sera pas valid&eacute;e.<br />
-  5.4. Le paiement sera d&eacute;bit&eacute; dans les douze heures qui suivent la validation de la commande par le Client gr&acirc;ce &agrave; la carte bancaire enregistr&eacute;e sur le compte personnel du Client que ce dernier aura s&eacute;lectionn&eacute; sur la page &laquo; Panier &raquo;.<br />
-  5.5. Les Fournisseurs et/ou l&rsquo;Association Le Social Market pourront refuser toute commande de tout Client avec lequel il existe un litige non encore r&eacute;solu &agrave; la date de la commande, sans encourir de responsabilit&eacute; &agrave; cet &eacute;gard.<br />
-  5.6. Les paiements par carte bancaire sur le Site sont totalement s&eacute;curis&eacute;s par le syst&egrave;me Stripe (https://stripe.com/about ) Les conditions g&eacute;n&eacute;rales d&rsquo;utilisation de Stripe sont disponible ici en anglais https://stripe.com/fr/terms . Une fois le paiement vers&eacute; sur notre compte nous divisons le montant entre l&rsquo;Association Le Social Market, les Fournisseurs et les Associations. L&rsquo;Association Le Social Market, les Fournisseurs et les Associations n&rsquo;ont acc&egrave;s &agrave; aucune donn&eacute;e bancaire du Client.<br />
-  <br />
-   6 Livraison<br />
-  6.1. Les dispositions qui suivent sont suppl&eacute;tives &agrave; celles du Fournisseur qui seraient plus favorables. Le Client devra prendre toutes les informations n&eacute;cessaires aux modalit&eacute;s de livraison aupr&egrave;s de chaque Fournisseur.<br />
-  Les Produits sont livr&eacute;s par les Fournisseurs &agrave; l&rsquo;adresse indiqu&eacute;e par le Client, lors de la passation de la commande, situ&eacute;e sur l&rsquo;ensemble des territoires indiqu&eacute;s par les Fournisseurs concern&eacute;s dans leurs param&egrave;tres du Site.<br />
-  Le Client est le seul responsable de l&rsquo;adresse qu&rsquo;il aura mentionn&eacute; lors de la commande. Il devra r&eacute;ceptionner la commande selon le mode de livraison choisi et selon les indications donn&eacute;es par les Fournisseurs.<br />
-  6.2. La commande est livr&eacute;e dans un d&eacute;lai maximum de trente (30) jours, &agrave; compter du jour de l&rsquo;envoi du courriel de validation d&eacute;finitive de la commande.<br />
-  Le d&eacute;lai de livraison s&rsquo;ach&egrave;ve &agrave; la premi&egrave;re pr&eacute;sentation de la commande &agrave; l&rsquo;adresse de livraison indiqu&eacute;e par le Client, selon le mode de livraison choisi par le Client.<br />
-  6.3. &Agrave; d&eacute;faut de retrait du Produit dans les d&eacute;lais, il sera retourn&eacute; chez le Fournisseur.<br />
-  6.4. Le Client supporte l&rsquo;ensemble des risques li&eacute;s au Produit le jour de son exp&eacute;dition. Les Fournisseurs informent le Client de l&rsquo;exp&eacute;dition du Produit par courrier &eacute;lectronique, &agrave; l&rsquo;adresse &eacute;lectronique indiqu&eacute;e dans le compte personnel du Client.<br />
-  6.5. Le Client devra n&eacute;cessairement v&eacute;rifier l&rsquo;&eacute;tat du Produit au moment de sa livraison, et devra mentionner toutes les r&eacute;serves utiles aupr&egrave;s du transporteur ou toute autre personne habilit&eacute;e, sur le document pr&eacute;vu &agrave; cet effet. Il peut aussi refuser le colis purement et simplement. Le Client dispose de trois (3) jours, &agrave; l&rsquo;exclusion des jours f&eacute;ri&eacute;s, sous peine de forclusion, pour faire savoir au transporteur, par lettre recommand&eacute;e, que le Produit est endommag&eacute;.<br />
-  6.6. Conform&eacute;ment &agrave; l&rsquo;article L.114-1 du Code de la consommation, en cas de retard de livraison de plus de sept (7) jours, le Client peut annuler sa commande par lettre recommand&eacute;e avec accus&eacute; r&eacute;ception, dans un d&eacute;lai de soixante jours (60) ouvr&eacute;s &agrave; compter de la date limite de livraison du Produit aupr&egrave;s des Fournisseurs. Les Fournisseurs se sont engag&eacute;s selon le choix du Client, dans un d&eacute;lai de trente (30) jours &agrave; compter de la demande du Client :<br />
-   &bull; &agrave; rembourser le prix du Produit ;<br />
-   &bull; &agrave; r&eacute;exp&eacute;dier le Produit aux frais du Fournisseur ;<br />
-   &bull; &agrave; attribuer un avoir au Client valable un an d&rsquo;un montant &eacute;gal au prix du Produit et au montant des frais li&eacute;s &agrave; la livraison.<br />
-  6.7.&#160;Les Fournisseurs et a fortiori l&rsquo;Association Le Social Market ne sauraient &ecirc;tre responsables du d&eacute;faut ou des retards de livraison dus, &agrave; une cause de force majeure ou &agrave; une cause imputable au Client. Le Client ne pourra d&egrave;s lors se pr&eacute;valoir de la proc&eacute;dure d&eacute;crite pr&eacute;c&eacute;demment.<br />
-  6.8.&#160;De m&ecirc;me en raison du transfert des risques ils ne sauraient &ecirc;tre responsables de la perte du Produit command&eacute; &agrave; compter du jour de son exp&eacute;dition.<br />
-  <br />
-   7 Droit de r&eacute;tractation<br />
-  7.1. Conform&eacute;ment aux articles L.121-20 et suivants du Code de la consommation, le Client b&eacute;n&eacute;ficie d&rsquo;un d&eacute;lai de sept (7) jours francs, sans avoir &agrave; justifier de motif, ni &agrave; payer de p&eacute;nalit&eacute;s, sauf les frais de retour. Le d&eacute;lai de r&eacute;tractation court &agrave; compter de la date de r&eacute;ception du Produit command&eacute; par le Client.<br />
-  Le Client doit retourner aux Fournisseurs le Produit conform&eacute;ment &agrave; la proc&eacute;dure d&eacute;finie ci-apr&egrave;s compl&eacute;t&eacute;e par celle indiqu&eacute;e par le Fournisseur, dans son emballage d&rsquo;origine et en bon &eacute;tat, propre &agrave; sa revente avec tout ses accessoires et autres &eacute;l&eacute;ments livr&eacute;s avec lui et demander l&rsquo;&eacute;change ou le remboursement ou encore un avoir valable pendant une dur&eacute;e de un an. On entend par &eacute;tat d&rsquo;origine le Produit qui n&rsquo;a pas fait l&rsquo;objet et ne porte aucune trace d&rsquo;une utilisation prolong&eacute;e.<br />
-  Le Client doit dans ce cadre contacter le Service client du Fournisseur par l&rsquo;interm&eacute;diaire de l&rsquo;adresse email fournie dans l&rsquo;email d&rsquo;enregistrement de commande envoy&eacute; par l&rsquo;Association Le Social Market ou en cas de non-r&eacute;ponse dans un d&eacute;lai de sept (7) jours le Service client de l&rsquo;Association Le Social Market, dont les coordonn&eacute;es sont mentionn&eacute;es &agrave; la fin des Conditions G&eacute;n&eacute;rales ;<br />
-  Dans le cas d&rsquo;un remboursement, l&rsquo;Association Le Social Market s&rsquo;engage &agrave; rembourser le Client, au plus tard dans les trente (30) jours suivant la date &agrave; laquelle le Client a exerc&eacute; son droit de r&eacute;tractation, sous r&eacute;serve que le Produit ait &eacute;t&eacute; retourn&eacute; au Fournisseur.<br />
-  7.2. Le droit de r&eacute;tractation ne peut&ndash;&ecirc;tre exerc&eacute; dans les cas mentionn&eacute;s aux articles L121-20-2 et de l&rsquo;article L 121-20-4 du Code de la Consommation.<br />
-  7.3. A l&rsquo;expiration du d&eacute;lai de r&eacute;tractation, le Client n&rsquo;a aucun droit au remboursement de la commande, alors m&ecirc;me qu&rsquo;il aurait retourn&eacute; le Produit &agrave; l&rsquo;Association Le Social Market ou au Fournisseur, et peu importe que l&rsquo;un de ces derniers ait accept&eacute; de reprendre le Produit.<br />
-  <br />
-   8 Proc&eacute;dure de retour des Produits<br />
-  En cas de r&eacute;tractation ou en cas d&rsquo;&eacute;change de Produit non-conformes, les Produits devront &ecirc;tre retourn&eacute;s selon les modalit&eacute;s indiqu&eacute;es par le Fournisseur. Le Client pour toute demande pr&eacute;alable ou r&eacute;clamation relative aux retours de Produits devra entrer en contact avec le Fournisseur par l&rsquo;interm&eacute;diaire de l&rsquo;adresse email fournie dans l&rsquo;email d&rsquo;enregistrement de commande envoy&eacute; par l&rsquo;Association Le Social Market.<br />
-  <br />
-   9 Responsabilit&eacute;<br />
-  9.1. L&rsquo;Association Le Social Market s&rsquo;engage &agrave; mettre tout en oeuvre pour permettre l&rsquo;acc&egrave;s au Site 24 heures sur 24 et 7 jours sur 7. N&eacute;anmoins elle ne peut garantir le dit acc&egrave;s en cas de force majeure, de pannes ou d&rsquo;interventions de maintenance n&eacute;cessaires &agrave; son bon fonctionnement, le tout sans pr&eacute;avis et sans aucun droit &agrave; indemnit&eacute;.<br />
-  9.2. L&rsquo;Association Le Social Market n&rsquo;est pas responsable des cons&eacute;quences, telles qu&rsquo;elles soient, li&eacute;es &agrave; l&rsquo;utilisation d&rsquo;Internet. Il est conseill&eacute; par ailleurs au Client de sauvegarder les donn&eacute;es concernant la commande.<br />
-  9.3. La livraison et la qualit&eacute; des Produits sont exclusivement de la responsabilit&eacute; des Fournisseurs, &agrave; l&rsquo;exclusion de celle de l&rsquo;Association Le Social Market, qui ne pourra &ecirc;tre responsable que des litiges relatifs au paiement de la commande. Tout autre litige devra &ecirc;tre port&eacute; &agrave; la connaissance des Fournisseurs. N&eacute;anmoins l&rsquo;Association Le Social Market pourra intervenir en qualit&eacute; d&rsquo;interm&eacute;diaire afin de les r&eacute;gler dans les meilleures conditions.<br />
-  9.4. L&rsquo;Association Le Social Market met tout en oeuvre pour remplir ses obligations. En cas d&rsquo;inex&eacute;cution ou de mauvaise ex&eacute;cution de ces derni&egrave;res, la responsabilit&eacute; de l&rsquo;Association Le Social Market est limit&eacute;e au montant de la commande du Client. La limitation de responsabilit&eacute; est exclue dans les cas &eacute;num&eacute;r&eacute;s par la loi et qui ont un caract&egrave;re imp&eacute;ratif.<br />
-  <br />
-   10 Garanties l&eacute;gales<br />
-  Le Client b&eacute;n&eacute;ficie aupr&egrave;s des Fournisseurs, &agrave; l&rsquo;exclusion de l&rsquo;Association Le Social Market, de la garantie l&eacute;gale de non-conformit&eacute; et des vices cach&eacute;s, telles que prescrites par la loi dont les articles sont reproduits ci-apr&egrave;s.<br />
-  Article L211-4 du Code de la Consommation<br />
-  Le vendeur est tenu de livrer un bien conforme au contrat et r&eacute;pond des d&eacute;fauts de conformit&eacute; existants lors de la d&eacute;livrance.<br />
-  Il r&eacute;pond &eacute;galement des d&eacute;fauts de conformit&eacute; r&eacute;sultant de l&rsquo;emballage, des instructions de montage ou de l&rsquo;installation lorsque celle-ci a &eacute;t&eacute; mise &agrave; sa charge par le contrat ou a &eacute;t&eacute; r&eacute;alis&eacute;e sous sa responsabilit&eacute;.<br />
-  Article L211-5 du Code de la Consommation<br />
-  Pour &ecirc;tre conforme au contrat, le bien doit :<br />
-  1&deg; Etre propre &agrave; l&rsquo;usage habituellement attendu d&rsquo;un bien semblable et, le cas &eacute;ch&eacute;ant :<br />
-   &bull; Correspondre &agrave; la description donn&eacute;e par le vendeur et poss&eacute;der les qualit&eacute;s que celui-ci a pr&eacute;sent&eacute;es &agrave; l&rsquo;acheteur sous forme d&rsquo;&eacute;chantillon ou de mod&egrave;le ;<br />
-   &bull; Pr&eacute;senter les qualit&eacute;s qu&rsquo;un acheteur peut l&eacute;gitimement attendre eu &eacute;gard aux d&eacute;clarations publiques faites par le vendeur, par le producteur ou par son repr&eacute;sentant, notamment dans la publicit&eacute; ou l&rsquo;&eacute;tiquetage ;<br />
-  2&deg; Ou pr&eacute;senter les caract&eacute;ristiques d&eacute;finies d&rsquo;un commun accord par les parties ou &ecirc;tre propre &agrave; tout usage sp&eacute;cial recherch&eacute; par l&rsquo;acheteur, port&eacute; &agrave; la connaissance du vendeur et que ce dernier a accept&eacute;.<br />
-  Article L211-12 du Code de la Consommation<br />
-  L&rsquo;action r&eacute;sultant du d&eacute;faut de conformit&eacute; se prescrit par 2 ans &agrave; compter de la d&eacute;livrance du bien.<br />
-  Article 1641 du Code Civil<br />
-  Le vendeur est tenu de la garantie &agrave; raison des d&eacute;fauts cach&eacute;s de la chose vendue qui la rendent impropre &agrave; l&rsquo;usage auquel on la destine, ou qui diminuent tellement cet usage que l&rsquo;acheteur ne l&rsquo;aurait pas acquise, ou n&rsquo;en aurait donn&eacute; qu&rsquo;un moindre prix, s&rsquo;il les avait connus.<br />
-  Article 1648 alin&eacute;a 1er du Code Civil<br />
-  L&rsquo;action r&eacute;sultant des vices r&eacute;dhibitoires doit &ecirc;tre intent&eacute;e par l&rsquo;acheteur dans un d&eacute;lai de 2 ans &agrave; compter de la d&eacute;couverte du vice.<br />
-  Pour b&eacute;n&eacute;ficier de la garantie l&eacute;gale de conformit&eacute; ou de la garantie des vices cach&eacute;s, le Client doit contacter le Fournisseur par l&rsquo;interm&eacute;diaire de l&rsquo;adresse email fournie dans l&rsquo;email d&rsquo;enregistrement de commande envoy&eacute; par l&rsquo;Association Le Social Market; En cas de non-r&eacute;ponse pendant un d&eacute;lai de sept (7) jours, le Client doit en informer le Service client de l&rsquo;Association Le Social Market dont les coordonn&eacute;es sont mentionn&eacute;es &agrave; la fin des Conditions g&eacute;n&eacute;rales.<br />
-  Le Client sera rembours&eacute; par le Fournisseur des frais r&eacute;sultant du retour du Produit.<br />
-  <br />
-   11 Donn&eacute;es personnelles &ndash; Cookies<br />
-  11.1. L&rsquo;Association Le Social Market collecte certaines informations personnelles des Clients sur le Site (ci-apr&egrave;s les &laquo; Informations &raquo;) afin de traiter les commandes, et traiter leur paiement. Si le Client s&rsquo;oppose &agrave; la collecte des Informations, la commande ne pourra &ecirc;tre effectu&eacute;e.<br />
-  l&rsquo;Association Le Social Market utilise par ailleurs les Informations afin de communiquer aux Clients les actualit&eacute;s et nouveaut&eacute;s de l&rsquo;Association Le Social Market.<br />
-  D&rsquo;une mani&egrave;re g&eacute;n&eacute;rale, les Informations des Clients collect&eacute;es permettent de personnaliser et d&rsquo;am&eacute;liorer la qualit&eacute; du Site et la navigation des Client ainsi que des services associ&eacute;s au Site.<br />
-  11.2. l&rsquo;Association Le Social Market est responsable du traitement des informations personnelles des Clients.<br />
-  11.3. Dans le cadre du traitement des informations dont l&rsquo;objet est mentionn&eacute; ci-dessus, l&rsquo;Association Le Social Market divulgue le contenu appropri&eacute;, aux Fournisseurs et aux prestataires charg&eacute;s d&rsquo;assurer la livraison des Produits.<br />
-  11.4. l&rsquo;Association Le Social Market divulgue n&eacute;cessairement les Informations aupr&egrave;s des autorit&eacute;s administratives ou judiciaires qui le lui demanderaient sur injonction.<br />
-  11.5. Le Client peut choisir &agrave; tout moment, dans la rubrique d&eacute;di&eacute;e sur le Site, d&rsquo;&ecirc;tre inform&eacute; de l&rsquo;actualit&eacute; de l&rsquo;Association Le Social Market en cr&eacute;ant un compte et en param&eacute;trant ses notifications par courriel.<br />
-  Dans les deux cas qui pr&eacute;c&eacute;dent, le Client peut &agrave; tout moment revenir sur son accord en cliquant sur le lien &lsquo;unsubscribe&rsquo; sur un mail Social Market.<br />
-  <br />
-   12 Propri&eacute;t&eacute; intellectuelle &ndash; Protection des bases de donn&eacute;es<br />
-  12.1. Tout le contenu pr&eacute;sent sur le Site, sans aucune exclusion, y compris les bases de donn&eacute;es et les technologies utilis&eacute;es par l&rsquo;Association Le Social Market sont la propri&eacute;t&eacute; de cette derni&egrave;re, ou de ses Fournisseurs et partenaires, et est prot&eacute;g&eacute; par le droit de la propri&eacute;t&eacute; intellectuelle.<br />
-  12.2. Il est formellement interdit d&rsquo;extraire, reproduire, r&eacute;utiliser tout ou partie du contenu du Site sauf autorisation &eacute;crite et expresse de l&rsquo;Association Le Social Market. Tout accord donn&eacute; par l&rsquo;Association Le Social Market ou par le titulaire des droits de propri&eacute;t&eacute; ne cr&eacute;e en aucun cas au profit du Client un droit intangible et pourra &ecirc;tre d&eacute;nonc&eacute; &agrave; tout moment par l&rsquo;Association Le Social Market ou le titulaire des droits sur simple de demande. Le Client devra obtemp&eacute;rer sans d&eacute;lai.<br />
-  Il est par ailleurs totalement interdit d&rsquo;utiliser des techniques telles que celles du framing.<br />
-  <br />
-   13 Invalidit&eacute; partielle &ndash; Int&eacute;gralit&eacute; du contrat &ndash; Tol&eacute;rance<br />
-  13.1. Les clauses des Conditions g&eacute;n&eacute;rales r&eacute;put&eacute;es nulles ou inapplicables pour quelle que raison que ce soit, n&rsquo;affecteront en aucun cas la validit&eacute; des autres clauses des Conditions g&eacute;n&eacute;rales qui restent effectives.<br />
-  13.2. Les Conditions g&eacute;n&eacute;rales et l&rsquo;ensemble des donn&eacute;es relatives &agrave; la commande communiqu&eacute;es au Client, constituent l&rsquo;int&eacute;gralit&eacute; des relations contractuelles intervenues entre les Parties et forment un tout indivisible.<br />
-  13.3. En cas de contradiction entre ces documents, les Conditions g&eacute;n&eacute;rales pr&eacute;vaudront.<br />
-  13.4. La simple tol&eacute;rance du non-respect d&rsquo;une disposition des Conditions g&eacute;n&eacute;rales par l&rsquo;une des Parties ne constituera en aucun cas un abandon de droit ou une renonciation ni une modification des Conditions g&eacute;n&eacute;rales. Le fait que l&rsquo;une des Parties ne mette pas en oeuvre l&rsquo;un des droits qui lui est conc&eacute;d&eacute; par les Conditions g&eacute;n&eacute;rales ne veut pas dire qu&rsquo;elle renonce pour l&rsquo;avenir &agrave; ce droit.<br />
-  <br />
-  14. Conservation des donn&eacute;es &ndash; Convention de preuve<br />
-  14.1. Conform&eacute;ment &agrave; l&rsquo;article L134-2 du Code de la consommation, l&rsquo;Association Le Social Market assure la conservation des documents relatifs &agrave; la commande effectu&eacute;e par le Client, qui peut &agrave; tout moment en demander la communication.<br />
-  14.2. Les messages re&ccedil;us par voie &eacute;lectronique, et plus g&eacute;n&eacute;ralement les documents &eacute;lectroniques &eacute;chang&eacute;s entre les Parties, auront la m&ecirc;me valeur que celle accord&eacute;e aux originaux. Les Parties conserveront les documents &eacute;lectroniques de telle mani&egrave;re qu&rsquo;elles puissent constituer des copies fid&egrave;les et durables au sens de l&rsquo;article 1348 du code civil.<br />
-  14.3. La confirmation du paiement de la commande par le Client sur le Site vaut signature &eacute;lectronique du Client et la preuve de la commande.<br />
-  <br />
-   15 Service Client de l&rsquo;Association Le Social Market<br />
-  Pour toute demande d&rsquo;information, r&eacute;clamation le Client peut joindre le Service client :<br />
-   &bull; par courriel en &eacute;crivant &agrave; contact@lesocialmarket.fr ;<br />
-   &bull; par courrier en &eacute;crivant &agrave; : A l&rsquo;Attention de C&eacute;cile Compte - Association Le Social Market - 57 rue du cherche-midi 75006 Paris - FRANCE<br />
-  <br />
-   16 Droit applicable &ndash; Litiges &ndash; R&eacute;clamation<br />
-  16.1. Les Conditions g&eacute;n&eacute;rales sont r&eacute;gies par le droit fran&ccedil;ais &agrave; l&rsquo;exclusion de tout autre r&eacute;glementation.<br />
-  16.2. En cas de litige, le Client s&rsquo;adressera, pr&eacute;alablement &agrave; tout contentieux, aux Fournisseurs afin de trouver une solution amiable.<br />
-  16.3. Il est fait mention dans les Conditions g&eacute;n&eacute;rales de l&rsquo;intervention de l&rsquo;Association Le Social Market dans le cadre des r&eacute;clamations du Client aupr&egrave;s du Fournisseur, si ce dernier n&rsquo;intervient pas dans un certain d&eacute;lai. Le Client est inform&eacute; que l&rsquo;Association Le Social Market n&rsquo;a dans ce cadre qu&rsquo;un r&ocirc;le d&rsquo;interm&eacute;diaire entre les Parties afin de r&eacute;gler les r&eacute;clamations dans les meilleurs d&eacute;lais. Elle ne saurait intervenir en faveur de l&rsquo;une ou de l&rsquo;autre Partie.<br />
-  16.4. Tout litige auquel les Conditions g&eacute;n&eacute;rales pourraient donner lieu sera port&eacute; devant les juridictions comp&eacute;tentes en application des r&egrave;gles de droit commun.<br />
-  <br />
-   17 Informations relatives &agrave; la coordination du Site<br />
-  Editeur du Site lesocialmarket.fr<br />
-  Association Le Social Market association loi 1901 domicili&eacute;e au 57 rue du cherche-midi 75006 Paris France <br />
-  Courriel :&#160;contact@lesocialmarket.fr<br />
-</p>
+    	<h1>Conditions Générales de Ventes</h1>
+    </section>
+    <p align="left" style="font-weight:normal">
+      <br />
+      1 Objet &ndash; Champ d&rsquo;application &ndash; Modification des Conditions g&eacute;n&eacute;rales<br />
+      1.1 Les pr&eacute;sentes conditions g&eacute;n&eacute;rales (ci-apr&egrave;s les &laquo; Conditions g&eacute;n&eacute;rales &raquo;) r&eacute;gissent les conditions d&rsquo;utilisation du site www.lesocialmarket.fr (ci-apr&egrave;s le &laquo; Site &raquo;), &eacute;dit&eacute; par l&rsquo;association ASSOCIATION LE SOCIAL MARKET, association loi 1901 domicili&eacute;e au 57 rue du cherche-midi, par tout utilisateur (ci-apr&egrave;s d&eacute;nomm&eacute; le &laquo; Client &raquo;) du site, ci-apr&egrave;s d&eacute;nomm&eacute;s ensemble les &laquo; Parties &raquo; ou individuellement la &laquo; Partie &raquo;. Le terme de Client est indiff&eacute;remment utilis&eacute; que l&rsquo;utilisateur du Site ait effectu&eacute; une commande ou non, aupr&egrave;s des fournisseurs proposant leurs produits sur le Site.<br />
+      1.2 Le site www.lesocialmarket.fr permet aux Clients de s&eacute;lectionner et d&rsquo;acqu&eacute;rir des produits de mode, de technologie, de d&eacute;coration, de sport aupr&egrave;s de fabricants, de distributeurs ou de cr&eacute;ateurs (ci-apr&egrave;s les &laquo; Fournisseurs &raquo;), et de reverser une partie du montant de la vente &agrave; des associations (ci-apr&egrave;s les &laquo;&#160;Associations&#160;&raquo;). Les Produits sont directement choisis, mis en ligne sur le Site et livr&eacute;s par les Fournisseurs. L&rsquo;Association Le Social Market est dans ce cadre un interm&eacute;diaire entre les Fournisseurs et les Clients en mettant &agrave; leur disposition le Site qui permet leur mise en relation.<br />
+      L&rsquo;Association Le Social Market met tout en oeuvre pour s&eacute;lectionner les Fournisseurs susceptibles d&rsquo;offrir le meilleur service aux Clients. N&eacute;anmoins elle ne saurait &ecirc;tre responsable de la mauvaise ou l&rsquo;inex&eacute;cution de leurs obligations.<br />
+      1.3. Les Fournisseurs en commercialisant sur le Site, s&rsquo;engagent &agrave; respecter certaines obligations, notamment l&eacute;gales. Les dites obligations particuli&egrave;rement celles relatives &agrave; la livraison, &agrave; la r&eacute;tractation, et aux garanties l&eacute;gales, sont mentionn&eacute;es dans les Conditions g&eacute;n&eacute;rales et n&rsquo;engagent que les Fournisseurs, &agrave; l&rsquo;exclusion de l&rsquo;Association Le Social Market. Les Clients sont inform&eacute;s que les Fournisseurs ont leur propre organisation et qu&rsquo;ils doivent d&egrave;s lors s&rsquo;informer des modalit&eacute;s de livraison, de retour, de r&eacute;tractation, et de toute autre modalit&eacute; concernant les Produits et leur vente. Les Clients peuvent contacter les Fournisseurs gr&acirc;ce &agrave; une adresse mail fournie sur leur mail d&rsquo;enregistrement de commande.<br />
+      1.4. Avant la validation de toute commande sur le site www.lesocialmarket.fr le client est inform&eacute; qu&rsquo;en cliquant sur un bouton &laquo;&#160;Finaliser l&rsquo;Achat&#160;&raquo; il accepte les pr&eacute;sentes Conditions G&eacute;n&eacute;rales de Vente avec la phrase &laquo;&#160;En continuant vous acceptez nos Conditions G&eacute;n&eacute;rales de Vente&#160;&raquo;. En cliquant, le Client accepte donc sans r&eacute;serve les Conditions g&eacute;n&eacute;rales qui pr&eacute;valent sur toute autre document &eacute;manant du Client. Le Client est invit&eacute; &agrave; sauvegarder sous sa propre responsabilit&eacute; les Conditions g&eacute;n&eacute;rales par tout moyen dont il dispose. Pour rappel, l&rsquo;utilisation du site par un visiteur implique que le visiteur accepte pleinement les d&rsquo;utilisation du site dans leur totalit&eacute;.<br />
+      1.5. L&rsquo;Association Le Social Market se r&eacute;serve le droit de modifier les Conditions g&eacute;n&eacute;rales &agrave; tout moment. En cas de modification, les Conditions g&eacute;n&eacute;rales applicables sont celles en vigueur &agrave; la date de la navigation et/ou de la commande de Produits effectu&eacute;e par le Client. Afin de faciliter la bonne application des Conditions g&eacute;n&eacute;rales, la date d&rsquo;entr&eacute;e en vigueur et le num&eacute;ro de version sont indiqu&eacute;s en en-t&ecirc;te des Conditions g&eacute;n&eacute;rales.<br />
+      <br />
+       2 Informations sur les Produits &ndash; Disponibilit&eacute; des Produits<br />
+      2.1. Le Client est inform&eacute; que les couleurs des photographies des Produits peuvent, en raison de la qualit&eacute; de r&eacute;solution utilis&eacute;e sur l&rsquo;ordinateur du Client, diff&eacute;r&eacute;es de celles du Produit livr&eacute;. Les descriptifs et photographies des produits sont fournies par les Fournisseurs, mais peuvent &ecirc;tre r&eacute;&eacute;crits dans l&rsquo;optique de maximiser les ventes par l&rsquo;Association Le Social Market.<br />
+      Le Client est invit&eacute; &agrave; interroger le service clients des Fournisseurs &agrave; partir de l&rsquo;adresse email fournie dans l&rsquo;email d&rsquo;enregistrement de commande, et en cas de non-r&eacute;ponse dans un d&eacute;lai de sept (7) jours, le Service clients de l&rsquo;Association Le Social Market dont les coordonn&eacute;es sont mentionn&eacute;es &agrave; la fin des Conditions g&eacute;n&eacute;rales, pour toute demande relative au Produit ou en cas d&rsquo;information manquante ou qui lui semble erron&eacute;e.<br />
+      2.2. La disponibilit&eacute; des Produits est affich&eacute;e sur la page concernant le Produit.<br />
+      2.3. Si les Fournisseurs mettent tout en oeuvre pour v&eacute;rifier en temps r&eacute;el la disponibilit&eacute; de chaque Produit, ce dernier peut cependant s&rsquo;av&eacute;rer indisponible. Les Fournisseurs se sont engag&eacute;s &agrave; informer le Client, par message diffus&eacute; par le syst&egrave;me de messagerie du Site, d&egrave;s qu&rsquo;ils ont connaissance de l&rsquo;indisponibilit&eacute; du Produit dans un d&eacute;lai de sept (7) jours &agrave; compter de la date de la commande. Les Fournisseurs doivent informer le Client :<br />
+       &bull; du d&eacute;lai de disponibilit&eacute; du Produit et du d&eacute;lai de livraison qui s&rsquo;ensuit ;<br />
+       &bull; ou de l&rsquo;indisponibilit&eacute; permanente du Produit. Dans ce cas, conform&eacute;ment aux dispositions de l&rsquo;article L 121-20-3 du Code de la consommation, ils proc&eacute;deront &agrave; la demande du Client :<br />
+       &bull; au remboursement du Produit dans les trente (30) jours, &agrave; compter de la date de la commande du Client ;<br />
+       &bull; ou &agrave; l&rsquo;attribution d&rsquo;un avoir valable pendant une ann&eacute;e.<br />
+       3 Proc&eacute;dure de commande<br />
+      3.1. Seuls les Clients juridiquement capables peuvent commander sur le Site.<br />
+      3.2. Les commandes sont n&eacute;cessairement effectu&eacute;es sur le Site &agrave; l&rsquo;exclusion de tout autre medium.<br />
+      3.3. Le Client doit avant de proc&eacute;der &agrave; toute commande cr&eacute;er son compte personnel en renseignant les donn&eacute;es indiqu&eacute;es sur le formulaire d&rsquo;inscription. Le Client est le seul responsable des donn&eacute;es renseign&eacute;es, non seulement en ce qui concerne leur exactitude mais aussi leur conservation. Il est le seul responsable de toute communication aupr&egrave;s de tiers que ce soit par erreur, n&eacute;gligence ou faute et de leur utilisation frauduleuse. En cas d&rsquo;utilisation frauduleuse du compte personnel du Client, ce dernier devra en informer l&rsquo;Association Le Social Market dans les plus brefs d&eacute;lais en envoyant un courriel &agrave; l&rsquo;adresse suivante :&#160;contact@lesocialmarket.fr.<br />
+      L&rsquo;acc&egrave;s au compte personnel est effectu&eacute; gr&acirc;ce &agrave; l&rsquo;adresse &eacute;lectronique indiqu&eacute;e lors de sa cr&eacute;ation et du mot de passe confidentiel cr&eacute;e par le Client.<br />
+      En cas d&rsquo;oubli du mot de passe, le Client peut demander la cr&eacute;ation d&rsquo;un nouveau mot de passe selon la proc&eacute;dure indiqu&eacute;e sur le formulaire d&rsquo;identification.<br />
+      3.3. Le Client afin de passer la commande de Produit doit s&eacute;lectionner l&rsquo;item pr&eacute;vu &agrave; cet effet et valider son ajout au &laquo; Panier &raquo;. La passation de la commande s&rsquo;effectue &agrave; partir de la page intitul&eacute;e &laquo; Panier &raquo; avec le syst&egrave;me du &laquo; double clic &raquo;, le premier pour finaliser la commande et le deuxi&egrave;me pour la valider. Pr&eacute;alablement &agrave; la validation de la commande (deuxi&egrave;me &laquo; clic &raquo;) le Client peut modifier sa commande.<br />
+      Il sera demand&eacute; au Client de choisir le mode de livraison du(des) Produit(s) en fonction des options propos&eacute;es par le Fournisseur.<br />
+      Le Client est invit&eacute; &agrave; v&eacute;rifier l&rsquo;&eacute;tat de sa commande visible dans la page &laquo; Panier &raquo; avant sa validation d&eacute;finitive. Les Conditions g&eacute;n&eacute;rales devront &ecirc;tre lues et accept&eacute;es par le Client afin d&rsquo;acc&eacute;der &agrave; l&rsquo;&eacute;tape de validation d&eacute;finitive de la commande.<br />
+      Lorsque le paiement est effectu&eacute;, dans les conditions d&eacute;finies ci-apr&egrave;s, le Client recevra une confirmation de la commande par courriel qui ne constitue qu&rsquo;un seul accus&eacute; de r&eacute;ception de celle-ci. La commande ne deviendra d&eacute;finitive qu&rsquo;apr&egrave;s l&rsquo;envoi par le Fournisseur d&rsquo;un courriel de validation de la commande, &agrave; l&rsquo;adresse &eacute;lectronique indiqu&eacute;e dans le compte personnel du Client, r&eacute;capitulant les &eacute;l&eacute;ments de la commande (Produit, prix, mode de paiement, frais de livraison, mode de livraison, etc&#8230;).<br />
+      <br />
+       4 Prix<br />
+      4.1. Les prix des Produits sont exprim&eacute;s en euros et prennent en compte la T.V.A. en vigueur au jour de la commande. Les frais d&rsquo;emballage et de livraison peuvent venir en suppl&eacute;ment du prix total du(des) Produits command&eacute;(s) en fonction de la politique de livraison des Fournisseurs.<br />
+      4.2. Si les Fournisseurs constatent une erreur manifeste relative &agrave; l&rsquo;un des quelconques &eacute;l&eacute;ments de la page relative au Produit command&eacute;, ils se r&eacute;servent le droit de r&eacute;soudre la commande. L&rsquo;Association Le Social Market assurera le remboursement complet du prix pay&eacute; par le Client, sans encourir de responsabilit&eacute; &agrave; cet &eacute;gard.<br />
+      4.3. Le Client est tenu de payer le prix du Produit affich&eacute; le jour de la commande, alors m&ecirc;me que les Fournisseurs l&rsquo;auraient modifi&eacute; peu apr&egrave;s.<br />
+      <br />
+       5 Paiement<br />
+      5.1. L&rsquo;Association Le Social Market a re&ccedil;u de la part des Fournisseurs le mandat de percevoir le prix des commandes de Produits et de traiter toutes r&eacute;clamations relatives au paiement.<br />
+      5.2. Le paiement du prix du Produit est effectu&eacute; par carte bancaire (Carte Bleue, Visa, Eurocard/Mastercard, American Express).<br />
+      5.3. En cas de refus du paiement par la banque du Client, la commande ne sera pas valid&eacute;e.<br />
+      5.4. Le paiement sera d&eacute;bit&eacute; dans les douze heures qui suivent la validation de la commande par le Client gr&acirc;ce &agrave; la carte bancaire enregistr&eacute;e sur le compte personnel du Client que ce dernier aura s&eacute;lectionn&eacute; sur la page &laquo; Panier &raquo;.<br />
+      5.5. Les Fournisseurs et/ou l&rsquo;Association Le Social Market pourront refuser toute commande de tout Client avec lequel il existe un litige non encore r&eacute;solu &agrave; la date de la commande, sans encourir de responsabilit&eacute; &agrave; cet &eacute;gard.<br />
+      5.6. Les paiements par carte bancaire sur le Site sont totalement s&eacute;curis&eacute;s par le syst&egrave;me Stripe (https://stripe.com/about ) Les conditions g&eacute;n&eacute;rales d&rsquo;utilisation de Stripe sont disponible ici en anglais https://stripe.com/fr/terms . Une fois le paiement vers&eacute; sur notre compte nous divisons le montant entre l&rsquo;Association Le Social Market, les Fournisseurs et les Associations. L&rsquo;Association Le Social Market, les Fournisseurs et les Associations n&rsquo;ont acc&egrave;s &agrave; aucune donn&eacute;e bancaire du Client.<br />
+      <br />
+       6 Livraison<br />
+      6.1. Les dispositions qui suivent sont suppl&eacute;tives &agrave; celles du Fournisseur qui seraient plus favorables. Le Client devra prendre toutes les informations n&eacute;cessaires aux modalit&eacute;s de livraison aupr&egrave;s de chaque Fournisseur.<br />
+      Les Produits sont livr&eacute;s par les Fournisseurs &agrave; l&rsquo;adresse indiqu&eacute;e par le Client, lors de la passation de la commande, situ&eacute;e sur l&rsquo;ensemble des territoires indiqu&eacute;s par les Fournisseurs concern&eacute;s dans leurs param&egrave;tres du Site.<br />
+      Le Client est le seul responsable de l&rsquo;adresse qu&rsquo;il aura mentionn&eacute; lors de la commande. Il devra r&eacute;ceptionner la commande selon le mode de livraison choisi et selon les indications donn&eacute;es par les Fournisseurs.<br />
+      6.2. La commande est livr&eacute;e dans un d&eacute;lai maximum de trente (30) jours, &agrave; compter du jour de l&rsquo;envoi du courriel de validation d&eacute;finitive de la commande.<br />
+      Le d&eacute;lai de livraison s&rsquo;ach&egrave;ve &agrave; la premi&egrave;re pr&eacute;sentation de la commande &agrave; l&rsquo;adresse de livraison indiqu&eacute;e par le Client, selon le mode de livraison choisi par le Client.<br />
+      6.3. &Agrave; d&eacute;faut de retrait du Produit dans les d&eacute;lais, il sera retourn&eacute; chez le Fournisseur.<br />
+      6.4. Le Client supporte l&rsquo;ensemble des risques li&eacute;s au Produit le jour de son exp&eacute;dition. Les Fournisseurs informent le Client de l&rsquo;exp&eacute;dition du Produit par courrier &eacute;lectronique, &agrave; l&rsquo;adresse &eacute;lectronique indiqu&eacute;e dans le compte personnel du Client.<br />
+      6.5. Le Client devra n&eacute;cessairement v&eacute;rifier l&rsquo;&eacute;tat du Produit au moment de sa livraison, et devra mentionner toutes les r&eacute;serves utiles aupr&egrave;s du transporteur ou toute autre personne habilit&eacute;e, sur le document pr&eacute;vu &agrave; cet effet. Il peut aussi refuser le colis purement et simplement. Le Client dispose de trois (3) jours, &agrave; l&rsquo;exclusion des jours f&eacute;ri&eacute;s, sous peine de forclusion, pour faire savoir au transporteur, par lettre recommand&eacute;e, que le Produit est endommag&eacute;.<br />
+      6.6. Conform&eacute;ment &agrave; l&rsquo;article L.114-1 du Code de la consommation, en cas de retard de livraison de plus de sept (7) jours, le Client peut annuler sa commande par lettre recommand&eacute;e avec accus&eacute; r&eacute;ception, dans un d&eacute;lai de soixante jours (60) ouvr&eacute;s &agrave; compter de la date limite de livraison du Produit aupr&egrave;s des Fournisseurs. Les Fournisseurs se sont engag&eacute;s selon le choix du Client, dans un d&eacute;lai de trente (30) jours &agrave; compter de la demande du Client :<br />
+       &bull; &agrave; rembourser le prix du Produit ;<br />
+       &bull; &agrave; r&eacute;exp&eacute;dier le Produit aux frais du Fournisseur ;<br />
+       &bull; &agrave; attribuer un avoir au Client valable un an d&rsquo;un montant &eacute;gal au prix du Produit et au montant des frais li&eacute;s &agrave; la livraison.<br />
+      6.7.&#160;Les Fournisseurs et a fortiori l&rsquo;Association Le Social Market ne sauraient &ecirc;tre responsables du d&eacute;faut ou des retards de livraison dus, &agrave; une cause de force majeure ou &agrave; une cause imputable au Client. Le Client ne pourra d&egrave;s lors se pr&eacute;valoir de la proc&eacute;dure d&eacute;crite pr&eacute;c&eacute;demment.<br />
+      6.8.&#160;De m&ecirc;me en raison du transfert des risques ils ne sauraient &ecirc;tre responsables de la perte du Produit command&eacute; &agrave; compter du jour de son exp&eacute;dition.<br />
+      <br />
+       7 Droit de r&eacute;tractation<br />
+      7.1. Conform&eacute;ment aux articles L.121-20 et suivants du Code de la consommation, le Client b&eacute;n&eacute;ficie d&rsquo;un d&eacute;lai de sept (7) jours francs, sans avoir &agrave; justifier de motif, ni &agrave; payer de p&eacute;nalit&eacute;s, sauf les frais de retour. Le d&eacute;lai de r&eacute;tractation court &agrave; compter de la date de r&eacute;ception du Produit command&eacute; par le Client.<br />
+      Le Client doit retourner aux Fournisseurs le Produit conform&eacute;ment &agrave; la proc&eacute;dure d&eacute;finie ci-apr&egrave;s compl&eacute;t&eacute;e par celle indiqu&eacute;e par le Fournisseur, dans son emballage d&rsquo;origine et en bon &eacute;tat, propre &agrave; sa revente avec tout ses accessoires et autres &eacute;l&eacute;ments livr&eacute;s avec lui et demander l&rsquo;&eacute;change ou le remboursement ou encore un avoir valable pendant une dur&eacute;e de un an. On entend par &eacute;tat d&rsquo;origine le Produit qui n&rsquo;a pas fait l&rsquo;objet et ne porte aucune trace d&rsquo;une utilisation prolong&eacute;e.<br />
+      Le Client doit dans ce cadre contacter le Service client du Fournisseur par l&rsquo;interm&eacute;diaire de l&rsquo;adresse email fournie dans l&rsquo;email d&rsquo;enregistrement de commande envoy&eacute; par l&rsquo;Association Le Social Market ou en cas de non-r&eacute;ponse dans un d&eacute;lai de sept (7) jours le Service client de l&rsquo;Association Le Social Market, dont les coordonn&eacute;es sont mentionn&eacute;es &agrave; la fin des Conditions G&eacute;n&eacute;rales ;<br />
+      Dans le cas d&rsquo;un remboursement, l&rsquo;Association Le Social Market s&rsquo;engage &agrave; rembourser le Client, au plus tard dans les trente (30) jours suivant la date &agrave; laquelle le Client a exerc&eacute; son droit de r&eacute;tractation, sous r&eacute;serve que le Produit ait &eacute;t&eacute; retourn&eacute; au Fournisseur.<br />
+      7.2. Le droit de r&eacute;tractation ne peut&ndash;&ecirc;tre exerc&eacute; dans les cas mentionn&eacute;s aux articles L121-20-2 et de l&rsquo;article L 121-20-4 du Code de la Consommation.<br />
+      7.3. A l&rsquo;expiration du d&eacute;lai de r&eacute;tractation, le Client n&rsquo;a aucun droit au remboursement de la commande, alors m&ecirc;me qu&rsquo;il aurait retourn&eacute; le Produit &agrave; l&rsquo;Association Le Social Market ou au Fournisseur, et peu importe que l&rsquo;un de ces derniers ait accept&eacute; de reprendre le Produit.<br />
+      <br />
+       8 Proc&eacute;dure de retour des Produits<br />
+      En cas de r&eacute;tractation ou en cas d&rsquo;&eacute;change de Produit non-conformes, les Produits devront &ecirc;tre retourn&eacute;s selon les modalit&eacute;s indiqu&eacute;es par le Fournisseur. Le Client pour toute demande pr&eacute;alable ou r&eacute;clamation relative aux retours de Produits devra entrer en contact avec le Fournisseur par l&rsquo;interm&eacute;diaire de l&rsquo;adresse email fournie dans l&rsquo;email d&rsquo;enregistrement de commande envoy&eacute; par l&rsquo;Association Le Social Market.<br />
+      <br />
+       9 Responsabilit&eacute;<br />
+      9.1. L&rsquo;Association Le Social Market s&rsquo;engage &agrave; mettre tout en oeuvre pour permettre l&rsquo;acc&egrave;s au Site 24 heures sur 24 et 7 jours sur 7. N&eacute;anmoins elle ne peut garantir le dit acc&egrave;s en cas de force majeure, de pannes ou d&rsquo;interventions de maintenance n&eacute;cessaires &agrave; son bon fonctionnement, le tout sans pr&eacute;avis et sans aucun droit &agrave; indemnit&eacute;.<br />
+      9.2. L&rsquo;Association Le Social Market n&rsquo;est pas responsable des cons&eacute;quences, telles qu&rsquo;elles soient, li&eacute;es &agrave; l&rsquo;utilisation d&rsquo;Internet. Il est conseill&eacute; par ailleurs au Client de sauvegarder les donn&eacute;es concernant la commande.<br />
+      9.3. La livraison et la qualit&eacute; des Produits sont exclusivement de la responsabilit&eacute; des Fournisseurs, &agrave; l&rsquo;exclusion de celle de l&rsquo;Association Le Social Market, qui ne pourra &ecirc;tre responsable que des litiges relatifs au paiement de la commande. Tout autre litige devra &ecirc;tre port&eacute; &agrave; la connaissance des Fournisseurs. N&eacute;anmoins l&rsquo;Association Le Social Market pourra intervenir en qualit&eacute; d&rsquo;interm&eacute;diaire afin de les r&eacute;gler dans les meilleures conditions.<br />
+      9.4. L&rsquo;Association Le Social Market met tout en oeuvre pour remplir ses obligations. En cas d&rsquo;inex&eacute;cution ou de mauvaise ex&eacute;cution de ces derni&egrave;res, la responsabilit&eacute; de l&rsquo;Association Le Social Market est limit&eacute;e au montant de la commande du Client. La limitation de responsabilit&eacute; est exclue dans les cas &eacute;num&eacute;r&eacute;s par la loi et qui ont un caract&egrave;re imp&eacute;ratif.<br />
+      <br />
+       10 Garanties l&eacute;gales<br />
+      Le Client b&eacute;n&eacute;ficie aupr&egrave;s des Fournisseurs, &agrave; l&rsquo;exclusion de l&rsquo;Association Le Social Market, de la garantie l&eacute;gale de non-conformit&eacute; et des vices cach&eacute;s, telles que prescrites par la loi dont les articles sont reproduits ci-apr&egrave;s.<br />
+      Article L211-4 du Code de la Consommation<br />
+      Le vendeur est tenu de livrer un bien conforme au contrat et r&eacute;pond des d&eacute;fauts de conformit&eacute; existants lors de la d&eacute;livrance.<br />
+      Il r&eacute;pond &eacute;galement des d&eacute;fauts de conformit&eacute; r&eacute;sultant de l&rsquo;emballage, des instructions de montage ou de l&rsquo;installation lorsque celle-ci a &eacute;t&eacute; mise &agrave; sa charge par le contrat ou a &eacute;t&eacute; r&eacute;alis&eacute;e sous sa responsabilit&eacute;.<br />
+      Article L211-5 du Code de la Consommation<br />
+      Pour &ecirc;tre conforme au contrat, le bien doit :<br />
+      1&deg; Etre propre &agrave; l&rsquo;usage habituellement attendu d&rsquo;un bien semblable et, le cas &eacute;ch&eacute;ant :<br />
+       &bull; Correspondre &agrave; la description donn&eacute;e par le vendeur et poss&eacute;der les qualit&eacute;s que celui-ci a pr&eacute;sent&eacute;es &agrave; l&rsquo;acheteur sous forme d&rsquo;&eacute;chantillon ou de mod&egrave;le ;<br />
+       &bull; Pr&eacute;senter les qualit&eacute;s qu&rsquo;un acheteur peut l&eacute;gitimement attendre eu &eacute;gard aux d&eacute;clarations publiques faites par le vendeur, par le producteur ou par son repr&eacute;sentant, notamment dans la publicit&eacute; ou l&rsquo;&eacute;tiquetage ;<br />
+      2&deg; Ou pr&eacute;senter les caract&eacute;ristiques d&eacute;finies d&rsquo;un commun accord par les parties ou &ecirc;tre propre &agrave; tout usage sp&eacute;cial recherch&eacute; par l&rsquo;acheteur, port&eacute; &agrave; la connaissance du vendeur et que ce dernier a accept&eacute;.<br />
+      Article L211-12 du Code de la Consommation<br />
+      L&rsquo;action r&eacute;sultant du d&eacute;faut de conformit&eacute; se prescrit par 2 ans &agrave; compter de la d&eacute;livrance du bien.<br />
+      Article 1641 du Code Civil<br />
+      Le vendeur est tenu de la garantie &agrave; raison des d&eacute;fauts cach&eacute;s de la chose vendue qui la rendent impropre &agrave; l&rsquo;usage auquel on la destine, ou qui diminuent tellement cet usage que l&rsquo;acheteur ne l&rsquo;aurait pas acquise, ou n&rsquo;en aurait donn&eacute; qu&rsquo;un moindre prix, s&rsquo;il les avait connus.<br />
+      Article 1648 alin&eacute;a 1er du Code Civil<br />
+      L&rsquo;action r&eacute;sultant des vices r&eacute;dhibitoires doit &ecirc;tre intent&eacute;e par l&rsquo;acheteur dans un d&eacute;lai de 2 ans &agrave; compter de la d&eacute;couverte du vice.<br />
+      Pour b&eacute;n&eacute;ficier de la garantie l&eacute;gale de conformit&eacute; ou de la garantie des vices cach&eacute;s, le Client doit contacter le Fournisseur par l&rsquo;interm&eacute;diaire de l&rsquo;adresse email fournie dans l&rsquo;email d&rsquo;enregistrement de commande envoy&eacute; par l&rsquo;Association Le Social Market; En cas de non-r&eacute;ponse pendant un d&eacute;lai de sept (7) jours, le Client doit en informer le Service client de l&rsquo;Association Le Social Market dont les coordonn&eacute;es sont mentionn&eacute;es &agrave; la fin des Conditions g&eacute;n&eacute;rales.<br />
+      Le Client sera rembours&eacute; par le Fournisseur des frais r&eacute;sultant du retour du Produit.<br />
+      <br />
+       11 Donn&eacute;es personnelles &ndash; Cookies<br />
+      11.1. L&rsquo;Association Le Social Market collecte certaines informations personnelles des Clients sur le Site (ci-apr&egrave;s les &laquo; Informations &raquo;) afin de traiter les commandes, et traiter leur paiement. Si le Client s&rsquo;oppose &agrave; la collecte des Informations, la commande ne pourra &ecirc;tre effectu&eacute;e.<br />
+      l&rsquo;Association Le Social Market utilise par ailleurs les Informations afin de communiquer aux Clients les actualit&eacute;s et nouveaut&eacute;s de l&rsquo;Association Le Social Market.<br />
+      D&rsquo;une mani&egrave;re g&eacute;n&eacute;rale, les Informations des Clients collect&eacute;es permettent de personnaliser et d&rsquo;am&eacute;liorer la qualit&eacute; du Site et la navigation des Client ainsi que des services associ&eacute;s au Site.<br />
+      11.2. l&rsquo;Association Le Social Market est responsable du traitement des informations personnelles des Clients.<br />
+      11.3. Dans le cadre du traitement des informations dont l&rsquo;objet est mentionn&eacute; ci-dessus, l&rsquo;Association Le Social Market divulgue le contenu appropri&eacute;, aux Fournisseurs et aux prestataires charg&eacute;s d&rsquo;assurer la livraison des Produits.<br />
+      11.4. l&rsquo;Association Le Social Market divulgue n&eacute;cessairement les Informations aupr&egrave;s des autorit&eacute;s administratives ou judiciaires qui le lui demanderaient sur injonction.<br />
+      11.5. Le Client peut choisir &agrave; tout moment, dans la rubrique d&eacute;di&eacute;e sur le Site, d&rsquo;&ecirc;tre inform&eacute; de l&rsquo;actualit&eacute; de l&rsquo;Association Le Social Market en cr&eacute;ant un compte et en param&eacute;trant ses notifications par courriel.<br />
+      Dans les deux cas qui pr&eacute;c&eacute;dent, le Client peut &agrave; tout moment revenir sur son accord en cliquant sur le lien &lsquo;unsubscribe&rsquo; sur un mail Social Market.<br />
+      <br />
+       12 Propri&eacute;t&eacute; intellectuelle &ndash; Protection des bases de donn&eacute;es<br />
+      12.1. Tout le contenu pr&eacute;sent sur le Site, sans aucune exclusion, y compris les bases de donn&eacute;es et les technologies utilis&eacute;es par l&rsquo;Association Le Social Market sont la propri&eacute;t&eacute; de cette derni&egrave;re, ou de ses Fournisseurs et partenaires, et est prot&eacute;g&eacute; par le droit de la propri&eacute;t&eacute; intellectuelle.<br />
+      12.2. Il est formellement interdit d&rsquo;extraire, reproduire, r&eacute;utiliser tout ou partie du contenu du Site sauf autorisation &eacute;crite et expresse de l&rsquo;Association Le Social Market. Tout accord donn&eacute; par l&rsquo;Association Le Social Market ou par le titulaire des droits de propri&eacute;t&eacute; ne cr&eacute;e en aucun cas au profit du Client un droit intangible et pourra &ecirc;tre d&eacute;nonc&eacute; &agrave; tout moment par l&rsquo;Association Le Social Market ou le titulaire des droits sur simple de demande. Le Client devra obtemp&eacute;rer sans d&eacute;lai.<br />
+      Il est par ailleurs totalement interdit d&rsquo;utiliser des techniques telles que celles du framing.<br />
+      <br />
+       13 Invalidit&eacute; partielle &ndash; Int&eacute;gralit&eacute; du contrat &ndash; Tol&eacute;rance<br />
+      13.1. Les clauses des Conditions g&eacute;n&eacute;rales r&eacute;put&eacute;es nulles ou inapplicables pour quelle que raison que ce soit, n&rsquo;affecteront en aucun cas la validit&eacute; des autres clauses des Conditions g&eacute;n&eacute;rales qui restent effectives.<br />
+      13.2. Les Conditions g&eacute;n&eacute;rales et l&rsquo;ensemble des donn&eacute;es relatives &agrave; la commande communiqu&eacute;es au Client, constituent l&rsquo;int&eacute;gralit&eacute; des relations contractuelles intervenues entre les Parties et forment un tout indivisible.<br />
+      13.3. En cas de contradiction entre ces documents, les Conditions g&eacute;n&eacute;rales pr&eacute;vaudront.<br />
+      13.4. La simple tol&eacute;rance du non-respect d&rsquo;une disposition des Conditions g&eacute;n&eacute;rales par l&rsquo;une des Parties ne constituera en aucun cas un abandon de droit ou une renonciation ni une modification des Conditions g&eacute;n&eacute;rales. Le fait que l&rsquo;une des Parties ne mette pas en oeuvre l&rsquo;un des droits qui lui est conc&eacute;d&eacute; par les Conditions g&eacute;n&eacute;rales ne veut pas dire qu&rsquo;elle renonce pour l&rsquo;avenir &agrave; ce droit.<br />
+      <br />
+      14. Conservation des donn&eacute;es &ndash; Convention de preuve<br />
+      14.1. Conform&eacute;ment &agrave; l&rsquo;article L134-2 du Code de la consommation, l&rsquo;Association Le Social Market assure la conservation des documents relatifs &agrave; la commande effectu&eacute;e par le Client, qui peut &agrave; tout moment en demander la communication.<br />
+      14.2. Les messages re&ccedil;us par voie &eacute;lectronique, et plus g&eacute;n&eacute;ralement les documents &eacute;lectroniques &eacute;chang&eacute;s entre les Parties, auront la m&ecirc;me valeur que celle accord&eacute;e aux originaux. Les Parties conserveront les documents &eacute;lectroniques de telle mani&egrave;re qu&rsquo;elles puissent constituer des copies fid&egrave;les et durables au sens de l&rsquo;article 1348 du code civil.<br />
+      14.3. La confirmation du paiement de la commande par le Client sur le Site vaut signature &eacute;lectronique du Client et la preuve de la commande.<br />
+      <br />
+       15 Service Client de l&rsquo;Association Le Social Market<br />
+      Pour toute demande d&rsquo;information, r&eacute;clamation le Client peut joindre le Service client :<br />
+       &bull; par courriel en &eacute;crivant &agrave; contact@lesocialmarket.fr ;<br />
+       &bull; par courrier en &eacute;crivant &agrave; : A l&rsquo;Attention de C&eacute;cile Compte - Association Le Social Market - 57 rue du cherche-midi 75006 Paris - FRANCE<br />
+      <br />
+       16 Droit applicable &ndash; Litiges &ndash; R&eacute;clamation<br />
+      16.1. Les Conditions g&eacute;n&eacute;rales sont r&eacute;gies par le droit fran&ccedil;ais &agrave; l&rsquo;exclusion de tout autre r&eacute;glementation.<br />
+      16.2. En cas de litige, le Client s&rsquo;adressera, pr&eacute;alablement &agrave; tout contentieux, aux Fournisseurs afin de trouver une solution amiable.<br />
+      16.3. Il est fait mention dans les Conditions g&eacute;n&eacute;rales de l&rsquo;intervention de l&rsquo;Association Le Social Market dans le cadre des r&eacute;clamations du Client aupr&egrave;s du Fournisseur, si ce dernier n&rsquo;intervient pas dans un certain d&eacute;lai. Le Client est inform&eacute; que l&rsquo;Association Le Social Market n&rsquo;a dans ce cadre qu&rsquo;un r&ocirc;le d&rsquo;interm&eacute;diaire entre les Parties afin de r&eacute;gler les r&eacute;clamations dans les meilleurs d&eacute;lais. Elle ne saurait intervenir en faveur de l&rsquo;une ou de l&rsquo;autre Partie.<br />
+      16.4. Tout litige auquel les Conditions g&eacute;n&eacute;rales pourraient donner lieu sera port&eacute; devant les juridictions comp&eacute;tentes en application des r&egrave;gles de droit commun.<br />
+      <br />
+       17 Informations relatives &agrave; la coordination du Site<br />
+      Editeur du Site lesocialmarket.fr<br />
+      Association Le Social Market association loi 1901 domicili&eacute;e au 57 rue du cherche-midi 75006 Paris France <br />
+      Courriel :&#160;contact@lesocialmarket.fr<br />
+    </p>
   </section>
 
-    <!-- Footer -->
-  <footer class="text-center" id="footer">
-    <div class="line-bleu-bottom">
-    </div>
-    <div class="line-red-bottom">
-    </div>
-    <div class="footer-above">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col col-md-4">
-            <h4>A propos</h4>
-            <div class="link-footer">
-              <a href="/faq/">F.A.Q.</a><br>
-              <a href="/cg/">Conditions Générales</a><br>
-              <a href="/mentions/">Mentions Légales</a>
-            </div>
-          </div>
-          <div class="footer-col col-md-4">
-            <h4>Suivez-nous</h4>
-            <ul class="list-inline">
-              <li>
-                <a target="_blank" href="https://www.facebook.com/lesocialmarket/" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://twitter.com/lesocialmarket" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col col-md-4">
-            <ul class="list-inline">
-            <h4>Contactez-nous</h4>
-            <li>
-              <a href="mailto:contact@lesocialmarket.fr" class="btn-social btn-outline"><i class="fa fa-envelope"></i></a>
-            </li>
-          </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-below">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            Le Social Market &copy; 2016
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <!-- Footer -->
+  <%= render "layouts/footer" %>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-top page-scroll visible-xs visible-sm">
-    <a class="btn btn-primary" href="#home">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <%= render "layouts/scroll_top" %>
 
 </body>
 
